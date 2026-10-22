@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Rectfly 的本地输入、日志、完全访问权限、语法下载和自愿评测分享说明。附英文隐私政策。">
+  <meta name="referrer" content="no-referrer">
+  <title>隐私政策 — Rectfly</title>
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Rectfly 首页"><img src="assets/app-icon.png" width="34" height="34" alt="">Rectfly</a>
+      <nav aria-label="主导航"><a href="index.html">首页</a><a href="privacy.html" aria-current="page">隐私</a><a href="support.html">支持</a><a href="attributions.html">致谢</a></nav>
+    </header>
+    <main id="main" tabindex="-1" class="document">
+      <p class="eyebrow">PRIVACY</p>
+      <h1>隐私政策</h1>
+      <p class="lead">你打的字，留在你的设备上。</p>
+      <p class="meta">更新于 2026 年 10 月 22 日 · 中文为主，附英文</p>
+      <aside class="draft" aria-label="草案状态"><strong>发布前草案</strong><p>本政策按公开版“输入日志默认关闭、评测结果经同意后由系统分享导出”的约定编写，须在公开版行为核验通过后生效。</p></aside>
+      <nav class="contents" aria-label="政策目录"><a href="#data">输入与学习</a><a href="#logs">输入日志</a><a href="#access">完全访问</a><a href="#network">联网边界</a><a href="#evaluation">联邦评测</a><a href="#english" lang="en">English</a></nav>
+      <section id="data"><h2>输入与本机学习</h2>
+        <p>Rectfly 键盘扩展不联网。中文纠错、英文补全、词语联想和个人学习在设备上完成。输入文字、导入的 Rime 用户词库及学习记录只在本机使用，不上传到我们的服务器，也不在设备间同步。</p>
+        <p>我们不通过 Rectfly 收集个人信息。App 无第三方 SDK、无广告、无追踪工具。本机学习会使用你的选词和输入习惯；这不表示把输入内容发送给开发者。</p>
+      </section>
+      <section id="logs"><h2>输入日志默认关闭</h2>
+        <p>公开版默认不记录输入日志。只有你在 App 的“隐私与数据”中打开“记录输入日志”后，才会把排查输入问题所需的日志写入本机。日志可能包含输入文字、候选、触点和周边上下文，验证码等普通输入框的内容也可能被记录。</p>
+        <p>你可以随时关闭记录，并通过“清除输入日志”删除已有日志。“清除学习记录”单独重置本机学习。关闭记录不等于删除已有日志。</p>
+        <p>“启用键盘内导出”是另一个可选开关。开启后，长按键盘的“123”可保存近期故障包，再由主 App 手动分享。故障包可能包含文字与上下文，发送前请检查并移除私人内容。</p>
+      </section>
+      <section id="access"><h2>为什么请求完全访问</h2>
+        <p>Rectfly 键盘扩展声明请求“允许完全访问”。它用于键盘与主 App 在本机共享设置、按键震动级别、用户词库、已下载语法模型及个人学习数据，也用于可选日志和手动故障包导出。</p>
+        <p>完全访问会扩大 iOS 授予键盘的权限，包括联网能力；Rectfly 键盘不使用该能力发送输入。基础输入可不授予完全访问，但本机共享与相关功能可能受限。你可随时在 iOS 设置中关闭它。<a href="support.html#full-access">查看操作方法</a>。</p>
+      </section>
+      <section id="network"><h2>键盘离线，主 App 可下载语法</h2>
+        <p>键盘扩展的输入过程不使用网络。主 App 的“万象语法”功能会在启动时查询 GitHub 的公开发布接口以检查模型更新，也可由你手动检查；模型文件仅在你选择下载或更新后获取。模型安装后由键盘离线读取，你也可以在主 App 中删除模型。</p>
+        <p>这些请求不附带你的输入、用户词库、学习记录或输入日志。GitHub 及下载服务会接收到建立网络连接所需的 IP 地址和请求信息，并按其服务规则处理。Rectfly 没有用于接收输入或评测结果的自建服务器。</p>
+      </section>
+      <section id="evaluation"><h2>联邦评测与自愿分享</h2>
+        <p>联邦评测使用已有的本机输入记录，对比现版与候选新版的结果，计算过程与结果留在本机。你可在 App 内关闭评测。</p>
+        <p>按公开版约定，仅当你明确同意并操作系统分享时，才导出胜负统计。没有自动上传或接收统计的服务器，是否发送、发送给谁由你选择。</p>
+        <p>导出内容包括“两版都对、只有现版对、只有新版对、两版都错”等计数、总数和按输入长度分组的统计，以及实验标识、构建版本标识和完成日期；不含输入文字、所选词语、拼音或按键记录。评测统计与可能含文字的故障包是不同文件。</p>
+      </section>
+      <section id="website"><h2>本网站与联系</h2>
+        <p>本网站仅使用静态 HTML、CSS 和本地图片，无脚本、无 Cookie、无追踪、无外部字体或第三方嵌入。外部来源链接仅在你点击时打开。</p>
+        <p>网站计划由 GitHub Pages 托管，访问时托管服务可能处理 IP 地址等必要请求信息。网站不收集你的键盘输入。</p>
+        <p>隐私问题或数据处理咨询，请联系 <a href="mailto:rectfly@fastmail.com">rectfly@fastmail.com</a>。你主动发送的邮件内容会交由邮件服务处理，请避免附带敏感输入记录。</p>
+      </section>
+      <section class="english" id="english" lang="en" aria-labelledby="english-title">
+        <h2 id="english-title">Privacy policy · English</h2>
+        <p class="meta">Updated October 22, 2026 · Pre-release draft</p>
+        <p>This draft describes the intended public release: input logging is off by default and evaluation statistics are exported only with consent through the system share sheet. It takes effect after those behaviors have been verified in the public build.</p>
+        <h3>Typing and local learning</h3><p>The Rectfly keyboard extension does not access the network. Correction, completion, suggestions and personal learning run on your device. Typed text, imported Rime user dictionaries and learning records stay local; they are not uploaded or synced between devices. We do not collect personal information through Rectfly. There are no third-party SDKs, ads or tracking tools.</p>
+        <h3>Optional logs and fault bundles</h3><p>Input logging is off by default in the public release. If you enable it under Privacy &amp; Data, logs are stored locally and may contain text, candidates, touch events and surrounding context, including verification codes entered into ordinary fields. You can disable logging and delete existing logs separately. Local learning can be reset separately. Turning logging off does not delete existing files.</p><p>Keyboard fault capture is a separate option. When enabled, long-pressing “123” saves a recent fault bundle for manual sharing from the app. Bundles may contain text and context. Review them and remove private information before sharing.</p>
+        <h3>Full Access</h3><p>The extension requests Full Access for local sharing of settings, haptic preferences, imported dictionaries, installed grammar models and personal learning between the app and keyboard, as well as optional logs and manual fault export. iOS also grants network capability with this permission; Rectfly's keyboard does not use it to send your input. Basic typing works without Full Access, while shared features may be limited. You may revoke it in iOS Settings at any time.</p>
+        <h3>Grammar downloads</h3><p>The main app checks GitHub's public release API for grammar updates at launch or when you request a check. It downloads model files only when you choose to download or update them. Installed models are used offline and can be deleted in the app. Requests do not include typed text, dictionaries, learning records or input logs. GitHub and download services receive connection information such as your IP address. Rectfly operates no server to receive input or evaluation results.</p>
+        <h3>Federated evaluation</h3><p>Evaluation compares versions using existing local input records. Processing and results remain on your device, and evaluation can be disabled. Under the public-release policy, statistics are exported only after explicit consent using the system share sheet; there is no automatic upload or receiving server. You choose the recipient. The export contains win/loss counts, totals, input-length buckets, experiment and build identifiers, and a completion date. It contains no typed text, selected words, pinyin or key events. Fault bundles are separate and may contain text.</p>
+        <h3>Website and contact</h3><p>This static website uses local images and CSS, with no scripts, cookies, analytics, external fonts or third-party embeds. External links open only when selected. The intended host, GitHub Pages, may process IP addresses and other request information needed to serve pages. Contact <a href="mailto:rectfly@fastmail.com">rectfly@fastmail.com</a> about privacy. Messages you choose to send are handled by email services; avoid including sensitive input records.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>Rectfly · 让输入回到文字本身</p>
+      <div><a href="privacy.html">隐私</a> · <a href="support.html">支持</a> · <a href="attributions.html">致谢</a> · <a href="mailto:rectfly@fastmail.com">联系我们</a></div>
+    </footer>
+  </div>
+</body>
+</html>

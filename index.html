@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Rectfly 是一款离线运行的 iOS 双拼键盘，支持整句纠错、Rime 用户词库导入和中英混打。">
+  <meta name="referrer" content="no-referrer">
+  <title>Rectfly — 离线的 iOS 双拼键盘</title>
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Rectfly 首页"><img src="assets/app-icon.png" width="34" height="34" alt="">Rectfly</a>
+      <nav aria-label="主导航"><a href="index.html" aria-current="page">首页</a><a href="privacy.html">隐私</a><a href="support.html">支持</a><a href="attributions.html">致谢</a></nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">iOS 双拼键盘</p>
+          <h1 id="hero-title">打字时，<br>留一点余地。</h1>
+          <p class="intro">Rectfly，从小鹤双拼出发。打错键时，结合上下文寻找你想写的词；连成一句，也能一起纠错。</p>
+          <p class="muted">键盘离线运行，输入与学习记录留在本机。</p>
+          <div class="actions"><a class="button" href="#testflight">了解公开测试<span class="arrow" aria-hidden="true">↗</span></a><a href="support.html">开始使用</a></div>
+        </div>
+        <figure class="keyboard-figure">
+          <div class="typing-sheet"><p class="typing-label">把想说的话，写下来。</p><p class="typing-text">你好，世界。<span class="caret" aria-hidden="true"></span></p></div>
+          <div class="keyboard" aria-hidden="true">
+            <div class="candidates"><span>你好</span><span>拟好</span><span>你</span></div>
+          <div class="key-row"><span class="key">q</span><span class="key">w</span><span class="key">e</span><span class="key">r</span><span class="key">t</span><span class="key">y</span><span class="key">u</span><span class="key">i</span><span class="key">o</span><span class="key">p</span></div>
+          <div class="key-row"><span class="key">a</span><span class="key">s</span><span class="key">d</span><span class="key">f</span><span class="key">g</span><span class="key">h</span><span class="key">j</span><span class="key">k</span><span class="key">l</span></div>
+          <div class="key-row"><span class="key">z</span><span class="key">x</span><span class="key">c</span><span class="key">v</span><span class="key">b</span><span class="key">n</span><span class="key">m</span></div>
+            <div class="key-row"><span class="key wide">123</span><span class="key wide">中/EN</span><span class="key space">空格</span><span class="key wide">换行</span></div>
+          </div>
+          <figcaption>文字与键盘为排版示意，非 App 截图或纠错测试结果。</figcaption>
+        </figure>
+      </section>
+      <div class="statement">
+        <p><strong>输入不上传。</strong> 纠错与联想在设备上完成。</p>
+        <p>可选语法模型由主 App 下载，安装后离线使用。<a href="privacy.html#network">了解联网边界</a></p>
+      </div>
+      <section class="features" aria-labelledby="features-title">
+        <div class="feature-heading"><h2 id="features-title">顺着你的输入习惯。</h2><p>熟悉的双拼，本机的学习。</p></div>
+        <div class="feature-grid">
+          <article class="feature"><h3>整句输入，也能纠错</h3><p>把触点、词库和上下文一起考虑，为错键、漏键、多键等输入寻找候选。纠错仍可能出错，你可以从候选中选择想写的内容。</p></article>
+          <article class="feature"><h3>不止小鹤双拼</h3><p>默认使用小鹤双拼，也支持自然码、智能ABC、拼音加加。在 App 的“双拼方案”中选择自己习惯的一种。</p></article>
+          <article class="feature"><h3>把 Rime 用户词带过来</h3><p>导入 Rime 的用户词库文本导出，或兼容的个人词库文件。词语保存在这台设备上，不改动内置词库。</p></article>
+          <article class="feature"><h3>中文里，也写英文</h3><p>支持中英混打、英文词联想与补全，并在本机学习常用英文词序。也可以切换到 EN 模式输入英文。</p></article>
+        </div>
+      </section>
+      <section class="testflight" id="testflight" aria-labelledby="testflight-title">
+        <div><h2 id="testflight-title">一起试试 Rectfly。</h2><p>公开测试将通过 TestFlight 提供。</p></div>
+        <div><p><strong>测试链接待开放</strong></p><p class="availability">此处预留公开测试入口，暂时无法加入。当前项目要求 iOS 26 或更新版本，最终以测试版说明为准。</p><a href="support.html#feedback">已有测试版？反馈使用问题 →</a></div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>Rectfly · 让输入回到文字本身</p>
+      <div><a href="privacy.html">隐私</a> · <a href="support.html">支持</a> · <a href="attributions.html">致谢</a> · <a href="mailto:rectfly@fastmail.com">联系我们</a></div>
+    </footer>
+  </div>
+</body>
+</html>

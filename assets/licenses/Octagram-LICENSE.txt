@@ -1,0 +1,49 @@
+Wanxiang character weights
+Author: amzxyz
+Source: https://github.com/amzxyz/RIME-LMDG/blob/e5cb7db/dicts/zi.dict.yaml
+License: Creative Commons Attribution 4.0 International
+https://creativecommons.org/licenses/by/4.0/
+Modified: stripped tones, converted readings to Flypy codes, merged same-character/
+same-code weights by maximum, and filtered by iOS 26.5 system-font glyph coverage.
+Supplied weights are unchanged; missing weights are zero.
+
+Wanxiang grammar model
+Author: amzxyz
+Source: https://github.com/amzxyz/rime-wanxiang-data/releases/tag/LTS
+Pinned fallback: September 9, 2026 LTS asset 552602424
+License: Creative Commons Attribution 4.0 International
+https://creativecommons.org/licenses/by/4.0/
+The grammar data is downloaded unchanged as wanxiang-lts-zh-hans.gram.
+It is not bundled. Pinned fallback SHA-256: 1eb651288b117e68374110b32796346e128be790e994559cb7c1e3b0fd63029d
+The Swift reader is adapted separately under the BSD license below.
+
+Copyright (c) 2014, RIME Developers
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+  * Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+  * Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+
+  * Neither the name of the copyright holder nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

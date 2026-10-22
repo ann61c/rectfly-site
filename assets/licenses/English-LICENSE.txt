@@ -1,0 +1,1172 @@
+English frequency data
+
+Source: https://github.com/wolfgarbe/SymSpell
+Commit: c239062ae02961df18ab7da1671d01b4388204e0
+
+Unigram vocabulary: filtered to ASCII letters/apostrophes and sorted;
+frequencies unchanged.
+Bigram table: frequency_bigramdictionary_en_243_342.txt from the same
+SymSpell commit, restricted to this vocabulary and the top eight successors
+per context; original frequencies unchanged. Distributed under the repository's
+MIT license below. The following corpus credits describe the unigram source.
+Google Books Ngram: CC BY 3.0 https://creativecommons.org/licenses/by/3.0/
+SCOWL source and license: https://wordlist.aspell.net/scowl_v1-readme/
+
+MIT License
+
+Copyright (c) 2018 Wolf Garbe
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+COPYRIGHT, SOURCES, and CREDITS:
+
+The collective work is Copyright 2000-2018 by Kevin Atkinson as well
+as any of the copyrights mentioned below:
+
+  Copyright 2000-2018 by Kevin Atkinson
+
+  Permission to use, copy, modify, distribute and sell these word
+  lists, the associated scripts, the output created from the scripts,
+  and its documentation for any purpose is hereby granted without fee,
+  provided that the above copyright notice appears in all copies and
+  that both that copyright notice and this permission notice appear in
+  supporting documentation. Kevin Atkinson makes no representations
+  about the suitability of this array for any purpose. It is provided
+  "as is" without express or implied warranty.
+
+Alan Beale <biljir@pobox.com> also deserves special credit as he has,
+in addition to providing the 12Dicts package and being a major
+contributor to the ENABLE word list, given me an incredible amount of
+feedback and created a number of special lists (those found in the
+Supplement) in order to help improve the overall quality of SCOWL.
+
+The 10 level includes the 1000 most common English words (according to
+the Moby (TM) Words II [MWords] package), a subset of the 1000 most
+common words on the Internet (again, according to Moby Words II), and
+frequently class 16 from Brian Kelk's "UK English Wordlist
+with Frequency Classification".
+
+The MWords package was explicitly placed in the public domain:
+
+    The Moby lexicon project is complete and has
+    been place into the public domain. Use, sell,
+    rework, excerpt and use in any way on any platform.
+
+    Placing this material on internal or public servers is
+    also encouraged. The compiler is not aware of any
+    export restrictions so freely distribute world-wide.
+
+    You can verify the public domain status by contacting
+
+    Grady Ward
+    3449 Martha Ct.
+    Arcata, CA  95521-4884
+
+    grady@netcom.com
+    grady@northcoast.com
+
+The "UK English Wordlist With Frequency Classification" is also in the
+Public Domain:
+
+  Date: Sat, 08 Jul 2000 20:27:21 +0100
+  From: Brian Kelk <Brian.Kelk@cl.cam.ac.uk>
+
+  > I was wondering what the copyright status of your "UK English
+  > Wordlist With Frequency Classification" word list as it seems to
+  > be lacking any copyright notice.
+
+  There were many many sources in total, but any text marked
+  "copyright" was avoided. Locally-written documentation was one
+  source. An earlier version of the list resided in a filespace called
+  PUBLIC on the University mainframe, because it was considered public
+  domain.
+
+  Date: Tue, 11 Jul 2000 19:31:34 +0100
+
+  > So are you saying your word list is also in the public domain?
+
+  That is the intention.
+
+The 20 level includes frequency classes 7-15 from Brian's word list.
+
+The 35 level includes frequency classes 2-6 and words appearing in at
+least 11 of 12 dictionaries as indicated in the 12Dicts package.  All
+words from the 12Dicts package have had likely inflections added via
+my inflection database.
+
+The 12Dicts package and Supplement is in the Public Domain.
+
+The WordNet database, which was used in the creation of the
+Inflections database, is under the following copyright:
+
+  This software and database is being provided to you, the LICENSEE,
+  by Princeton University under the following license.  By obtaining,
+  using and/or copying this software and database, you agree that you
+  have read, understood, and will comply with these terms and
+  conditions.:
+
+  Permission to use, copy, modify and distribute this software and
+  database and its documentation for any purpose and without fee or
+  royalty is hereby granted, provided that you agree to comply with
+  the following copyright notice and statements, including the
+  disclaimer, and that the same appear on ALL copies of the software,
+  database and documentation, including modifications that you make
+  for internal use or for distribution.
+
+  WordNet 1.6 Copyright 1997 by Princeton University.  All rights
+  reserved.
+
+  THIS SOFTWARE AND DATABASE IS PROVIDED "AS IS" AND PRINCETON
+  UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR
+  IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PRINCETON
+  UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES OF MERCHANT-
+  ABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE
+  LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL NOT INFRINGE ANY
+  THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.
+
+  The name of Princeton University or Princeton may not be used in
+  advertising or publicity pertaining to distribution of the software
+  and/or database.  Title to copyright in this software, database and
+  any associated documentation shall at all times remain with
+  Princeton University and LICENSEE agrees to preserve same.
+
+The 40 level includes words from Alan's 3esl list found in version 4.0
+of his 12dicts package.  Like his other stuff the 3esl list is also in the
+public domain.
+
+The 50 level includes Brian's frequency class 1, words appearing
+in at least 5 of 12 of the dictionaries as indicated in the 12Dicts
+package, and uppercase words in at least 4 of the previous 12
+dictionaries.  A decent number of proper names is also included: The
+top 1000 male, female, and Last names from the 1990 Census report; a
+list of names sent to me by Alan Beale; and a few names that I added
+myself.  Finally a small list of abbreviations not commonly found in
+other word lists is included.
+
+The name files form the Census report is a government document which I
+don't think can be copyrighted.
+
+The file special-jargon.50 uses common.lst and word.lst from the
+"Unofficial Jargon File Word Lists" which is derived from "The Jargon
+File".  All of which is in the Public Domain.  This file also contain
+a few extra UNIX terms which are found in the file "unix-terms" in the
+special/ directory.
+
+The 55 level includes words from Alan's 2of4brif list found in version
+4.0 of his 12dicts package.  Like his other stuff the 2of4brif is also
+in the public domain.
+
+The 60 level includes all words appearing in at least 2 of the 12
+dictionaries as indicated by the 12Dicts package.
+
+The 70 level includes Brian's frequency class 0 and the 74,550 common
+dictionary words from the MWords package.  The common dictionary words,
+like those from the 12Dicts package, have had all likely inflections
+added.  The 70 level also included the 5desk list from version 4.0 of
+the 12Dics package which is in the public domain.
+
+The 80 level includes the ENABLE word list, all the lists in the
+ENABLE supplement package (except for ABLE), the "UK Advanced Cryptics
+Dictionary" (UKACD), the list of signature words from the YAWL package,
+and the 10,196 places list from the MWords package.
+
+The ENABLE package, mainted by M\Cooper <thegrendel@theriver.com>,
+is in the Public Domain:
+
+  The ENABLE master word list, WORD.LST, is herewith formally released
+  into the Public Domain. Anyone is free to use it or distribute it in
+  any manner they see fit. No fee or registration is required for its
+  use nor are "contributions" solicited (if you feel you absolutely
+  must contribute something for your own peace of mind, the authors of
+  the ENABLE list ask that you make a donation on their behalf to your
+  favorite charity). This word list is our gift to the Scrabble
+  community, as an alternate to "official" word lists. Game designers
+  may feel free to incorporate the WORD.LST into their games. Please
+  mention the source and credit us as originators of the list. Note
+  that if you, as a game designer, use the WORD.LST in your product,
+  you may still copyright and protect your product, but you may *not*
+  legally copyright or in any way restrict redistribution of the
+  WORD.LST portion of your product. This *may* under law restrict your
+  rights to restrict your users' rights, but that is only fair.
+
+UKACD, by J Ross Beresford <ross@bryson.demon.co.uk>, is under the
+following copyright:
+
+  Copyright (c) J Ross Beresford 1993-1999. All Rights Reserved.
+
+  The following restriction is placed on the use of this publication:
+  if The UK Advanced Cryptics Dictionary is used in a software package
+  or redistributed in any form, the copyright notice must be
+  prominently displayed and the text of this document must be included
+  verbatim.
+
+  There are no other restrictions: I would like to see the list
+  distributed as widely as possible.
+
+The 95 level includes the 354,984 single words, 256,772 compound
+words, 4,946 female names and the 3,897 male names, and 21,986 names
+from the MWords package, ABLE.LST from the ENABLE Supplement, and some
+additional words found in my part-of-speech database that were not
+found anywhere else.
+
+Accent information was taken from UKACD.
+
+The VarCon package was used to create the American, British, Canadian,
+and Australian word list.  It is under the following copyright:
+
+  Copyright 2000-2016 by Kevin Atkinson
+
+  Permission to use, copy, modify, distribute and sell this array, the
+  associated software, and its documentation for any purpose is hereby
+  granted without fee, provided that the above copyright notice appears
+  in all copies and that both that copyright notice and this permission
+  notice appear in supporting documentation. Kevin Atkinson makes no
+  representations about the suitability of this array for any
+  purpose. It is provided "as is" without express or implied warranty.
+
+  Copyright 2016 by Benjamin Titze
+
+  Permission to use, copy, modify, distribute and sell this array, the
+  associated software, and its documentation for any purpose is hereby
+  granted without fee, provided that the above copyright notice appears
+  in all copies and that both that copyright notice and this permission
+  notice appear in supporting documentation. Benjamin Titze makes no
+  representations about the suitability of this array for any
+  purpose. It is provided "as is" without express or implied warranty.
+
+  Since the original words lists come from the Ispell distribution:
+
+  Copyright 1993, Geoff Kuenning, Granada Hills, CA
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  1. Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+  2. Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+  3. All modifications to the source code must be clearly marked as
+     such.  Binary redistributions based on modified source code
+     must be clearly marked as modified versions in the documentation
+     and/or other materials provided with the distribution.
+  (clause 4 removed with permission from Geoff Kuenning)
+  5. The name of Geoff Kuenning may not be used to endorse or promote
+     products derived from this software without specific prior
+     written permission.
+
+  THIS SOFTWARE IS PROVIDED BY GEOFF KUENNING AND CONTRIBUTORS ``AS IS'' AND
+  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  ARE DISCLAIMED.  IN NO EVENT SHALL GEOFF KUENNING OR CONTRIBUTORS BE LIABLE
+  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+  OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+  SUCH DAMAGE.
+
+
+The variant word lists were created from a list of variants found in
+the 12dicts supplement package as well as a list of variants I created
+myself.
+
+The Readmes for the various packages used can be found in the
+appropriate directory under the r/ directory.
+
+
+
+Rectfly English regional spelling variants
+==========================================
+
+Modified subset of VarCon 2020.12.07, en-wl/wordlist revision
+b22230cc5250887737fdefe9ca4c9d9d01230eaa. Copyright 2000-2020
+by Kevin Atkinson and Benjamin Titze.
+
+Only verified clusters through SCOWL level 60 and preferred/equal
+American and British forms are used. Each added spelling maps to a
+covered frequency spelling; no new frequency observations are claimed.
+The original VarCon notices follow unchanged.
+
+Copyright
+=========
+
+Copyright 2000-2019 by Kevin Atkinson
+
+Permission to use, copy, modify, distribute and sell this array, the
+associated software, and its documentation for any purpose is hereby
+granted without fee, provided that the above copyright notice appears
+in all copies and that both that copyright notice and this permission
+notice appear in supporting documentation. Kevin Atkinson makes no
+representations about the suitability of this array for any
+purpose. It is provided "as is" without express or implied warranty.
+
+Copyright 2016 by Benjamin Titze
+
+Permission to use, copy, modify, distribute and sell this array, the
+associated software, and its documentation for any purpose is hereby
+granted without fee, provided that the above copyright notice appears
+in all copies and that both that copyright notice and this permission
+notice appear in supporting documentation. Benjamin Titze makes no
+representations about the suitability of this array for any
+purpose. It is provided "as is" without express or implied warranty.
+
+Since the original words lists come from the Ispell distribution:
+
+Copyright 1993, Geoff Kuenning, Granada Hills, CA
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. All modifications to the source code must be clearly marked as
+   such.  Binary redistributions based on modified source code
+   must be clearly marked as modified versions in the documentation
+   and/or other materials provided with the distribution.
+(clause 4 removed with permission from Geoff Kuenning)
+5. The name of Geoff Kuenning may not be used to endorse or promote
+   products derived from this software without specific prior
+   written permission.
+
+THIS SOFTWARE IS PROVIDED BY GEOFF KUENNING AND CONTRIBUTORS ``AS IS'' AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL GEOFF KUENNING OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+
+Rectfly English prose statistics
+================================
+Derived from the complete English Tatoeba detailed export, 2026-10-03.
+Source: https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences_detailed.tsv.bz2
+Project and export license: https://tatoeba.org/en/downloads
+License: CC BY 2.0 FR https://creativecommons.org/licenses/by/2.0/fr/
+Modifications: deduplicated; disjoint 10% holdout removed; sentence-start,
+pair and three-word statistics extracted and bounded by observation count.
+No sentence texts are bundled. No literary source is used.
+Rebuild: Tools/BuildLexicon/build_english_prose.py, pinned compressed snapshot.
+Attribution: Tatoeba contributors (including anonymous/unowned sentences).
+Named owners supplied in the English export:
+000sharris000, 00shoujikisou, 0789392767, 0987654321ok, 0ni, 100nosewiggles, 12882, 12Daniel,
+12sea21, 19521chaos, 19841984tk, 2001, 200rabbits, 2013ik50, 21violins, 2oid, 3040403, 4567hmm_,
+4ier, 58mph, 5nova, 5rree5, 6askan, 6b, 6dDcHYgMAg, 6jou, 745404527, 7egoist, 7evenbananas,
+8011794255, 8684, 880326119, 888goober888, 8lovedog, 9h0ost, 9iam, ABChessel, AC, ACB, AGreatWaller,
+AJS, AJ_110, AKDiscer, AKINCI81, ALVChavacano, ALyes, AMIKEMA, ANANASA, ANEESNT, ANH_DAO,
+AOCinJAPAN, APOLLON, APagano, ASV, ATES, ATG, ATH, Abcormal, AbdMMansour, Abdaresrif, Abderrahmane,
+Abdulaziz, Abdulwahab, Abeer, Abeotat1948, AbiezerFm, Abra, AbuAminkurtoot, AbuOmar_Sabbagh,
+ActelOc, Ada_Virus, Adam78, Adam9812, AdamG, AdamKaan, AdamRotmil, Addison, Adeelpk, Adelpa,
+Adil007, Adlib, Adou_Fr, Adrien_FR, Advanced, Aeetlrcreejl, Aekuqre, Aerbay, Aerhus, AfricanQuant,
+Ag12x, Agestur, Aggriken, Aghanim, Aghlimas83, Agnies, Agny, Aharlekyn, Ahha, Ahiru, Ahitos,
+Ahmad_Safi, Ahmd, AhmedJamal, Ahmed_Waleed, Ahmet, Aidys, Aihe, Aiji, AirstripOne, Airvian, Airy,
+Aisha, Aj, Ajay, Akatsuki, Akenaseryan, Akh2403, Akhi, Akhil, Akita, Akradna, Akseltinfat, AkuNeko,
+AlYisUn, Alaakhalid, AlachuaCountyBill, Alairis, AlanF_US, AlanRominger, Alba, AlbadeG, Albannach,
+Albert, AlbertaJ, AlbertoGS, Album9505, Aldain, Aleco, Alejandr0, Aleksandro40, Aleksandros,
+Aleksej, Alex93, AlexJ22, AlexParrish, Alex_M, AlexanderNevzorov, Alexander_M, Alexini, Alexlegende,
+Alexs, AlfredoSeimandi, Algentem, AlgideAmygdale, Alhumaidany_1990, Ali1234, AliBeadle, Alifono,
+AlinaYakovleva, Alizen, Alkrasnov, Almi92, Alois, Alonf89, Alperimmmmmmm, Alpha, AlphabetQi, Alphae,
+AlsayedMohamed, Alska, AlteredBeast, Alternia, Altyn, Alucard, Amanarora, AmarMecheri, Amastan,
+Amazigh7, Amazigh_Bedar, Amazighnarif, AmberShadow, Ameer, Amelia04, AmeliaC, AmeliaLaurens,
+American, Amessikel, Amgaray, Amghar, Amico500, Amittai, Amnafeq, Amntag, Amstan19, AmsuqqelAmaynut,
+AmyJean, Amzir, Analu_Kalaka, Andic, Andoromeda, Andre007, AndrePaulo, Andreacozzolino,
+AndreoPeetermans, AndresR1994, AndrewR231085, Andrew_B, Andrey, Andrezs, AndyC, Anfasa, Angela,
+Angie_89, AniDeer, Anifanfula, Anilam, Ankio, Ann74, AnnaHX, AnneWy, Anne_Paen, AnnieLouisa, Annika,
+Annushka, Anon, Anskora, Anteemony, Anteroinen, AnthonyFP, Antoniocjf, Antoniok01, Anxxos, Anyone,
+AoTsuki, Aomori, Aoshiroi, ApAdAnA, Apex, Aphima, ApioDelPueblo, Apkaloo, Apollogeist, AqQoyriq,
+AqQoyriq_1, Aqn, AqrratWsamRaz, Aquatack, ArOoj_143, ArasanRavi83, Archangelix, Archeone, Archibald,
+AreusII, Aria, Ariel120292, ArizonaJim, Arkylie, ArminAshrafi, Arobaz, Arondayot, Arraroak,
+Arriev93, Ars, Arsal, Arslan, Art4704, Artfanster, Arura, Ary, AryKiss, Asadamcan, AsaeP,
+Asakurayoh11, Asif, Asilin, AsizDeg, AsliAbbasi, Asma, AstronautKangaroo, Asynja, Atervanda,
+Athomas, Atomo, Attack_Infantry, Atversch, AucaCoyan, Augustus, Auride, Aurix, AutoBot, AvAdam05,
+Avanna, AwesomeSheep48, Aya, Ayemin, Ayoubbenaida, AyourAchtouk, AzPolyglot, Azer, AzizFarouqi,
+Aznay, AzureFlowers, AzureX120, BABAL, BB__031216, BE, BEASY8, BHO, BRCoolata, BRW, BRyeO12,
+BSanswrang, BUSRA16, B_C, Baakamono, Babelball, Baberino, Babilfrenzo, BahDuring, Bah_Dure,
+BahaMansoub, Baharowski, Bailedagaiola, Balamax, Balinto, Baloushi, Bandivagyok, Bangoro, Baohuynt,
+Barbi101, Barbiche0, Barend, BaroForos, Barra, Bart_Demeyere, Bashir, Batko, BatmanD, Bauyrjan,
+Bear, Beatminister, Becca, Bedeutung, Belcantante, Beliashas, Bellifer, Ben200, BenGheens,
+Benjameno, Bergthor, Berkay, BerlinJakarta, Bernie75, Beshir, BetoBob, Betsemes, BettoBr, Bharti,
+Biafraland, Bianquita, Bibiaaf5c, BigBandaid, Biga, BijendraHansda, Bikkietin, BilalBouy, Bilberry,
+BillThayer, Bing05, Biologist_Ahmed, Birago, Bitefasnowia, Bitirim, BivouacCanteenBar, Blabla,
+BlackHoler, Blackien, Blair0113, Blargian, Blaz, Blejert, BlockeeR, BluaPapiliono, BlueDecember,
+BlueLagoon, Blueblaze, BlundaInte, Blurk, Bnu, BobbyLee, Bodi_Baski, Bokunatsu156, Bond21, Boneshj,
+BooMie, Bootlander, Borbie, BoriQa, Borkonall, Bosco, Both6546, BrahimAzwawi, BrainStorming, Bran,
+BranTheOliver, Braunberg, BraveSentry, Bravus, Brian255, BrianLegit, Brianna, Bricxjo, Britvian,
+Bruno_Lopes, Brunosprak, Bryanr12, Buacity10, Bubblyworld, Buddy_Muldoon, Budz888, Burak_,
+Butterbur_Umbrella, ButterflyOfFire, Butterworth, BuzulkusuPenguin, CA, CAMERONCASSIDY7, CC, CD, CE,
+CF, CH, CHThiem, CJones, CK, CLARET, CM, CN, CP, CS, CSDavid, CT, Cabo, Caecilius, Caesura,
+Cainntear, Cak_ypa2010, Cakhin, Caku, Caleb, Calvo, CanadianBoson, Cangarejo, CannedBread, CanonNi,
+CansuVarol, Caparzoo, Captaindc, Capuchin, CardinalRed, CarmBri, CarpeLanam, Carradee, CaspieChi,
+Castro5432, CataG, Catriona, Catz1987, Cemil, Cerenade, Cervi, Cerwjenawka, Cezrun64, Chackoony,
+Chaiya, CharChar, Charlotte875, CharmQuark, Charmander, CheckPointOne, Chelsea, Cherubian,
+Chevere33, ChickenKiev, ChinesePoster, Chipiliro_Chandamale, Chocoloca, Choctaw_Irish,
+Choe_Gyeong_Geun, Chrikaru, Chris, Chris1309, Chris87, Chrissi, ChristiKolin, Christiane,
+Christophe, Chromatic, ChurroC, Chus, Cibrani, Cindrogriza, Cintra, Cirilo, Cithara, Citrine,
+Cjdron, Clavain, Clepsydris, Clic, Clockworkbred, Cocodrilo, Cocorico, Coella, ColawithIce, Colbo,
+ColinG, Combine988, Con_123_gona_4567, Conjuice, Connum, ConqueRRoR, Cookie, Cookie_cat, Cookie_san,
+Cookiejardino, CoolBreezes, Copella, CoronerDaniel, Cottonee0418, CouleursCrim, Covered, Crataegus,
+Craxic, CreativEcho, CreeperVLin, Crowbar, CubeAlgs101, Cuc, CurlyBloke, Currentlyabox,
+CuteGirlLeia, Cxom, CyberneticianDave, Czar, DEADMAN, DG10, DHD, DJT, DJ_Saidez, DaSydsta33,
+Dabrowskiowski, DaedalusDancel, Daga007, DailyJapan, Dalyup, Damari, DamjaMS, Dan13, DanDaMan020,
+Dana, DanaDescalza, Danberry, DancingHorses, DandyDucky, Dani6187, DaniE, DanielDan, DanielDaniel,
+DanielDeik, DanielTzvi, Danika_Dakika, Danka, Danquebec, Dany74PL, DaoSeng, Daoud_OUAMARA,
+Darcycamp, Dardasavta, Darellur, Dario, Dark, DarkHollow, DarkLinkXXXX, Darkbloom, Darkmaster,
+DarnYeet, Darragh_jd, DataFlower, DataFrame2026, Daved, Davellan, David, David145634, DavidDias,
+DavidEspenlaub, DavidMansaray, DavidVm, Davidgo5867, Dawn, DawnH, DeSha, Deacher, Deagger, DebbieT,
+Debbie_Linder, Decoder, DeepDarkSea12, Deerhound, Deestor, DeezLangGods, DeguSan96, Dejo, Dekkel,
+Delayedecholalia, Delian, DemonicSatori, DenO, DenielElfu, DeniseAzevedo, DenizErtekin, Denizar,
+Denizbulut, DentelaPexor, Derek495, Deroman, Desanida, Desparil, Despear, Dess, Destiny,
+DetErMinNavn, Dexterity121, Dhoru, Dianochka, Did_Panas, DiePain, DiffEquation, Digie,
+DimitarParushev, Din, Dinadinu, DiphenylOxalate, Dirk80, Discipulus, DiscoNostalgia, Disconnect,
+DjWLaan, Djd_9, Djef_Messaoudi, Dmessaoudi, Dmitrij15, DoYourDailyDuo, Dobroskok, Dogukhan48,
+Dokuyaku, Domingo33, Dominika7, Domitori, DonC, DonTae, Doolotbek, Doremi391, Dorenda, Dorlota,
+Dorothea, DostKaplan, Dottyeyes, DoubleBeast, Dozyjones, DrWinters, DracoKall, DragonM,
+DragonPloyglot, Drake, Dreamk33, Dreneejr, DriedGrapes31, Drimann, Driv3nfromwithin, Drozak,
+Drwhooooo, Duck, Ducky, Dunameitor1, Dunbab, Dunpy, DuosDragonPolyglot, Dusaniela, Dusun_Les,
+Duvanov, Duyu09, DylanTonic, DzWnG, Dzsonny, ECHOOooo, EDOBEAR, EHsasi, EPiph, ET, EXEC, Eadlyn0823,
+Ealdwimor, EarlD3, Earsears43, Earthlark, Eccles17, Eckhardtgabriel, Eclipse5632, Ecwiese, Ed,
+Eddygp, Ederra, Edmund, Edouard, EduardaNasc, EduardoST, EduardoTirado, EdwinPujols, Ee_un, Eesa,
+Eevee, Efe, Efsun, Egao, Eisenrot, Ekselans, ElClonguero, El_mas_capo, Elaineeeeee, Elbow, Eldad,
+Elenia, Elheym, EliTheCoder, Elie, Elin, Elliv, Elsanto, Elsofie, Elyte, EmeraldDoge, Emersono,
+EmilyDeWahl, Emiwoo, Emperor, EmperorCharlesII, EnbyARO, Endrio, EnglishFreak, EnglishLover, Enncke,
+Ennocb, Enrike80, Enzo, EoghanM, Equilingual, Eratheone, ErdemTan, Eremon, Ergulis, EricPiphany,
+EricYarnell, ErnestoIslas, Ernie, Erwan29200, ErykWdowiak, Es2Kay, Esmatullah, EsperantoFarsi_Robot,
+Esperantostern, Espereto, Esphiritu, Espi, EsraaTawfik, EstasKorea, Estebitan, Esto, Etost, Eugell,
+EugeneGS, EvaFranska, Evano, Evermint_Fox, Everybody, Evie, EvilGenius88, ExampleDoer,
+ExplorationEng, ExponentialYoghurt, Ezatullah, Ezel, FB, FC_Barcelona, FEN1X64, FI, FROG123, FSLian,
+FWK, Fabe86, Fafa_1, Fai, Fairlight, Faizyrooma44, Fajrereto, FakharShafi, Fanki, FaridTrad,
+FarnworthPatrick, Faruq, Farvoyager, FatPig, Fateme, FatihUst, Faxix12345, Fbaiai, Feba, Felipe,
+FelipeG, Fenrir, FerenczPatricia, Feri5, FernandoMTz, Feryll, FeuDRenais, FeuDRenais2, Feyza, FiRez,
+Fiarill, Fin, Fingerhut, Finn7200, Fireblade75, Firesoul7, Fish, FishlandicFishy, FlamingBee,
+FlamingTofu, Flargus, Flarona, Fleavens5, FlinkPoyd, Flippo, FluxDGTL01, Focusakker, Foogod,
+Fouroulou, Fr_G, Francis, Francisco_M, FrankP, FrankeeD, Frazfaranto, Freddy_hutauruk, FrenZie,
+FretfulGiant, Fueyes, Fukuko, GB3, GHBookfreak, GHPL, GLOBULE38, GLaDOS, GN, GOP, GPHemsley,
+Gabe_the_cat, GabrielPires, Gabriela122, Gabuliellu, GadafMemedi, Gal, Galko, GamalNemeri, Gamero,
+Garrett_denni5, GaryGaryGary, GaryM, Gavbigav, Gawell, Gaz83, Gazerolaf, GeeZ, Geeky_Green,
+Gekkidan, GemMonkey, Genemdaffern, Geneza, GeorgeHolt, Gepardo, Germic, Geronimo560, GewoonLeonYT,
+Gezeit, GiaCatNguyen, Gianpon, Gib, GiggyMantis, GinaAxella, GioBo, Giselle128F, Giulio, Glat64,
+Globetrotter, Gloria7, GlossaMatik, Glutexo, GoFreeOgden, Goatstein, GoddessSK, Goelano, GoiKira,
+Gold, Goldendoor, Goldoon, Good222, Goofy, Goracykabanos, Gorialis, Gorzash, Goso321, Grayster,
+Green03, GreenFrost5655, GreenPastures, Grendayzer, GreySquirrel, Greyjoy, Grigore10, Grim_fandango,
+GrizaLeono, Grobian, Grst4Ntmlgystz485791, GuSec, GuiFFI, GuidoW, Guilherme, Guilmaeire, Gulliver,
+Gulo_Luscus, Gumiho, Gummi84, GundisalvusVitalis, Guney, Guria, Guroria, GustaBR, Gustav249,
+GustavHRV90, Gutembsf, Guust, Gwyddno, Gwyn, Gxejko, Gxojo, HAGNi, HAYACH, HEY, HL, HOTL628912,
+H_Liliom, Hadjou, Haehnchenpaella, HaffA, Hakaku, Hakkoum, Hakkuryuu, HaleBopp, Haluk, Hamid_Kessal,
+Hamidb, Hamideh7, Han_n, Haneen, Hanga, Hannah_nguyenminh, Hans07, Hans_Adler, HappyMidnight,
+Harinezumi, Harpagornes, Harry_Styles, Hartvi, Haruhi_Gafitas, Hasnep, Hassan66, Hatfanz, Hatsurami,
+Hatta, Hautis, Hayabusa, Haydeeakin, HeBerbom, Heartemiss, Hector005, Hedede, HedefTuran,
+Heisenberg, Hekima, Helen_allegory, Helene, Helginka, HelioA, Hellerick, Henmesq, Henrii, Henrique5,
+Henrix, Henu, Heppeng, Heracleum, Hermesianax, Herobane, Hertz, HeyItsMark, Hideki143, Hideousss,
+Hieplt74, HighlandTroll, Hikaru, Hime, Hirashiki, HirotoH, Hiwasherwany, HocineBenamer, Hoctr,
+Hohen, HolyGhostClaw, Hoody_K, HoptoDot, HorseOfCourse, Hosam, HotaruIka, Hothenguyen1969,
+HoubkneghteS, HououinKyouma, House_of_L, Houshang, Howzah, Huntiger, Huskion, Hussein64, Hybrid,
+Hyeseong, Hypat, IAlexI, ICThomas, IERT, IForTheSite, IJamLegend, IMer, ISNad, IVB, Ibrahim88855,
+IbrahimRary, Ibtarabishy, IceGirl, Iden, IdiomHunter, Idont, Idopauline, Igider, Igider15, Igliwie,
+Ignoto, Ihsan, Ikram67, Ilan2001, Ilia2, Illigmar, ImMike, Imenebaiod, Imp, InaRoberts, Inal,
+Incursio, IndigoLily, IndoBharat, Inego, Ineptus, InfinitusPrimus, Inkpot, Inoue, IntiKissed,
+Inventorfrog, Ioan_Cristian, Ioana_Dobre, Iolanda, Iriep, Irina_Ilievska, IronBeagle, IsabelleRain,
+Isach, Ishao, Isomorph, IstTiat, ItalNewbie, Ivan24, Ivanovb, IvritLover, Iwiziw, Ixlosiddin,
+J7vida, JB, JBG, JBTBFDIG, JBean, JDR, JFMorais, JGWS, JHR, JK_Summerlin, JLGQ_, JMLlovet, JNQ, JOE,
+JPDavidson, JS24, JSakuragi, J_J_max, J_S, Jabling, Jabol, JackRoberts, JackSchpeck, JackyJiaqiSun,
+Jakeira12, Jakeira34, JameezTranslates, JamesB84, JamesIII, Jamez_Bender, JanErikJ, Jan_Schreiber,
+Janalisa, Jane_Austen, Janevy, JanoInstruisto, Japanfan, JaqueSo, JarHead54321, Jarno,
+Jaroslav_Dubo123, Jat01, JayNo, JayRS, Jaziii, JeanLuc80, JeanM, Jean_Claudee, Jeannierocket,
+Jefepeters, Jeff, Jenn, Jens_Odo, Jenzibah, Jepang, JeremyH, JeroenHoek, Jesse, Jevgenija, Jeydon,
+Jhowwick, JiMin, Jillyappleseed, JimBreen, Jime11, JimiYoru, Jimmy, JimmyUK, Jimmy_Lang1,
+Jin_Dehong, JinnyLinny, Jio15, Jlemien, Jlscottuk, JnRouvignac, Joachim10, Joana, JoeStrout,
+Joffrey, Johannes_S, JohnKnaphus, JohnRail, Johnpham, Jojololly, Jokubas, JonLDS, Jondel, Jonet,
+Jonirakess, Jonpe2, Jop, Jormomo, Jose_Gomez, Josefwintzent, Joseph, Josephlingo, Josh, Joshua5526,
+Joshua_42, Joules, Joutsentaika, Jshit, Juankarlos, Juba, Jubaamrani, JudgeDeadd, Judith42,
+JudithKiwi18, Jugunu, Jujugrubs, JuliaBeck, JuliaJulia, JuliaRamos, JulianCalde9419, JulieMDM,
+Julien_PDC, Jum, JumJum, JunjouLover, JustCallMeH, JustRandomUsr, Just_Balls, Just_Some_Guy,
+Justabrazilian, K1RB1L1TY, KJSOSO, KPX, KURAKU, KXCAMB_, K_hina, Kaa938637, Kaguya, Kai2313,
+Kalamunda, Kalashin, Kallie, Kamilla, Kaminari, KamishiroRin, Kar1na, KaraDrolma, KarbonKrystal,
+Kardona, KardonaBoske, Karingui, Karl69Marx, Karla2600, Karlberg, Karok, Kary, Kaseijin,
+KasperNymand, Kat, KatKoba, Katabasis, Katastrauff, Kathereenah, Katheriinne, Katie_Yves,
+Katjo_Mencanto, Katubeltza, Kayray, Kazuki278, Kazune, KeEichi, Keder, Kedron_Brook, Keith,
+Kekswaffel, Kenbi93, Kenneth, Kerbear832, Kerstin, Ketutar, Kev_in, Kevre, KeylinM, Khaled99x,
+Khelm, Khortain, Khvalovsky, Kiandro1596, Kiepier, Kikra77, Killari, Kimeiga, King2E4, KingBread,
+Kiraness, Kirilo, Kirschen112, KishoreKashyap, KitanoGirl, Kitoro, Kiui, Kiwi, KiwiCreme, Kizono2,
+KlaasZ4usV, Kleinweich, Klemensas, Knabacxo, Kochira, Kokoo, Kolpan, Konall, Koninda,
+KonstantinLukas, Konstantinosssssss, KoreanBeaver, Korekorin, Kori, Kostia, Kotaman, KrisR,
+Kristinka, Kriszti, Krzysztof92, Kunstliebhaber, Kuraimegami, Kuyo, Kvantumo, Kxeo, LB, LK, LMJC001,
+LPo, LSDuigi, LTcreator, LW, LaArakido, LaPingvino, Lachy, Ladin, Ladyinred, Lagritta, Lahna,
+Laineychan, Lais_La_Aksolotlulo, Lake, Lakeseayesno, Lalourquieta, Lameen, LangNutt99,
+LanguageBreaker, LanguageExpert, Languageswithlorena, Laquin, LaraCroft, Larin, LarissaDeck,
+Lars224, Lathean, LatinSmallLettrAlpha, Laudemilson, Laverdure, Layla, Lazer, Lazi_Ilir_Danga,
+Lazlord, Lazovic, LdjuherTaqvaylit, Ldyhippo, Le_Samourai, Le_puera_in_le_umbra, Lebad,
+Lebensfreude, LeeSooHa, Leedihuzur, LeeisureTime, Left, Legeartis, Legion, Leglaine, Lemmih, Len,
+Lenjo, LeoBeltran, Leolaaziano, Leonid, Leono, LeonuPedronco, Leopard, Lepotdeterre, Leppur,
+Letterperfect, LeviHighway, LeviYoder, Levi_Luowei, Levington24, Leviszta, Leyata, Leynaf,
+LiborSupcik, Lich, Liface, LiftedStarfish, Likhan, LilFlaneur, LiliHanna, Lillith, Lily_at_School,
+LimeGreenTeknii, LinaTamazight, Linda_Li, Lindoula, Linguahacks, Linguando, Linguist137,
+LinguisticFusion, Linking111, Linlinwei, LionKimbro, Lisandro586, LishaR, LittleBoy, LittleKafka,
+Littleboyshanmu, Littoral, LiuJL47, Lonely_cup_noodle, Lopes1801, Loquer, LordJim, Lovedino,
+LoverofEnglish, LowCodePlatforms, LowMemory, Lrdwhyt, LucasLarson, LucasRibeiro, LucianLaFleur,
+Luciferous, Luciosp, LucyDee, LugoIlmer, Luiaard, Luigi, LuigiRJ, Luis25011961, Luisbugarin,
+LuizAugusto1764, Luk3, LukeJD, Lukenji, Lukespamla, LukuTesau, Lumi, Lumi_alt, Lumo, Lumpawurump,
+LunarRobe, Lunaris, Lundian, Lungwort, Luornu, Lupuro, Lurid, Luthien72, Lycidas, Lydia, Lyte3000,
+M1dx, MAC, MASSfisher, MCcommand, MFKanisky, MFS, MHB, MK, MN, MS, MSWindowsinside, MSartre,
+MSullivan, MT, MTC, MUIRIEL, MaVi, Maasikas, MacGyver, MaccAodh, Mack, MadHatter, MadWithMusic7,
+Madekube, Maelstr0m, MagisterTyrey, Mahmud, MaikM, Maisha, Makx, Malape, Malika, Malko66,
+Maltherion, Mamed, Mandalay, Manezoid_PQP, Manfredo, Manishgupta1015, Mankle, Manukavina, Mar1L,
+Maralula, MarcW, Marcus_T, Marek, MarekMazurkiewicz, Margie, Maria_E_Ward, Marieta, Marigold,
+MarijnKp, Marildex, Marilenium, Mario8286, Marisa, Marissa, MarkPrice, MarkiPairPliers, Markiplier,
+Marlena, MarlonX19, Marqasa, Marquinho, Marshmallow, Marstell, Martha, MartinShadock, Martka,
+MarvinSalazar777, MaryJ, Masa, Masatami, Masensen, Mashuruzu, Mashuu, Massi, Massin04, Masusu,
+Mateon1, MathKay, Matheus, MatheusPese, Matrix29, Matteusmauritz, MatthewChriswood, Matthewsean123,
+Matthias, Mauricio, Mavry, Max101, Max_Hydrogen, Maxence, Maydanozz, Mayday, Mayk, Mayo, Maysarat,
+McDutchie, MdMV, Mdshahjahan, MecklyBver, Mediabat, Megz, Mehdi, Mehrad, Mehrdad55, Mehrdad777,
+Meksems, Melang, Meldrew, Melina_C, MelisJ, Melvaloock, Melvin05, Menschi, Meri, Meruert,
+Mesmeric_Moon, MessDjaaf, Metalcape, MethodGT, MichaelOpdenacker, MichaelS1, Michaelus432,
+MichelTesmon, Mickey, Micsmithel, Mieulon, MihaiPopa12, Mihok, Mikarific, MikeDee, MikeInLA, MikeV,
+Mikomalik, Miktsoanit, Mild, MildSenseOfDoom, Milenka, Minorojo, Mirena, MirendaBABY, Miri, MisaelG,
+Misaki, MissGuri, Missy_Hissy, MisterBrown, MisterTrouser, Mithridates, Mitsukii, Mixtli, MiyaUna,
+Miznia, Mo5555, Mofli, Mohamedzakaria, MohammedShaneeb, Mohiisalih, Mohsin_Ali, MoisesRDL, Mojo,
+Mokurai, MondCivitano, Monde, Monjali12, Monk, Monroe, MonsieurTRISTE, Moramira, Morg, Morgengrauen,
+Morse, Morsy_tatoeba, Mortyy, MostAssertive, Mouguias, Mouseneb, MrJuice, MrKru, MrOhno, MrPloeger,
+MrPro, MrSener95, MrShoval, MrVhek, Mr_Tombs, Mrdrumjunkie3, Mrew2Vier, MsEmma, MsFixer,
+MsHollowfox, Mssan, MuadDib, Muelisto, Muh_lchgr, Muhammed_abdoon, Multidrive, Munia, Murteza,
+Muskwalker, Mussie, Musso, Mutusen, Mwiggins, Myeir, Myi, Myrabellium, Myrano_, Myria, N00t,
+N30HRTGDV, NChan8, NKTC, NNON, NTD, Nadialene, Naina, Naityahia, Najeebullah_anh, Nakim2019,
+NamaeNoSaikuru, Namikaze, Nanci, Nandixer, Narda, Nast, NastyaKayokhtina, Natan, NathanJohnson,
+Native77, NativesAlliance, NatsuDonkey, Natsumi, Nazar_Durdiyew, Nemo, Neniom, Nero, Neslihan,
+Nevado, Neverin, New_Tat_User, Newavok, NextMessenger, Nicacioh20, Nicat, NickBK, NickC, Nicolas73,
+NielDLR, NigerianSmiths, Nihonjinn, Nihonkage, NikiTricky, Niki_Pechlivanidi, Nikola123, Nina,
+Ninche, Ninja, Nirmaz, Nisa, Nivealsedulo, NivethaSri, NixGerit, NizzanCohen, Njohnston, Nm,
+NoInkling, Noah, NoahAB, Noisemaker, Noitebranca, Nolantm, NomadSoul, NoraJae, NotApplicable,
+Notchy, Nouran1000, Nudl, Nuel, Nufel, NurseMeeks, Nvd0_0, Nyans, Nylez, Nyoman, Nzak9, OA, OCDALYS,
+OCORCORAIN, OJR1, Oaphs, Obado, Objectivesea, Ocie, Odanak1811, Odelaine, Odhran_Gwydhenn,
+OjisanSeiuchi, Okidokay, Oktopusek, OkumuraShintaro, Olan, Olcyx, Ole, Olenka, Olisoul,
+OliverHughes, Olya, OmNomDom, Omar910, Omeritzics1, OminousEagle, OmkarM, Omnivoro, Ooneykcall,
+OpenSystemenHOGent, Opiejay888, Orane, Orange, OrangeFruit, OrangeTart, Oranje, Orava,
+Orlandoarturo323, Oscar48, Oscarschuller, OsmanOmera, OsoHombre, Ostrovska, OtCzarnyKot, Oudjehani,
+PDotAlex, PERCE_NEIGE, PWRWR, Paabel09, Pacific, Pain, PaisanoUSA, Pajer_Boro, Palores, PanShiBo,
+Pandista, Pantelis, Paolino, Parasysciamuiri, Parmeet, Paron, Pars, Patautista, PaterAeneas,
+Patpat44, PatrckH, PaulHat, PaulLambeth, PaulP, PaulTheRoman, PauloSamuel, PavelB, PazEr, Peanutfan,
+Pedraam, Pema_Fox, Pengaterch, PentheusPuddleglum, PeteG00, Peter15, PeterMillar3, PeterMontgomercy,
+PeterParker, PeterR, PeterUKBR, Petrarch1603, Pfirsichbaeumchen, Pharamp, PiaKorvo, PickleMan_5000,
+Piero, Pierre, Pietpetoors, Pincenoire, Pineapple, PinkBook, Piteris, Pixel, PlaguedPixel, Plangam,
+PlavoniaTrotsky, Plodder, Ploomich, Plusquamperfekt, PokeGamers, Polgar1, Poliglotski, PolyLinx,
+Popolon, Popop, Porcorosso, Porronett, PotatoeII, Ppjet6, Prabhat, Praeshock, Prakash_Baski,
+PrasantaHembram, PrincessJin, Priyesh, ProfessorAntonnio, ProfessorGiraffe, ProfoundManifesto,
+Pronabjyoti, Prophete, Proxima5, Psou, Psy, Ptr, PublicDomainRecipes, PulseDS, Pun_intended,
+PvtMarc, PygmyAlpaca, Pyrimadine, QAberrant, QAzaqQA, QQJoy, QRJ700, QaraQoyriq, Qibli, Qiunn04, Qt,
+Quabazaa, Quazel, QueEugGS, QuentiBc, Queserasera, Quetucrois, Quielin, Quilombola_Knight, Quique,
+Qulennings, Quonpi, Qvadratus, Qwiplaino, R0b3rt0, RHF, RJH, RM, RNobleman, RU, Radek, Radical,
+RafaelM, Rafeind, Rafi, Rafik, Rahmi, RainShelter, Raizin, Ramiav, Ramona, Ramses, RandomGirl221b,
+RandomIDN, RandomUsername, Rani, Rantanplan, RareUser, Raringo, Raseena, RaspaKrusto, Ratat,
+Ratsuke, RaveRat, RavenGuardian, Rawrren, Raymondmyman, Razmikb, Rebeca, Rebolicas, Rector,
+RedInkstone, Redmanskiy, Redwars22, ReeseRivers, Reesi, Reiha, Rekholder, Reletr, Renatabdias,
+Renzonokuken, Reonaato, Reza_, Rezzoc91, Rezzonance, Ricardo14, RichardTokyo, Richom, RickShaw,
+RickyDT, Riko, RikudoSenin, Rime, Risk, Riskemulo, Roaming, RobOwenKing, RobertHoca, Robertpaulson,
+RobinS, RobinvanderVliet, Robomb999, Robroy, RochaAr, Rocko, Roddern, RodrigoBarros, Rodrigopredja,
+Roedgroed, Roggy, RoiOfTheSuisse, Rok, Ronaldonl, Ronin1134, Roomba_Unit, RosaMariaH, Rosaburgs,
+RoseTech, Rosijupon, Ross0508, Rotor_AU, Rovo, RoyTek, RoyalBee, Rua, Ruben, Rubrick, RudeGuyGames,
+Rudzielec, Rukkee, RusVictoric1993, Russ8, Russell_Ranae, Ruthdq, Rwmpelstilzchen, RxMTH,
+Ryanquinn95, SGM, SHamp, SJPotter, SJStone, SLEET, SPENSER, SPJW, SR, SRF2806, SRP, SSibelty,
+SSquared, SUZIE, Saban, Sabe, Sabine00, Sabrina28343, SabukHitam, SadeN, SadeceTurkce, Sadlee,
+Sadness, Safari, Saifdahani, SailorMoonFan, Sakuharu, SakuraSound, Salem, Salim, Salim789,
+SalsaVioleta, Salt, Samer, Samghost, Sanaseppo, Saney, Saponutti, SaraEissa, Sarchia, Sarit, Sarita,
+Sarita2020, Sasan44, Sashka, Sassyj, Sauerkraut, Saumya, Savannahch, SavvyT, Sbgodin, Sbm3, SbrAkr,
+Sc1ence, ScarsAndStripes, Schierbeck, Schiller, Schmutti, Schuager, Sciapan, Sciuro_Kvar, Scotland,
+Scott, ScottPF, Scotth123, Scriptor, Scruffy, Scuba, SeaLiteral, Seael, SeanSexton, SecondInstance,
+SeeVogel, Seek, SehrGuteUebersetzung, Selami, Selcuk, Selena777, Selenyt, Selim, Selyan, Sendou,
+Septum4534, Serafettin, Serafin, Seren, Sereptie, Serg_K1ng, SergioChemist, Serhiy, Serrot, Serveto,
+Sethamajig, Sethlang, Seve, SexualDoritos, Sglod, Shabn, Shadd, Shadow96, Shady_arc, Shakyamuni,
+Shangri_La93, Sharaf78, SharonPritchett, Shazback, Sheldon9192, Shentorianus, Shep7000, Shereen,
+SherryChen, Shiawase, Shining, ShiningGem10, Shishir, Shishlak, ShivMantra, Shivangigupta2407,
+Shokie, Shounen, Shoyren, Shredder, Shrenoctal, Shujinko, Shurale, Sibelius, Sicaria, Sifaks,
+Siganiv, SigmaDelta, SilasNordgren, Silivrin, Silja, SillyDonut7, Sillyflame, Silvanka, SilverBaby,
+Silvestre, Sim5634, Simoon, Simply_Sardine, SinQisqe, Singaravelu, SirCourgette, SirZX, Siria,
+Sirimiri, Sirio60, Sisial, Sisyphe, Sisyphe_heureux, Skai, Skaty, Skie, Skvodo, Sladey, Slam4,
+Sleekkat, Sleepyscreen, Sling, SmartVisionSchool, Smiley72, Smoky, Smorrs, Snark, SnipsyStripes,
+Snout, SnowyDoll, Soesoe, Soheylas, Sokario, Sokario988, Sokian, Solana, SoleilDJ, Solid_Rock,
+Solurix, SomeHungryBois, Sona, Sonaza, Sonix, Sonoriuxo, Sophizzle, Soraikosan, Sorasama, Sorcien,
+Sorgan, SorrirBoy, Sosso, Source_Benedict_1921, Source_VOA, Sourdough, Soyadonis, Spacenut,
+Spamster, Spectral88, Spheniscine, Spiky, Spraaksugen, Sprachprofi, Sprachritter, Sprakify,
+SrTortuga, Stalwartlover, StarinaWilli, StarryArkt, SteCymru14, Steicxi, StephenCase, Stohlberg,
+StrikerFX, StrugglingToFrench, Stuart, Stuhr, StygianMist, Sudajaengi, Suelida, Suiseki, Sumyjkl,
+Sun, SunnyKim, SunnyMoon, Sunshinemy, Suntooth, SuperNerd9, Sura, Suresha, Suroosh,
+SurreptitiousLemons, Sushiman, Suzumeya_Meiya, Svalbard, Svetislava, Svira, Swalis, Sweatled,
+Sweetcheeks12354, Swift, Swindler, SydneyDon, Syfogidas, Syonide, Szyra_nn, TATAR1, TBuckley, TFO,
+TGKroening174, THANUJA, THURET, TJCinMaryland, TRANG, TROYE717, TRli, TaTu, Taam, Tabasco1999,
+Tadeusz, Taibouche, Taikian, Tajfun, Takato, Takirabor, Takuya, Talawaman, Talca, Talisman,
+Talonmalon, Talwit, Tamajeq1286, Tamangolang, TamaraMinasian, Tamazirifyt, Tammmasss, Tampio, Tamy,
+Tamy2, Tango, Tangobango, Tanikaz, TanukiKun, TanyaY, Tappity, Taras_Varava, Tartar,
+TastiestofCakes, Tatar, Tatoebauser, Taughr, Tavat, Taysa, Tbilisshi, Tbrennan, Tbwtdb, Tc14,
+Teangloir, Teashrock, Teboton, TeddyBearWitch, Teja, Teloy, Temir222, Tempoacc, Tenshi, Teodora,
+Tepan, Tereza, TerminusPro, Tesorium, Tesseract42, Teteu80, Th0th, Thadh, ThaisAmorim, Thanh,
+ThanhMinh, Thanuir, ThatHorse, The, TheAcHub, TheBahi, TheDQN, TheHendrik, TheMinion, TheNightAvl,
+TheSupernatural, The_Gentle_Crow, The_Shrike, The_World_Factbook, Thearkenterprise, Them, Theocracy,
+Theodoor, TheodoreBrown, Thiziri7, ThomasFAustria, Thryth, Thunderbolt, TibeThatGuy, Tibor0322,
+Tibor500, Tickler, Tighra_tlelli, Tigre, Tigrin, Tik, Tim, TimidRat, TingBuDong, Tinhinan, Tinku52,
+Tintomara, TinyMarshmallow, Tirifto, Tissi, Tiyachhauh, Tizon, Tjagotje, Tlustulimu, Tobsta,
+Todai123, ToinhoAlam, Tokeingah, Tom12345, Tom13, Tom9358, TomSFox, Tom_Facts, Tombaw, Tomwtom,
+TonyM, TonyT45, TopMan, Topkek, Tore, Torii, Toros, Torres40, Toutanmemtan, Tov_Fatykhov, Tower,
+Towhidn, ToxicFriu, TracyPoff, Trailsend, Trank, Translate28, TrapezoidalMicrowave, Trebalor,
+Tretiheall, Triathlete101, Trillian, Trinkschokolade, TrioLinguist, Triwizard, Trog41, Tron,
+Truthwatch3r, TsarNikolai, Tsetseg, Tuan, TuckingFypo, Tumbuka_Arch, TurkishReform, Turkish_Bible,
+Turtlewax85, Tutim, Tux, Twilight, Twisty_McMarx, Tximist, Txoria, Tzung_hsien_Chen, U2FS,
+Ueltatoeba2014, Ugr, Ugur, UliDolbarge, Ullalia, Ulquiorra, UltraG, Ultronimation, Umino,
+UmutBalacli, UnbrokenHope, Uniheld, Unomohito, Unserious, UrpleReen, Ursetoli, Urusai, User105223,
+User110621, User132751, User13844, User140029, User172799, User19745, User22901, User4611, User5120,
+User55521, User59300, User65345, User66640, User69184, User72724, User73201, User77812, User77813,
+User81139, User82312, User83551, User84539, User87851, User87977, User92242, User93664, User95182,
+User97998, Ushcabob, Ussis, UsuarioX, Utillz, Uwe, Uyezjen, Uyturk, Uzantnomo, V3GT, VCatmur,
+VEGGETTA777, VERODENIA, VH, VPZ, V_Zmoova, Valodnieks, VanadiumV, Vanege, Vanilla, Vee, Veilchen,
+Velosareon, Vened, Verdastelo, Versuss, Vesihiisi, Vethya, Vibius_Marcus, Vieroe, VikingDude123456,
+Viko, VilhelmsPort, Vincinho, Viniuau, ViolettaKoriagina, Virgilia, VirtuOZ, Vishaa, Vit, Vitalij,
+Vladik, Vladimir, Vo, VoiceLessQ, Voider, Vortarulo, Vraja108, Vulgaris, Vutabani, Vy, Vykan,
+WBojangles, WECANMAKE, WM3DAS, WP7032, Wadeut, Wadimiy, Wagner1994, WahahaDrills, Wakano, Waldelfe,
+Waldemar, Walentinio, Walled2023, WarmFoothills, Warnerbroder, WarsawWill, Waseemonline, Wassim,
+Wassmuth, Wassnen, Wayramaru, Weasel, Webb, Webmaster, Wedarf, WeissL, WelshTom1988, Welton,
+WestofEden, Wezel, Whariel, Whidou, Whiskkebarr, WhiteKnight, Whitney, Wierdmin,
+Wilalagapanadolbonow, Wilcynic, Will, WillPlatt, WilliamKwok, Winter, Wiode, WithAWhyNot,
+WitheredGryphon, Wittich, Wittydev, WizardGed, Wizek, Wnisa_sissa, Wobbelle, Wolf, Wolfex1, Wolgoon,
+Woozlez, Wu, Wuzzy, XY, XZJqz, Xanatos, Xandaros, Xandra_, XenoKat, XeroXenith, Xianan, Xonok,
+Xsotou, YURY0608, YVasev, Yacinegutta, Yagurten, Yakuwari, Yamabushi, Yan, Yana_B, Yanahma, Yanka,
+Yaro, YasinLa, YasmineMK, Yassan, Yazanb3, Yazid, Yennifer, Yepthatscool, YeshuaC, Yeti, Yetiowin,
+Yettutlay, Yevgeni, Yl, Ylberi, Ynhockey, YoavR, Yoihableak, Yokhor, Yoman, Yordan_A, York, Yorwba,
+Yoshidatsukune, Yottanglhab, YouHardDrive, Yougailes30, Youmu970, YoungRobin, YueBei, Yug, YukiOnna,
+Yulduz, Yurufuwa, Yush3, Yusup, Yuzu_Sa_sushi, ZETHorse, ZPVIP, Zabeus, Zac2333, ZacAttackk, Zach7,
+Zack, Zaghawa, Zagreides, Zaher, Zahia_Ntmazirt, ZakariaHard, Zaksocool, Zaphod, Zay_H_A, Zdzich,
+ZegPhig, ZehraQorxmaz, Zenda, Zenov, Zero, ZeroChrome, ZeroG, Zetsuji, ZeynepDuruCevirgen, Zhanas,
+Zifre, Ziggurat, ZiriSut, ZoeUK, Zucker_t, Zuriberri, Zurich899, Zxcv, Zylx, Zzeynep, ___12, _anna,
+_undertoad, a582252370, a5urbanipa1, aRubes, a_coder, a_dernellis, aaaamnnnujjjj, aadrian, aaliyan,
+aandrusiak, aapang94, aarikpokras, aaroned, aaronibus62, aat2u, aatofighian, abadf, abburns,
+abbymae111, abcd, abdab, abdo123, abdu99, abdu_mka, abeskies, abhu, abiniz, abkhaz, abled47,
+aboubasha, abracadebby, absvfx, abumk, abutner, abyssalalice, ac2027372210, acamacho, acbarbosa,
+acell, aclogar, acnevins, acorn, actualtp, acvector, ada_b, adalia, adalpari, adals, adamtrousers,
+adaycito, adept_379, adg, adiante19, adina, adjusting, adl, adlerq, adlnbvrtn, adm, admor82, admvvv,
+adri42, adrian_1067, adrianxu, adrien_mxm, adrifsa, adroguense, adwaith, adynee, ae5s, aebijjang,
+aelena, aen2610, aengelberg, aer4321, aeriph, aestate, afeinberg, afternoontea, afyodor, ag74, agio,
+agotaanna, agrakal, agusb1, ahlec, ahmad_ahmadi, ahmes, ahmetakcal, ahtapot, ai_solutions, aikidave,
+aikoniv, ain, ainqadir, airman, aisdfnik, aixvee, aizuddineismail, ajaystxus, ajdavidl, ajgajg1134,
+ajje, ajlee2006, ajmck, ajohndee, ajonsson, aka_aj, akaihen, aki21ogita_gmailcom, akin, akrav,
+akselamazigh, akvo, al, al_ex_an_der, alabama, alanood, alaptibor, alberto, albertodelf, albrusgher,
+alcalino, alciono, aldar, alec, alejandra__, alejogt94, alekso, alemfarid, aleppo, alester237,
+alex_witoslawski, alexander, alexcasper, alexisslay, alexmarcelo, alexmaur, alextato, aleyda,
+algernon, alhasani88, alialshishani, aliast, aliata_adam, alicam1010, alicanto, aliceinwire, alicup,
+aliene, alik_farber, alishalikescats, alitaif76, alkaitagi, alkhaldy, allasobirova, allenmanbear,
+allmarangie, allopathie, allsamadhan, almer, aln, aloannguyen, alpaycom, alper069, alpha1, alpha666,
+alphafour, alphanumeric, alphastrata, alpucca, alsing, althead, altusi, alvations, alvinsbored,
+alvren, always, alywin, amazigh, amazigh70, amazighgirl, ambarbuz, amberray84, ambsey, amcp,
+americanescu, amir_212500, amireghbal, amirkarger, amk, amkisko, amoeba, amrbekhit, amy109,
+amychang, an_hien, anaadrus, anaga27, anassara, anattado, anbu, anciental, anders, andibing,
+andie621, andreengels, andreesurya, andreigromit, andrej, andrenpereira, andresangelini,
+andresevargas, andrewfx51, andrewgtreantos, andrewmc, andri_en_grey, andrmene, andro, andyjm88,
+andymakespasta, aneesap, anemone, aneris6, anilomed, animyrch, aninaaa02, anjan, anjin, anjurii,
+ankipedia, ankit366, anmaretto, annab, annabelle, anndiana, anne, annewate, anoosha, anrialach,
+anthearuiz, anthonyb, anthrax26, antonb, anubhav, anubhav93, anuraag, anushka, anywa, anzart, aohta,
+apglopez, apzzd, aq_aria, aquatius, arademaker, arahlen, araneo, arashi_29, arashmehrad, arbaro,
+archer_root, arezoo, argabo, argentum, arh, ari_diary, ariarin, arie, arihato, arivkai, arlene,
+arnab, arnarsmata, arnxy20, arono, arseniiv, arslun, artbagel, artem343, artemlyubchenko, arthurf,
+arthurhh, artlader, artur, aruhito, aruhuredo, asakoasakoasako03, asbronaut, asfevaw, ashalynd,
+ashmoran, asimoes, asiu521, aslakg, asmaa, asmaf, asnorkin, astriddegaste, astru, astyng, astynk,
+asveja, asys, ataraxy, atc, athakaspen, atitarev, atlilobya, atp7_7_7, atreides_, atsukoloid,
+attachouallah, aucampia, auditlog, augine, aurelie, austin226, austininchina, austinweiss13, autuno,
+auxitt, auzer, avac74, avandivai, avayert, avenelanna, avi1000, avidrucker, avoidingrealwork,
+avshelar26, awad, awael58, awesome_kimbos_123, awiz, awkwardcultism, awynands, axcutul, axersmutual,
+ayc, aydincan77, aydink, aye1995, aym, aymen, aysshsh, ayymao, azad12, azadan, azarbad39, azcor,
+aziza, azizbekno9, azjani, azraelgnosis, azulhana, b2404981, b3nf4t, bRa1nST0rM, babelpoint, babisT,
+badgerfan, baerle1208, baetota, bagonyi, baiju, baisong, baixue, bajama, baji999, bajolo, bakaveka9,
+balkanbalkan, balli34, bandeirante, banichka, bannedagain, bapouy, baraban, barb, barrima, barryo,
+bart, bartbartez, basaundi, basilhan, batou187, batsheep, baudelaire, baumstumpf, bax_je, baxtree,
+bayram61, bazsieszti, bbchan44, bbranigin, bccomm, bcdavasconcelos, bdanner, beannie, beano09,
+beatrixvasc, beaushiny, beauzavier, becky82, beckykubick, becs, beeccy, begll, begood, behzad,
+bekindtoall, belgavox, belkacem77, bellyfuss1, belorusio, belvedere, belvis, benavery, benbika,
+benblue20, benjamin_netanyahu, benottoman, benthomas, benutzer, bephana, berrbahr, besarlalluvia,
+betigre, beubank, beyzanurkngr01, bferrant, bfrsoccer, bgaskin, bhwitz, bi, biber, bichodebola,
+bicolino34, big, bigdisc0very, bigfatpanda, bigfellow68, biglion, bigtorius, bigway, bijin,
+bilginhalil, biliken, bill, billt_estates, billy_boomo_2, binbinliang, bingobing5000, binu,
+bionicboy, biraykocak, birdfarm, bitchoftheseus, bites, bixen65039, bjowi, bkong88, blackslate,
+blay_paul, blaznivy, blogscot, blu, blu747, blueberrry, bluedragon123, bluemanshoe, bluepie88,
+blues, bluwy, bmarrow, bmaynard87, bmorsello, bobking12, bobson, bobstah, bohande, boink, bojnin,
+bokuboku, bolaurent, bolt6, bombenhagel, bonney12, bonny37, bonvasilisa, boobear, boogiepop, books,
+bookshelf, bookwolf, boosure, boracasli2, borke10, borke100, boscowitch, boshigorge, bosnabre,
+boston2390, botshy, boukensha, bourdu, bpeel, brad, brainman1800, brandini, brandur, brauchinet,
+brauliobezerra, breadandroses89, bretsky, brianskold, brightblackhole, broken_keyboard7000,
+brucenator, brumi2, brunobeltran, brymck, bsc2015, bserog, bsragrl, bsribeiro2, btball, btownauto,
+buddy6621, bufo, bulhaa, burak, burakaktas, buster_blu, butkam, cRoOnCh, c_shine, cabbage,
+cachorra17, cafe, cafoc64474, cafulur, cagdaseksi, cagey_cat, cai_lw, cailleachnangadhair,
+cairnhead, caitoceallaigh, caiusmaximus, cajunesque, calebante, callmath, calmanani, calypsow,
+cam2968, cambodiatransportser, cameosis, camilo1903, camilou, camilozeta, camouat, canadabound,
+canan, candistyx, caneel2023, canepa, canerj, canistrophedon, canonrebel, capiscuas, caponych,
+caprolix, captcrouton, captflint, carenas, cariito, carlosalberto, carloseperola, carou, cartals,
+casaniere, casperdewith, caspian, catakaoe, cataphract, catapri, catarwww, catcher, cathrynm,
+catimini, cazort, cbail, cblanken, cburgmer, cc_neko, ccotter, cdani, cdcjr, cdragon1983, celeriac,
+celesteaustral, cellath, cenk, ceres629, ceviri_atolyesi, ceyenna, cezar57, cfreeman03, chaarii_jpn,
+chadalpaugh, chajadan, chaliapin, chanchan, chandelier, changsubbs, chaos, charles, charleskwc,
+charlieo, charlotte13, charlotte95, charlottequelcvez, charprinny, chasingsheep, chatparle, chaule3,
+chdarwin, cheazyname24, cheeeeesus, cheeseisdisgusting, cheesr, chelita2, chemgio_2001123,
+chenglong, cheri, cherryband, cheryl_kannan, cherylting, cheskakim, chibiex, chiedegozaru, chihiro,
+chil14r, chipphan, chiyochan, chloe77, chloehuangAtsugi, chluer, chordtoll, chris3spice, chrisco_c2,
+chrismerck, chrisrice314, christian42, chriswnw, chtaktrk, chubbard, cia09cr, cia_UnitedStatesNa13,
+ciampix, cihanaxu, cinqhiboux, cirosantilli, civiricus, ciwlx, cjane, cjmanders, ckarakuzu, cl,
+clairyfairycake, clakre, clariceachuu, claudirvz, clayrat, clfrye, cliff900, clio, clm333, cls,
+cmdaniels, cmg, cmmike, cntrational, cockyhen, coerce1, coffeecoffi, coffeeinacan, cojiluc, colie83,
+collinssuarez, colonqn, colwem, confusedchild02, confusion, connie0804, conseque, contour,
+contributor, cookies4all, coolazice, coolo, copecopecope, corbinjurgens, coregame, corvard,
+coryleach, cost, cost_, cotanza29, coudykid, coven, coynejeremy, coyo7e, cps, crana, cranewang,
+crbk92, cremino, crescat, cribe, cringefactor, cris, cristina_fulginiti, cristinae, crnel727,
+crno_srce, cromwellt, croogie, croquettegucci, cruella, crunchyt, cruzedu, cruzedu73, cryptowallet,
+csabus, csmjj, csstutorial, ctkjg, cubean, cueyayotl, cumori, cursivedecay, curtd0g, curtisdavid,
+cutebunny, cutenababoy, cution, cwil, cy3, cykel, cymanteg, cypherpartiv, d_burfoot, da20,
+dabmaster420, daddysprowl, daed56, dafp, dag0310, daggad95, dagnaq, dagonzalezce, daifons,
+dajkalaszlo, dalanmiller, dalia26, dalp, damascene, damion2013, damkay, dan1ruusianspanish,
+dancingblade, dancor, danepo, dangell, dani0408, daniel_heurlin, danielestrigi, danieljtah,
+dannylow, dantat65, danyalosius, darckense, darinmex, darklulu, darooo, daroth2504, das_Ame,
+dasbeispielholz, dasfunked, datrukup, davearms, daveoily, davepier, david16, davidb, davidbolivar,
+davidcwalls, davidmbusto, davidtrembla, davidvdb, daviid_98, davis094, davjd, dawee58, dawidmigacz,
+dawnbreaksopen, dax00, dayofrei, daywo, dbahasa, dbg131, dbouna, dcarthik, ddnktr, deanoeba,
+deanrobertcook, dearyardsale, deathpulse42, deathwing, debian2007, dec, dedeAH, dedukakapanadze6,
+deejeypatel, deepak7121, deepsensation1, delstein, deltadave, demoanokkelate, demremustafa, deniko,
+denizakdeniz, denzel, deparuma, derevnjaaa, deric, dermberg, derpapottamus, desk, dessi71194,
+destroyants, devf16, devilyoudont, devmarx, dexique, deysub, deyta, dfordivam, dfrankmv, dgibbons,
+dhananjay, dhirensahu, diana95, diana_brain, dibdin, diegohn, dijek, dilek, dilo1, diltat, dimap18,
+dimitris, dincogan, dipdowel, diroco, dividebyd, divijo, diviner, djinni74, djtait, djwalker, dkl9,
+dknws, dkulp, dlobok, dma9, dmaddock, dnjst, dnswrsrx, dnzakby, dobleahl, dobled, dochash, doehae,
+doemaar14, dofry, dogcoll, dogukand, doinitallnow, dokkol, dolan, dominik100, dominiko, dominix4444,
+domiriel, don_ramon, doneja, donkirkby, donlogs, dora98, doragon, doswans, dotheduyet1999, dougr99,
+dougwalkerfan2002wow, doviende, dozens, dpcossio, dq, dr, dracae, draeklae, drahcir, drbugbait,
+dresisto, dressguard, driada, drjuly, drkdrk15, drnm2, drowsykush, drsrini, drvanneo, dryhay,
+dtedac, dtinny13, duckbest, duckington, duke, duma, durka42, dust_bunny, dvalmont, dvdemirel,
+dykova, dynamo, dyuuuuuuuuls, dzllztm, dzoja, dzouras, e78xx_xxx, eS, e_pileckis, eadbannon,
+eagjkrehjkgherjkh, eahxxx, eamost, earthsophagus, easononizuka, eastasiastudent, ebel, ebf84cb0,
+ebi1966, ebob52, ebonheart, ebrahim78652, ebricca, ebrubilir, ebubekir, eclair, ecorralest101, edbc,
+eddiegab, eddielyn, edelyn90, ederlezi, edge3100, edi, ediosn0424, ednorog, edoreld, ee3beans,
+eeveeta, eeyinn, efaresdi, efederer, efinah, egg0073, eggershead, egvalencia, ehrencrona, ehsansia,
+eidoloy, eirik174, eishiya, ekenyon, ekvintroj, el_otro_Stephen, el_vecino, elaichi, eldhose,
+elencw, elephant, eleutherothentes1, elfsrydn, elgranjuego, eli62, eliaz791, elifak, elijahbarrett,
+elithyia, elizabethchan, eljaque, ella695, ellasevia, ellsworth, elmassoudi, elmetal, elread,
+elsherif, elsteris, eltacodemex, ema_rega, emanresu, emida, emigonza, emine06, eminsv, eminyilmazki,
+emirhandmr, emitxab111, emmaR, emma_zunz, emmanen, emmarghx, emmettricks, emopaul, emory989,
+emprisdurden, emptybook, emrekargi, enara45, enchanted, encikkucing, enclectm, end, ender, endycj,
+enebi, engberg, englishchinese, engone, enisozcelik, enoc_vt, enteka, entusiasta, enwilson, enzubii,
+eo_as, eperparfe, ephirein, epiphany, erdeniz, erebea, erfre_eu, eric_vandenburg, erik21889,
+erikinkinen, erikspen, erinspice, eritain, erixa82, erixa83, erkanceylan, ernesto, errant1,
+erraticfaerie, ertukrm96, esakristina, esbe, escudo119, eses, eslanguage, espamatics, espatonay,
+esperanto, esperanturk, esperio, espjulie, essentialincognito, essi, esso, estambulista, etala,
+eternica, etoile, etok, eurt, evabarczak, evan10593, evanbrynj, evanrichter, evatr, evelynpt,
+evergreeniran, everlasting, everylanguage, evka, evkon, evwool, ewanf, excaelestis, exeunt404,
+exjimmy, exodream, eychang, eylemin, ezgita, fabiobasso, fabricio5, fadhil_riyanto, fadi, faehrmann,
+faizal, fajro, falcons84, falekseev, fanty, faraway9911, farinello, farmersa, farnaz,
+farzandeljavan, fatci, fathe, fatih, fatma27, faw, fayelah, fbayer, fcbond, fdhsdfjfgf,
+fedmartinez23, feifei, feiningyuan, fekundulo, felicia, felidad, felix63, felvideki, fendtwick,
+fenfang557, fengli, fengrim, ferka, ferra, feudalism, feyMorgaina, feyero, ffuentes, fgedikli,
+fgreco, ficion, fieryjack, figgles, filipe1238, filipe_s, firefoxuser, fireproofblaze, firespeaker,
+fishda, fivehills, fj_nambala, fjay69, fjrjdk, fkazmi90, fkfikret, flaregun, flatwound,
+flaviaelizabeth, flaviodesousa, fleur74, fleurbheara, fliegster, flipback, flipe, flitz, flomper,
+flopast, florence_arctica, flow, fluffyUser, fluffyrenamon, fniessink, foamy, fobos3, focmen, fogh1,
+follyfudgel, formiko, forsyth_rich, fouafouadougou, foxu, fpp, franca, francaisr0wlet,
+francescaeckelkamp93, francisco, frankou, frankowro, frasersanders, frazigisto, frecklejuice7,
+freddy1, fredwhyte, fredzed, freecudi, freedman, freequiet, freiberg_vlad, freibiermann,
+frempongemma, frenchcat, frenchlearner97, frog1011, frpzzd, frsrjake, frt, frzzl, fsmskr, ftmhty,
+fucongcong, fudede, fullyfledged_pigeon, furagwa, furoraceltica, furrykef, futurk, futurulus, g_j,
+g_man8744, gabesilk, gabjam, gabriel85, gabtags, gadeon, gahllib, gaialoro, gaidheal, galiana, gall,
+galoosh33, gamma, gapowell, garborg, garthberry, garydale, garynw, garyuichimongiri, gasche, gasser,
+gatdet, gaudrep, gauravjiii, gay_boy, gcaplan, gdaniel, gdfusion, gecko1979, geebee60, geekly,
+geert56, gejamiko, genericdave, genericuser, genry13, genuineblood, geobijes, gerson, ggia, ghobIn,
+ghostbane, ghostinfra, ghoti, ghoza, gianich73, gibbles, giiraffen, gillisthom, gillux, gin,
+giodivino, giru, giullina, gizem, gkchen, glassiko, glavkos, gleOsp, gleki, glenarcher, gleydin,
+gli315400, gloeb, glossboss, glottalstopperno2, gluis, gmoura96, gmyoh64dx, gnofs, gnomebubble,
+godarderik, gogoshanny, gokayburuc, gokhancin, goksun, gokustan, goldenthree, gomihog, gone2bacolod,
+gonnastop, gonsalet, google, gordafarin, gordeldier, gorkaazk, gouchi, gracefully, gracehero,
+graczens, grahambond, gravnash, graycake, greedybaboon, greg9381, greuze, greytheearthling,
+grindeldore, grinleysspa, gromenawer, grsmotorgroup, guavalava, guesser, guichi, guimihanui, guivn,
+gul123asal456, gumblex, guppypup, guroqui, guryushika, gustonrankin, guts, guyviet, guyze, gyokota,
+gzappaa, h_marti, habazbooz69, hackerman, hadawayman, haimlevy, hajenso, hakan, hakim1bal, hakimdif,
+hakimsopiak, hakkeb, halfagallon, halfb1t, halfdan, halibut, halime, halucnation, hamsolo474, han,
+hanaYT, hanadokei, handsomelyian, hani, hanibibiru, hannah, hansolo, hantol01, haohao, haomakk,
+happyui89, harans, harishpuvvula, harshnisar, hasan123, hasanyildiz, hasenj, hasentier, hashimi,
+hashtag_blessed, hasnadinar, hasteslide, haukie, haveamission, hayabusa_future, hayastan, hayrettin,
+haziqmir, hcbowman, hcougar, hebrajska, heccele, hecko, hecko2, hectorM, hectorvk, hedia, hefeiming,
+heffeque, hello, hello_frustration, helloroto, hellosunshine, helmfer, helpa, helpema_krokodilado,
+helq, hemadripatel, henrywijaya001, heo598, heranje, herchx, hermerinya, herrsilen, hesaplarinkrali,
+heyanapau, hgrvz, hi_andrew_quinn, hichamnait, hickeety, hidemat, hietjmo, hieuvanloc2004, higehiru,
+highbeats, hikoich, hilti955, hinotorihime, hinto4, histumness, hito, hitori37, hitsumu,
+hjcccompany, hjoest, hoangngocson, hoangphuong_92, hochanlam, hoffmania, holdraszallas,
+holger_reinherzen, holland1905, hollisko, hollyl, holmesworcester, holomanga, homsar, honestlang,
+honeychip, honeygod, hoodahooda, horsebones, hortusdei, hosa, hotmail1, hounoki, hrin, hsilver,
+hsoori, huluc2007, human600, humding3r, humilulo, humorous9830, hundo, hunzerf, huo3xing1ren2,
+husamalalloush, hustledynamo, hutian, huynhphihung, hyakkaiseisi, i3nihontv, iMaple, iMochte, iT4LL,
+iainmb93, iamgrim, iampo0kie, iankun, ianparri, iantez, iart61, ibkose, icantfindaname, iccanobif,
+iceqween000, icfindik, ichawiyen, ichivivi20, idkidkidk2357, idle_hatemonger, ieflicca, ifethereal,
+iggy, iglauko, ignacio, ignacy130, igoryen, igxr, iharmonize2, ihdh, iifle, iiujik, ijikure, ikarus,
+ilayde, ilhanmertalan, iliekchez, ilinasa, ilingualbay, ilkeraltinok, ilkeraltinok365, illiterate,
+illustrium, ilovegreece, iltrex, imboreeed, imjcooper, impclaw, imperiex, imytiti, ina, inastar,
+indef, indoraq, indraozora, inestpereira, inez, infomaster, ingenius000, ingilizcedelisi, ingonito,
+inhisoka, injenior, inkedpolyglot, inkplay, insularis, int32_t, interactomica, intertime,
+invokemoving, ion_Carlos, ipsofacto77, irakos5, iriberri, iris, irish, irrationale, isaacandrade,
+isch, ishbir, ishigoya, isitkismet, islandisto, islandisto1, ismael_avila, ismailzali, ismaximum,
+ispeakyourlang, isrtcify, issadouba, isteu, italianlearner01, itsthejazzkid, iu, ivanpellegrin,
+ivans, ivarro, ivy, izimekko, j0rd4nkzf, j4p4n, jSXesHRqcPB, j_hpan, ja, jaber, jabirkhankhan,
+jackchak, jackcook, jackloring, jacoblaguerre, jacopofar, jacquiceung, jahana, jairovx, jake32008,
+jakob, jakov, jalex813, james2c19v, jamesbcn, jamesforsyth, jameslin011, jamesquek, jamessilver,
+jan2023fim, janAetherStar, janLawa, janOpa, janTuki, jan_Aleku, jan_Kawika, jan_Ketalija, jan_Keto,
+jan_Lupelo, jan_Ne, jan_OkulaJu, jan_Santewa, jan_Seni, jan_nule, jan_usawi_sewi_o, jandrade,
+janmato, janms, janni, jantoki, japaliano, japegon, jarbv, jared1981, jaredc13, jasmaa, jasonlo,
+jast, jasumasa, jathonjet, jatubio, jaurk, javarara, javo, jawshx, jaxhere, jaydenms, jayefes65,
+jayrod84, jaystarkey, jaz1313, jbdu, jberkel, jbermudes, jbiesnecker, jblinguaphile, jbor0081,
+jbsperanto, jbuzz74, jcgillet, jd, jdelgad8, jdmcowan, jdonnarumma, jea310, jean49, jeanne, jeedrek,
+jeffr, jegaevi, jej13b, jejda, jellorage, jen, jenardcabilao, jeng02, jeniusrox, jennieforthesox,
+jenniferclaerr, jennifergrey, jenwang26, jeo, jeremy, jeremyisggg, jerom, jerrysmith, jeshaian,
+jessica, jessie0422, jestor, jesuisunmonstre, jetkk, jettie, jezkc, jezykiija, jgauthier, jhomel,
+jienisi, jihaire, jillald_evans, jimcor, jimkillock, jimmyrhcp, jimnoss, jingwumen, jinpt,
+jinxsimpson, jiraixu, jirkak, jismith1989, jiterraza, jivago, jiwajiwa, jjbraam, jjoeriman, jjtats,
+jkao, jkk, jkosmin, jlamb314, jlpinheiro1971, jm, jmadsen, jmcd93, jmdesp, jmelex, jmfcomo, jmhk,
+jmolina116, jmricker, jms, jn8522, jnho228, jnyca, joalo, joamator, joan_LanguageProcess, joannak,
+joao7889, joba, jobinjohny, joecool95660, joelparizi, joes, joethesupercow, joey, joeycrunch,
+johannessleon, johanrhg, johnasm, johnd, johnhy, johnisprobablybored, johnny04, johnny15,
+johnreindeer, jojii, jojo73, joko11, jolfrito, jollywatt, jonasferraz, jonhicks2011, jonizaak,
+jonlam, jonojet, jonr, jons_ling3, jonulawra, jorge855, jorgearestrepo, jorro, jose76c, josematrix,
+josephdlorimer, josevalsa, josh612, joshitobuba, joshodude_1308, joshuaozua, josivangoncalves,
+jota58, joulin, joyfie, jpense, jpond, jprichardsjc, jpshepherd, jpsncl, jrdnbrowne1, jsannemo,
+jshholland, jsk, jt2003, jt8900, jthomasnull, jtr, juanitux, juankbiker1, juanp2000, jubjubbird01,
+judahjog, judaismo, jufyuhar, jugglercat, jugurta_namous, julitaite, julkhami, jummy, junaidqadir,
+jungnet, juritch, justhalf, justinbieber, justing1057, justingaylor, justpeachy, jvlopes91, jxan,
+jxff, k8brady, kaaay, kadena, kadirsaglam, kaenif, kaesekaiser, kage, kahkeshan404, kahmadi,
+kaiperkins271, kaistanb, kaithespanishstrateg, kaitlin, kaiu, kalm, kalmez, kalogrenant,
+kalyanshrestha, kamaxwel, kamikor, kamikun, kamile, kamilfatsa, kanadsky, kanameyu, kanbutsu,
+kanewest, kangkong, kanlaon, kansaijesse, kapson, kapunga, karabat, karel36, karenkee, kareybh,
+karloelkebekio, karstenenh, karthik, katalex, kate15, kateh, katekat25, katherine425, katix824,
+katleen, katshi94, katsmal, kavita, kawaii, kaxxina, kayano, kayra220, kayre, kazeharuhime,
+kazenochikara, kazuya00, kbharat1307, kblakes, kbrady, kbunkers, kby, kbylr, kcat37, kcaze,
+keaupuni, kebsilli, kebukebu, kedge, kedymera, keegi, keehaag, keir, keira_n, keistas, kekette,
+kelemta, kelevgadol, kellenparker, kemalkaraca, kemushi69, kenji_yamada50, kenken, kensan, kenshin,
+kerbear407, keremcik, kesidi20, kevinhsu, kevinsito, kevlar67, kevoow, kflavin, khaldoon, khaledp16,
+khalidahmadzai, khalooz, kheldarz, khornetto, khorsabad, khungla, khurios2000, kicky, kidaehong,
+kieranjpball, kijeEnki, kikan321, kilahhxx, killaz, killer4o, killeralgae, killerpollox7, kilo,
+kilwann, kimhkng, kimse999, kimsora, kimtaro, kimvtaedomo, kinderpoke, kindpanda, kindred, king999,
+kingalekz, kingi, kinoko, kintopp, kiryopi, kiseva3, kiseva33, kishmary, kitab, kitkat129, kitler,
+kitnasannazsuzs, kittles, kjh, kjono, kjoseph, kkflf4, kkupus, kleberlucas, klebermann, kleklekle,
+klvik, klzlueylx, knk4597, knnida, koak, koala, kobaltium, kodimav, koenfoo, kohanyirobert, koineko,
+koinu, kokage, kolin2009, kolver_emre06, konekoneko, konekozuki, konhuruk, konkorde, konrad509,
+konradutkowski, kontomilosza, koosy, kopplex, korobo4ka, korosh_samier, kosame, koshak96, kostas,
+kotik, kotobaboke, kotoklizm, kotowaza, koyakun, kppenvel, krash, kremel, kremlin, krening,
+krevedko, krierr, kris514, krisher, krispy, krisztianp, krobbyzw, krodo, kroeckx, krofna, kroko,
+krolpand, krrk, kruko, krungthep, kruppek, krxze, krzysiek, ksjdragon, ksolina, ksuyghur, kuanysh,
+kuarash, kukla, kule, kulupuJeti, kuma, kumakyoo, kungfuhamster, kunwoo, kupo033, kurarenka,
+kuriko_delpanda, kurisu, kurisuteian, kurisutofu, kurkoski, kuroyukihime, kurteago, kurthc,
+kurtiago, kuyabiye, kvietka, kvthomasboban, kwes2, kwhero, kyle7667, kyleadrian10, kylecito,
+kylelyk, kylewii, kyobotte, la_kanro, labatteg, lablanu, lacerda44, ladypinguin95, laetitiamg,
+lakunma, lalala, lamejortraductora, landano, languagelearner, languagelover84, languagesandcoffee,
+langue, langulo, laofmoonster, lareith, larrythomas, lars, larsonnoah, larsyencken, las, lasolaco,
+lassakeur, laszchamachla, latet, latifa, lato365, laura_dono, laurafults, lauren, lavenir, lavinxi,
+lawka, lawyer, lazarus1907, lazycat, lazymoose, lazza, lde, ldegraaf, ldmichel, leandroingles,
+learngreek, leccine, lee_wan, leean, lefterav, legalghost, legume, leifika, leishenki, leka159,
+lemonhat, lenon_perez, leo_eich65, leonardo, leonardv, leoruilova, lepetitrouge, lerche,
+lesbianpetplay, lesgles, less_tat, leticiasato, letsgolanguages, letuananh, leucammieuvu,
+lev4uk_pavel2, levanah, levert118, lexiecalised, leyla, lgrande, lguy4, li0n_grAbbd_ankle, lia,
+liaison, liashi, lieknins, liekrawr, lightswitch, lilianmtzc, lilmerman, lily, lilygilder, lim,
+limmy, lindupindu, lindwurmkai, ling, lingomaxim, linguine, linguist1967, lingvokrolik, lingxy,
+linli101, linst12, lio, lioil, lion_boniface, liori, lipao, lirpa, list, liszt, lite, litong18,
+littlejohn_75, liwan1208, liztrigger, ljradio, lnanderson, loSqual, loghaD, lohnesinpr, loins,
+lojbanist, lolawesome65, lomy1988, lone_star, lonewolfie, longtruong, lookcloser, loominade,
+loonaOT12dalso, loongtion, lordbasil, lordfrikk, lorenzocabrini, lorx, lostmindRH, lotfi, lovasoa,
+lovermann, lp233, lua, luafyn, luca22, lucabattanta, lucas69, lucas979797, lucasfr, lucasjl,
+lucasmg123, lucasrocha1, lucatortuga, luchfilip, luci, lucianolopes, lucifergo, luciussulla,
+luckymaxwell, luckystar, lucyarias, ludoviko, lugal, luis_zimermann, lukaszpp, lumimi,
+luna_moonsilver, lunarr, lunatic, lunazawa, lunchmeat317, lurgist, lutao, luthorl, luwenzhuo,
+luxdelumine, luyulcu, lvxtrm, lweendela, lxmmxl56, lylalingarcia18, lynguist, lys1123, m0ya,
+m_khidesheli, maaster, mabster, macaboy, machisma, mackay, macromonas, mactrey, mad, madghis,
+madhatter5, madhukannan2006, madison, madjid777, madoromi, madvomon, maesro, mafuyu, magadi,
+magiquai, magnetic0332, magnificentgoddess, mahannah, mahatidouma, mahdi, mahdigol, mahdikalantari,
+mahdiye, mahendra, mahir256, mailohilohi, mailtotib, mairovergara, maiyag, maizewen, majabezjaja,
+mak, makarov, makeshiftman, maki, makija, malafaya, malak, malevolent, malinef, mallardreax, mamat,
+mamdohmohamed, mamduhi, mamoon, mamoruo, mamushi72sai, mane, mangie, mangodurian, manion, manlytoaj,
+manuk7, maolek, maqnus, mar0ja, marafon, marauder016, marcb, marcelolopes01, marcelostockle,
+marcika, marcj794, marco87, marcospcruz, marcosruben, marcp, marcusps, mari36, marianvasile,
+marienow, marinelratio992, marinoli, marioo, mariquet, maritza, mark1003, mark929, markknez,
+markmurphyt, marko, markpalmer, markwestcott, marllboro06, marloncori, marshmallowcat, marsovka,
+martelkapo, martenh, martikkk, martinhe543, martinhr, martinmartin, martinnicholson, martjenk,
+maruchi13, maruf89, marvinibahs, marvinibahs2020, marvinsalazar, mary_s, marybel, marylanskie,
+masaragiovanni, masgun13, mashi, masiver13, maskedmurader, massarelli, massin, mastanabal,
+masterjames, masudhasan232, masumi, masya, matahari88, matchai, matecro, matheushjs, matheuskc,
+mathmad2008, matildemaal, matsumurae, matsuteo, matt, mattezell, matthemattical, mattlb92,
+mattmittelman, mattpbooth, mauersegler, maus07, mavaddat, max1ders, maxiadam1, maxine, maxkoryukov,
+maya_, mayabe, mayahueli, maydoo, mayok, mayon, mayutaka8985, mazztech, mbcrack016, mbm, mbtott14,
+mcadagio, mccarras, mcdanieljosh50, mcelaj, mcfs, mcord, mcq, meagle5, meanderingpolyglot, mecasa90,
+mecheng, meerkat, megafanat, megamanenm, megaton, mehdi_xterra, mehrzad1972, mei2778, meidan,
+meiko452, meinung44, meirad, meishi, mela, melisa, melisszr, melo497, melodiouschaos2, melolsus,
+meloncurtains, melospawn, melsev, memmly, memries, menaud, mendel, menyo, mercen, mercindustries,
+meri_aasha4, meriaasha4, meric, merlin, mermaidmiho, meropi, merveekeskin, mervegorus, mervert1,
+meshatech, meshbags, mesut37, mesutb, metalserfo, metcaslix, metehangunes, meti420, metinyurtbasi,
+meursault, mexicanhere, mferrer0000, mfschiavo, mfw, mgrace, mhattick, mhenderson5, mhertz, mhr,
+mhsary, mhulbert, mialiesperantistas, michael_skidan, michaelstercero, michikon, michu, michu3453,
+mickel, mickey86, microcode, midori, mieru, miflhanc, migeels, mightyscoopa, migl, miharbi,
+mihir123, mikanatsu, mikazock, mikazuki, mike10017, mikecash, mikehenrty, mikekchar, mikel,
+mikeprit, miketheknight, mikhail_dvorkin, mikkadegatto, miklandr, mikulthegreat, milamber, milana,
+milestones, milkyway2313, mimosawang, mindfroggery, mindy, mingzhouren, minmin123, minshirui,
+mintytea, miravalles, miren, miro, mirorakonto, miry, misi2991, misshii, misumi, mithrinn, mjordan,
+mkacfr, ml_tatoeba, mlillie87, mmcstorage, mml, mmorton, moarplease, mob, modelqueen13, modjo,
+mojeanin, molls1889, mollydot, molnarorso, molokidan, moman, momomonkey, momowuwen, monahxo,
+mongsae, monsen_sanang_ai, monsieuradams, moodz, mookeee, moonhouse, mopo_ukkeli, morbrorper,
+morganlmallory, morgyn, morningstar, morrent, mortalis, mosi_ESPOIR, moskbnea, moskytoo,
+mostafaomar, motaamel, motico, moto, moujahid, mov0021, move0423, moxy, mqd, mr_vile, mramosch,
+mraz, mrbl, mrbunnydark3, mrdax, mrkalling, mrmriad, mronyszko, mrt6, mrtaistoi, ms_haze, msami,
+mschmitt, mseifert, mshahriarinia, msjvenegas, msuantak, mt783, mtcmcg, muatik, mudri, muggies16,
+muhamad13, muhanadabulela, muitoazul, mujtaba, mukti, multlingvisto, murcia, muriloricci, musaAzuna,
+musatkin, musgndz, mustafa836, muta, mutarjim, mutskt, mwgamera, myadzel, mydogisfast, mygez,
+mykolas, mysalamat, myself, mystic_, mysticalgod, mystixa, mzmzmz, mztae, n1human, n1ls, naXa,
+nabeel_tahir, nabyspi, nabyspi3, nadsat, naganogreen, nagoyablue, naikodemus, nairbv, namikiri,
+namu49, nana2capriccio, nanbanjin, nancjo, nancy, nanioitte, naomgabo, naoseidenada2018,
+nardsSantos, narnar, nash, nasirbal, nasirusman, nastasime, nata23, natema, natexh, naurugott, nava,
+navabi2004, navi, navigare, ndrewg, neco, nedim, needaworker, negativeclock, negichan, neil,
+neilgrey, neko85, nelli14, neofight78, nepeta, nergis, neron, nerveimpulse, nesiax, neumannhci,
+neurogeek, neutralpoint, nevergetup, new_world_order, newkome, newton, newton55, newtonlkh, nexx,
+neytiri, ngbaanh, ngdongit, ngimoel, ngoomie, nguyenh, nguyentuvuong, nhonha2005, nibuen,
+niceguydave, nicholas_martin, nickcorrado, nickitolas, nickrobson, nickyeow, nicolasa555, niconiko,
+nihonokage, niiiico, niisar, nikacchi, nikainscotland, nikitakit, nikobi88, nikolayfedorovv, nil98,
+nile45, nilesrogoff, nimfeo, nimmi, nimrand, ninefi, ninthfantasy, ninuzzo, nipbud, niq, niroshan,
+nita_hun, niu_global_tourism, nizoverdulo, nka07, nknight, nlin1, nmilka, nnnnnnnnnn, noani,
+noava22, nolongerhuman, nongvutha, noniq, nonong, nonymus1, noom2002, nootley, norimann, norveeg,
+nosa_manuel, nosabe, nosh4, not_yet, notobelieb, notrwanda, noventium, noxend, npc, npvojtik,
+nsharp, nssaitoh, nszandra, nthkmf, ntsereteli, nubok, nueby, nullsoul9, numsgil, nurendra,
+nurlanaze, nushin, nut, nuthaven, nvt123, nwah, nwt, nyansern, nyfikenienstrut, nysnamovois,
+nyspiceshop, o_o_l, oaruish, obracadabra, obsama1, obsessed_polyglot, ochern, ocirne, octobaguette,
+odango_daisuki, odien16, odiernod, oerken, offdare, ofxxx, ok_alp, okja, oksanask, olafurw,
+oldfashioned, olgalu, olia1204, oligophile, olive_wang, olivier, oliviya, olof, olyalya, omar23,
+omerfarukckmk, omeritzics, omfgitsasalmon, omidadab, omidcat2004, omiros, omniglotman, omri,
+ondal30, ondo, oneconor, oneweirdangel, onie23, onkobo, onlyenglish, onurg, onurtombalak, onyxite,
+oowowaee, op78723, opalandwoof, or5708, orafresh, orangeart, orbpic, orcrist, orge, orhanguzel,
+orhankemal, origami10, orika89, orion17, orionthehunter, orti1997, orycteropus, orzage, orzechowski,
+oscargatto, oscarguille, oscarpi, oschwimmer, osdedicados, oskar, ospalh, ostrich, otherwise,
+otterbaskets, ouitroisheures19, overcooked, owlielovesbooks, oxalis, oxioxigen, oyd11, ozgeakd,
+ozkozturk, ozzie, paadraab, paarspaard, pabik, pablocg, pabsango, padrewill, pakim249, pallorwag,
+pan176, panagoa, panamicua, pancakeparfait, pandaaa217, pandark, pandrecespedes, panglossa,
+panini_head, papabear, papago, paper1n0, papersaltserver, papilichasisto, paradoxa4, parheliu,
+parishegaru, parkangie23, parpar, particle, pasrreeine, passa97, passionstrings, pastelite, pastvu,
+patgfisher, pathem, patpat, patricedenis, patrickhofmann2001, paula_guisard, pauldhunt, paulina,
+paulomiziara, paulosilas, paulstiles91, pautroncosom, paxvobiscum, pbannerman, pchamorro, pckv,
+pcmill, peachiesjunk, pedrolima, pedromarques, pedrowood, pedzi, pegah, peibolvig, peipei,
+pejcinovick, pekerappo, pelaez, pelwan, pencil, pengpau, penguooo, pepasepar, pept, pergpau, perry,
+persian, personalnotes, personny, peterius, peterngor, peterschwammy, petersmr, petrolukasido,
+petterha, phantomslikeamofo, phasmida, phatiwershi, phcavelar, phelcq, phenomenol, phikhanguyen,
+phil9064, philo_phineas, phiz, phoonaz, phrasemix, phuc, pia29, pierrephi, pierrka, pierrot105,
+pig8322, pigeonenglish, pikapika200, piksea, pileswasp, pimmhogeling, pinaxe, pinfano, pingsam,
+pinkfreud, pinkmoon, pinkmpnster, pinkymahoney, pinkyshoes, pip, pirografia, pirytm, piterkeo,
+pititnatole, pixelka, pizzigatto, pj95, pjer, pjh203, pkill, plaidchuck, pleidian, pliiganto, pllim,
+plover, plumblossoms, plupr, plutowu, pms3335, pnberk, pndyjack, pne, pnnaeem, pochy, poco, podcast,
+podsulnuxfilia, pokeonimac, polita, polm, polna, polski_ren, polygon, ponisio7, poogle, popball,
+porfiriy, postacinedim, posxo, potatoindespair, potatosoup, pouet, pqs, prajdzisvet, prakhar,
+pranjal710, pratheepr, prdx63, pricemar, primitivo, princes21, princesamee, princessfairy45,
+procroco, profesora, protondonor, pstamato, psychoslave, psyntium, pttxi, pullnosemans, puppetshow,
+purehearted, purichan, purple_ice, putyika, pvcweb, pvn2k5, pwang, pyeman23, pyn, pyrachi, pysmatic,
+qana, qassim010203, qcomplex5, qdii, qiaonasen, qislam, qiushu, qmak, qpuffs, qqoen, qsanta, qslg,
+quagliarella, qualiaa, queenie, quickfitter, quicksanddiver, quinnelope, quirkyowl, qumokun,
+quoctrong018, qwerly, qwertydiy, qwertzu, qweruiop, qwoat, qwopsno, r3cca, rabblerouzer,
+rachaelannebrown, rackam, radiochu, rado, radub, radubradu, raeldor, rafael8243, rafael_cs,
+rafaeld4, rafaeldejesus8199, rafaga, raff003, rafieyan, rafiurster69, rafmagon, ragazzobravo,
+raggione, raghebaraby, rahim, rahul2612, rainbow, rainbowcake, rainbyte, rains_and_shadows,
+raizaxyl, rajib, rajulbat, rakuda, ramanirudh, ramen, ramen_icastico, ramenro96, randeepxsingh,
+randomdude, randykomforty, ransah, ranwise, raonicalias, raphael, raqreqentba, raquelmena, ratatat,
+raton, ravas, ravensfeather, ravensique_, raverouge86, ravisave, rawdatadaniel, raychsy, rayshih715,
+razbijati, rbbrbb, rbrtk, rcakil, rchase, rdgscratch, rea92, rebeccadeho, reblica, rebrafi,
+regambit, regisb, rekrutacja, remline, remo, remod, ren, rene1596, rengoldovna, renhei, reputation,
+restcoser, retr0ra1n, retrieval8717, reubsboyd, reureya, reva12, revoluson, rex13, reyaln,
+reza_faghany, rezgoljan, rheotaxis, rhodges007, rhus, rhys_mcg, ri, riccioberto, ricfolfez, richke,
+richwarm, rickinalbi, rift, rike, rikugunntaisyou, rileyphone, ripplecake, risewithelsa,
+rishimahope, ritualesatanum, rkqb, rks, rmateo, rmccar1, rmdas, rmgao, rmhommedis, rmorgansizemoore,
+rncwnd, roaxx92, robbar42, robbieheslop, robbinorion, robert1991, robertroberg, robespain,
+robingaspi, robmen, robo731, robot_fury, rocharex1, rock_pups, rockelle, rodolfo333, roeschter,
+rohahtiio, rokii, rokito, rolodophone, ronin, roobarb, roquet, rosa_chinensis, rosbif, rosellek,
+rowansky, royhuggins, rozsarozsa, rpg, rpglover64, rpietri, rsankarpillai, rsarias, rtnF,
+rtomharper, ruccini84, ruealexander544, rul, runforyourllife, ruotsinkuningas, rupledo, russell359,
+russjohnson09, ruth_tatoeba, ruyl, rwsoley, ryankoz24, ryanl321, ryanthewired, ryanwhiting, ryanzer,
+rymor, ryryry, s0m30n3, s_b_, saasmath, saba, sabluck, sabretou, sabri3296, sacredceltic, sad15,
+sad2, sadhen, sadiavt, sado, sadtoots, saeb, saeedveradi, safa, saghdullayev, sahilkhan, sahink,
+saiko, saillier, sajid4656, sakaya, sakifan, sakina, sakshi, sakslane, sakura12, saladin,
+saladworks, salahvh, salikh, salpfish, salutony, saluyot, sam, sam4, sam_m, sambuko, samgurt,
+samir_t, samlaf, samrl17, samtanidalip, samueldora, samuelgilman, samuraiseoul, samypersian,
+sanafarooqui, sandra1305, sandratheresa, sangelo, sania, sano, sans, sansa, santosh, saorsa,
+sapphrein, saradayo, sarakabocha, saravilla922, sarefo, sarhang_3k, sashaitanya, satez416, satsu,
+satsuma, saturo, savella, saverius, saw_666, say123, saya_otonashi, sayment, scaui0, scheherezhad,
+schidu, schlagermanx, sciberc, scornfulpen, scorp09, scorpione24r, scottr, scriptin, scrungus,
+sctld, scylla, scypher, seabass, seagrif, seanbeeson, seanc, sebCurti, sebek5000, secnyt, secokit,
+secretkingdom, seda, see, seeker, sefersaatci, sejb, sekhar, selcuk83, selcukbasak, selpahi,
+seltsameseeds, semih71, semmmasa, sencay, send2dag, senorsmile, senryakun, sensi, seoetung, seohkna,
+sepidehakasi, septemberrr, septianw, serach, serapp, serbobosnacroat, serefsaid, seregas, serenbay,
+serendipity42, sergewa, sergio, sergiomelo, serxan, sestersparrow, setagaya, sethwp22, setite,
+seupessoa, seveleu_dubrovnik, sezerpicak, sfgdh, sfleisch314, sgrapt, shabana1707, shadowsofpegasus,
+shadyray601, shafiee, shagadu, shaheer, shahidali6, shaiju, shaima, shake0615, shami, shang,
+shanghainese, shangkuanlc, shankey, shannonams, sharavsambuu, sharptoothed, sharris123,
+shashank19gaurav, shayan, shea, sheepdog, shekitten, sheodox, shiba80, shibaddict, shibeilei,
+shiboy, shifa, shilpa, shinigami016, shipperspice, shirayuki, shirgoldbird, shirley_davis, shirlli,
+shiruchi, shishikyuu, shitsurei, shizel, shman613, shmo, shmoo22, shortiiboy, shotgun99, shou,
+shubhamd, shuhaibpps, shuhratullo, shuk86, shuuzui__i, shveta_f, shwinnebego, si_lud, sicerabibax,
+sickan, sicsoc, sidchem981, siener, sifhg, sigavax, siggg, signalzero, sikmir, silence001, silesian,
+silvermane, silviannna, silviez, silvioricardoc, simaran, simon86m, simonwilmes, simranbansal,
+sinakd, sinanbilek, sinatra, singetak, siranis, siriusbb, sirpoot, sismic, sithu015, sito_jaxa,
+sivelock, sixtynine, siyaad, siyanapavlova, ska2, skanne, skellyfish, skillmer, skilsholm,
+skodaoktavia, skrillex, skutieos, skylight, slahatuvelli, slampisko, slasherkidx, slashslasher,
+slats, slava_sh, slavlangs, slavneui, sleepcows, slegros, slist, slivercat, slomox, slyfin, smacu,
+small_snow, smarisbird, smdean, smertcan, smomo, smonff, smz, snailp4el, sniknejam, snl, snmn_9188,
+snn, snowxvi, snsk, snyder34, snyderdm, sobr_vamp, soderstrom, sofiamarkarian, softtoffol, sofwath,
+soheil, soj4l, sokhanh03, solejar, soliloquist, solkan, solor, solsikkeris, somberlain, somekinda,
+sonming, sonokta, sonrbfaq, soobee620, soredewa, soridsolid, sorpaas, soueihin, soulofwarrior,
+sourcaramel, soweli, soweli_Elepanto, soweli_Tansisi, soweli_Wasona, soweli_nata, space_badger,
+spaiku, spark, speedwell, spenceryonce, spesific, spiritofwonder, spockofvulcan, sportsfreak,
+spudrucket, sqrk_, srovorake, ssc73, ssgauri, ssss4444, ssvb, stagos, stancollins, stanyas,
+starzykj, stb, stebert, stebnbr, steborce, stefairy, stephenmac7, stephenmk, steve, steven1995,
+steverules123, stevesanterre, stomasz, stoney, stoopeedhooman, stormy_clau, strangeanalyst,
+strangequark, strickvl, stuartcarter, studybrick_samuel, subbeena, suborna, suenos, sugirajj,
+sugisaki, sugoi, sugoida, sugoisensei, suika, sukanyahans, sulfate0082, sumanthegde, sumeyye,
+summer, sunandita, sundown, sunflower, sungkhum, sungur, sunlight2020, sunnywqing, sunsmudge,
+superbolo, supercereal, supercoolbeas, supercoolbeas30, superdenden, superfrog42, superlove,
+supermarinete, supplementfacts, sure, surencko, susaneb, suzailirok, svarga, svhschinese, svoyer,
+swagner, swatin, sweethoney, sweety, swgoldwood, swingman57, swolesuki, swyter, syammohan1512,
+sygs4mp, syllablestalker, symstym, synjoo, syshko, sysko, szaby78, szago, szilvia, szilviez,
+szivike, szvx, szymonk, tOkeshu, t_hbilgin, tabidots, tabiste, tabular, taeekss, tailinks,
+taisanboku, talanchuk, tamayura, tamsanh, tamurt_taqvaylit15, tanay, tane, tangereeny, tanguy14,
+tannga1980, tanulni, tanytan, tanzoniteblack, tarasterisk, tardisgirl, tarim222, tariqu, tariro,
+taro, tarsier, tas4w, tatemame97, tato, tatoebaaround, tatoebaforme, tatoebaphil, tatoebashrek,
+tatoebater, tatoerique, tatomeimei, tatusp2011, tavin, taylorbr, taylorbront, taylortravel, tazi,
+tbokes, tboronczyk, tchrspet1, tdes, teapot, teazle, technodisney, teddo_kuruuzu, teejay, teek, teh,
+tekinosman, tekne, telsfbay, temlat, tengooi, tennisers, tennismonix, tentochi, terminaljunkie,
+terrylin328, terrynoti, terryos, terrywallwork, terseverseper_se, teruguw, teskmon, testdog,
+testonit, teto, tetuan, tgt, thak123, thalitanjos, thana, thanhba1, that_fairy, thatrobotdev,
+thayne, theHydroLance, the_usual, theachaean, theachubpk, thebigcheese, thechuff, thecooltrain,
+thedowntowncanon, theegyptian, thegayone, thegui, therryan, therush, thesilhouette, thestargazer,
+thetzk, theupandup, thevikas, theyoungchemist, thienhoang15722, thirteen13_13, thomasn,
+thomasstrand, thomsmells, thorin, thorns, thowas, thrash242, threewingdinner, threnko, thugje27,
+thunderbreak, thungo, thuthanh, tibuurcio, tieguy, tien_oroniel, tifhiggins, tigger, tigro1973,
+tijlan, tikan0, tillyni, tim1452, times, timgreig, timmartin, timoteojohano, timsa, timsehn,
+timur_seber, timvox, timzf, tinacalysto, tingathy, tinnatay, tinowls, tinybat, tinytina, tiramisu,
+titto98, tiziri, tjb1982, tjbaron, tjmdejesus, tjwhale, tkr, tkwswims, tlatelolco, tnnglue, tobjan,
+tod, togtog, tohidk98, toilaf, tokipona, tokyomews, tokzyk, tom0483, tomalrussell, tomgodber,
+tomkun01, tommg, tommo, tommy390, tommywastakenabunch6, tomn, tomo, tomsito, toneg, tonrobson,
+tonygonz, torishima, tortuga, toshify, toterzsebet, totochka, totpreussen, totsubo, tozka,
+traductorazo, traeton, trainman, tranglich, trans6, transfusion, translatorjo, tras, trau, treskro3,
+trieuho, tripbeetle, tritonka11, trochal, trotter, truando, trusti, tsani, tsayng, tseivo, tsole,
+tsp_2, tsuyuri, ttaa, tucm, tughandeniz, tulakalbeyo, tulin, turkishlearner, turklehceleri, turnips,
+turtletonsure, tusharjoshi, tutawomen, tuuli, tvindy, twacnvcoc, twentyplus, txoriburu, txw, tyam,
+tyhn, tykzz, tylergillies, tylerschmidt, uNiRoui, ubarun, uberclimber, uharish2017, ukocum, ulitka,
+ulivo, ultiva31, ultrasaurus, ulumills, ulymarrero, ulyssemc1, umano, umei423, umi_lucie,
+ummibrahim, umut243, une_monica, unhammer, unionprof, unitedheatexchangers, unlucky1312, unobaya,
+unrelatedwaffle, unsquare, upsidedowngirl, uptonpark1973, urbi, urro, ursaminor, urusahon,
+urusu_tom, usagi, user, user0003, usmaan, usmanmasaripov, usuyus, uxintro, vahanm, vaiakutuvalu,
+vaijiro, vain777, valeriiiiiiii, valestanov, valhentai, valie, valovski, vanajasredhar, vanda_t,
+vandpatr, varikvalefor, vasanvrs, vashti, vatsal228, vbkun, vdogamr, veganesta, vekiano,
+velatsonmez, vencxjo, ventana, venticello, ver, verbum, verdantyuu, verdastelo9604, verdulo, verogc,
+vertigo93, verymuchso, vest, vet, vetreny, vexvine, vgigregg, vicbiz, vicch, vicky_arancia,
+vicsantos, victorhugosilvaspbr, victoriousdigi, victorq10, victorromero85, viet8387, viethungckdl,
+vijar82, vijaysharma, vikvaering, viljami, vilnat, vin_japan, vincelens, vinhan, vinkaks, vinkara,
+vinuplkd, violetanka, violinmike, viorayli, viorel, vipiai, virgil, vishalgade18, vit_baisa,
+vitoreiji, viule, vivace160, vjohn, vlad, vlllhrms, vo_gne, vocaloidlover39, vodka, voksa, volkan,
+voloferenc, voodoo, vowelharmony, voxbubnya, vpbroman, vstrishnik, vudypai, vvv123, vxern, vyqsaeqq,
+wENNVaT, wacked215, wackjonny, waeltken, wafa, wakaran, wakatyann630, wakawakafoobar, waldrumpus,
+walkingwithpigs, wallebot, wallu, walmas, wanderingkate, wanglily22, wangzi0921, wannaC,
+warikdigital, warmaksen, warrenbisch, wasabi, washisnein, wasshoi, waste, watertreatment, watta,
+wavylips, wbech, wbrunhayne, webmistusik, wedget, weehawken, weihaiping, weirdie, wellmaxpower,
+wells, wentzbabble, weregoingunion, wescraftedguy, wesley, wess, wetfart, wetterfree, wettypup,
+weylaway, weyung, whinsp92, whipback, whitefishglobal, whitekite, whykels, willhite2, williantoshio,
+willie7296, willthemiller, windra, wingsofintegrity, winterstream, wir2ozz, wireman, witbrock,
+wittleghoul, wma, wnieboer, woldemariam, woldemort12, wolfgangth, wolfwind, wondersz1, wonkk, wreka,
+wrench, wtfslash, wubbol, wugongli798, wuhrytz, wuiwie, wwkudu, wxcraft, wyodoodoyw, wzhd, xLilithx,
+xallace, xamvolagis, xarxes, xavc3141, xbx, xellugis, xenoborg21, xhlulu, xiaohong, xiaomo,
+xicotenga, xinhongww, xiongmao, xiuqin, xiuyuan, xlenchik, xmoffx, xorgy, xrchz, xtofu80, xugermany,
+xvictoria, xx22yy, xylian, xylopoppo, yabancee, yacine_1, yacsama, yaela107, yagli18, yakakadir,
+yakk, yamanq, yamashin, yanders, yangra, yaren_Toraman10, yarnx, yaron, yarrow, yashar, yashtib1995,
+yatomoya, yatyayat, yavuz, yavuzb, yavuzt, ydcok, ye3t, yecca, yesjustryan, yessoos, yetes, yethay,
+yfou, yifen238, yigitpia, yirhrgyd, yldz06, yobiouane, yodamo, yohurokano, yoloxochitl, yomna1993,
+yonaka_mousou, yorickvidal, yosia49, yossef, youmu, yourselfiegotleaked, yszczaaelg, ytc, ytugen,
+yu, yue_dongchen, yuiyu, yujiang, yujin, yukuhashiguy, yulesan, yura, yurayurateikoku, yurtkz,
+yurusu, yusuf_1991, yusufartuc, yusufco, yusufhakan12, yusufsarici, yuumei, yuuya, yuya, yvesnev,
+zSCRAM, zacbennett, zacharyofthesea, zachleigh, zahurdias, zakisukuk, zakkaya, zalaim, zaman_rasikh,
+zaneselvans, zarisi, zaure, zawtunlatt, zaytsev126, zellator, zeyde, zezhyrule, zgarbas, zgv,
+zhangsan, zhaoxin, zhekka, zhoucantd, zhouj1955, ziggsmith, zipangu, zlisia, zmah47jr, zmg213, zmoo,
+znc, zoeker, zogwarg, zoom, zorgzikhnit, zormax, zornn, zosia, zpaden, zrajm, zuikng, zumbeispiel,
+zumley, zvaigzne, zvzuibqx, zwhzwh, zyy915, zzxjoanw, zzz
+
+English proper-name package (english_names.rfen)
+Source: Wikidata structured data, pinned query snapshot 2026-10-08.
+License: CC0 1.0 Universal — https://creativecommons.org/publicdomain/zero/1.0/
+Policy: https://www.wikidata.org/wiki/Wikidata:Licensing
+Selection, provenance, source snapshot and reproducible build manifest:
+Tools/BuildLexicon/EnglishNames/README.md
+
+Rectfly English canonical casing
+================================
+english_casing.tsv is derived from the same complete English Tatoeba export
+and uses the contributor attribution above (CC BY 2.0 FR). Downloaded again
+on 2026-10-09; SHA256 is identical to the pinned 2026-10-03 snapshot:
+d2c8fc271db70967cbf6e74069b34f394eccccca4a61fc84039e0f0549016ee8.
+Modifications: deduplicated; same 10% holdout excluded; sentence-internal
+case-form counts reduced to preferred display spellings and ambiguity flags.
+No sentence texts are bundled. Rebuild: Tools/BuildLexicon/build_english_casing.py.
+
+english_casing_context.tsv uses the same source, contributors and held-out split
+as english_casing.tsv. It stores previous-word pairs whose sentence-internal
+capitalization has at least 3 training observations and 95% capital support.
+Rebuild: Tools/BuildLexicon/build_english_casing_context.py. CC BY 2.0 FR.
+
+
+English offensive-word admission list
+Source: https://github.com/dsojevic/profanity-list/tree/c27924319aa9bd6f917e3782b4f4b6604a50b652
+Modified: severity >= 2, whole-token/phrase matching, vocabulary-supported inflections
+excluding per-entry upstream exceptions.
+
+MIT License
+
+Copyright (c) 2021 David Sojevic
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Rectfly English acronym statistics
+=================================
+Derived from the original Tatoeba English detailed export retrieved 2026-10-16.
+Source: https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences_detailed.tsv.bz2
+Compressed SHA-256: 1d8c40545b4af2c6531d1a8b64941fa9d0fa3ee5bcc11cb705c8d8c1fd930c84
+License: CC BY 2.0 FR https://creativecommons.org/licenses/by/2.0/fr/
+Modifications: normalized-sentence deduplication, 10% holdout removed;
+sentence-internal abbreviation counts and canonical casing only. No sentences bundled.
+Rebuild: Tools/BuildLexicon/build_english_acronyms.py
+Attribution: Tatoeba contributors, including the named owners above and anonymous/unowned sentences.
+Additional named owners in this export:
+Squarerobot, humed_adam

@@ -1,0 +1,325 @@
+# Attributions
+
+## Unicode Unihan character readings
+
+- Author: Unicode, Inc.
+- Source: https://www.unicode.org/Public/17.0.0/ucd/Unihan.zip (Unicode 17.0.0)
+- License: Unicode License v3 (Unicode-3.0), https://www.unicode.org/license.txt
+
+`Data/CharacterSource` retains the pinned kTGH, kMandarin, kHanyuPinyin,
+kTGHZ2013 and kXHC1983 property values and source hashes. The independent
+`Tools/BuildLexicon/build_characters.py` strips tone marks, merges all readings
+and omits compatibility duplicates and syllabic readings that the existing
+Xiaohe codec cannot encode. Common dictionary readings for these characters
+are retained from the existing Rectfly source and amzxyz’s CC-BY-4.0 RIME-LMDG
+`zi.dict.yaml`, commit `5568f955750ca4b58deaafd4a18e2c6cf62562c9`. The exact
+reading supplement, upstream hash and CC-BY license are in `CharacterSource`. It produces `characters.tsv` and the
+shared, mapped `characters.rflx`, ordered by the Wanxiang weights described below
+and filtered by iOS system-font coverage. This source uses no Gboard or rime-ice data.
+The full copyright and permission notice is bundled in `Unicode-LICENSE.txt`
+in both targets and displayed in the App’s 致谢 page.
+
+
+## Wanxiang high-frequency core and exact-only cold words
+
+- Authors: amzxyz and RIME-LMDG contributors.
+- Optional exact-code packs: mingren, diming, renming, shici, wuzhong, yaopin,
+  yixue, huaxue, duoyin, cuoyin, fangyan, taifeng and yiren, all from full commit
+  `e5cb7dbebeacb5ddad63289640940105ef32cf45`. Per-file download and derived-data
+  SHA256 values are in `Data/WordSource/source.json`; used copies in `Data/WordSource/Packs`.
+  Missing source frequencies use 1; the core/cold frequency units are unchanged.
+  Abbreviation/T9 tables and mixed-script input rules are not included.
+- Source: https://github.com/amzxyz/RIME-LMDG/tree/e5cb7db
+- License: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/.
+- Changes: tone removal, Xiaohe canonicalization, word/pronunciation deduplication
+  by source maximum, omission of malformed/unencodable rows, frequency selection
+  for the core and compact exact-code indexing for cold words. No frequency
+  rescaling or extra coefficients.
+- Public, unencrypted used-data copy: `Data/WordSource/wanxiang-used.tsv`.
+  `Data/Wanxiang-LICENSE.txt` is bundled/displayed. A public source copy is not
+  an ETM exemption; release requires the channel checks in `Data/WordSource/README.md`.
+- Owner userdb records are a separate imported private layer, not in this copy.
+- Release attachment: `wanxiang-used-e5cb7db.tar.gz`, built and byte-verified by
+  `Tools/BuildLexicon/package_wanxiang_source.py`. Publish it as a separately
+  downloadable, unauthenticated release asset. If this source repository or its
+  releases are private, publish the attachment on a public release mirror before
+  distributing the App. See `Data/WordSource/README.md` for the release procedure.
+
+## wanxiang RIME-LMDG (dictionaries + grammar model)
+
+- Author: amzxyz
+- License: CC-BY-4.0
+- URL: https://github.com/amzxyz/RIME-LMDG
+
+`Data/CharacterSource/wanxiang-zi.dict.yaml` preserves the character dictionary
+from commit `e5cb7db` (amzxyz, CC BY 4.0). The derived `characters.tsv` and
+`characters.rflx` remove tone marks, convert readings to Flypy codes, merge
+same-character/same-code weights by maximum, and exclude characters without
+iOS 26.5 system-font glyphs. Missing weights are zero; supplied weights are unchanged.
+The full license is in `Data/CharacterSource/Wanxiang-LICENSE.txt`.
+
+The optional grammar download is the unchanged `wanxiang-lts-zh-hans.gram` from
+[amzxyz/rime-wanxiang-data LTS](https://github.com/amzxyz/rime-wanxiang-data/releases/tag/LTS).
+The October 19, 2026 asset has 398,497,836 bytes and SHA-256
+`9eedac1d836f3fdafb61b162035c8937253aedc106be40b2b957d9ab64e9ed89`.
+The pinned fallback `wanxiang-lts-20260909.gram` is the unchanged September 9, 2026 LTS
+model (asset 552602424; 420,339,756 bytes; SHA-256
+`1eb651288b117e68374110b32796346e128be790e994559cb7c1e3b0fd63029d`).
+The App downloads the upstream asset (or pinned `ann61c/rectfly` fallback) into the App Group;
+the keyboard and App preview map that same file. It is not bundled. Attribution and the CC BY 4.0 license link are included in both bundles'
+`Octagram-LICENSE.txt`.
+
+## librime-octagram (grammar format and query defaults)
+
+- Author: lotem
+- License: BSD-3-Clause
+- URL: https://github.com/lotem/librime-octagram
+
+The plugin's source (`gram_db.h`, `gram_db.cc`) documents the on-disk gram
+format (Rime MappedFile header + darts-clone double-array trie). The offline
+extractor and Swift runtime reader implement that published layout.
+`Shared/OctagramLanguageModel.swift` adapts the basic-Han, non-rear word-query
+defaults from commit `bfb168ca33d8b372596fdf2007933f3da1cf360e`.
+Copyright (c) 2014, RIME Developers. The full BSD-3-Clause license is retained
+in `Data/Octagram-LICENSE.txt` and included in the App and keyboard bundles.
+
+## English frequency dictionary
+
+`Data/english_words.tsv` derives from Wolf Garbe's SymSpell frequency dictionary,
+revision `c239062ae02961df18ab7da1671d01b4388204e0`, filtered to ASCII letters and
+apostrophes and sorted by word. The upstream truncated `you'v` is corrected to
+`you've`; original frequencies are unchanged.
+
+- Source: https://github.com/wolfgarbe/SymSpell/blob/c239062ae02961df18ab7da1671d01b4388204e0/SymSpell/frequency_dictionary_en_82_765.txt
+- SymSpell: MIT, copyright 2018 Wolf Garbe.
+- Google Books Ngram frequencies: CC BY 3.0, https://creativecommons.org/licenses/by/3.0/.
+- SCOWL vocabulary: https://wordlist.aspell.net/scowl_v1-readme/.
+- Required notices are bundled in `Data/English-LICENSE.txt` in both targets.
+- Rebuild: `Tools/BuildLexicon/build_english.py`; pinned source and output SHA-256
+  values are checked. No SymSpell implementation or runtime dependency is used.
+
+## English word-pair frequencies
+
+`Data/english_bigrams.tsv` derives from the same pinned SymSpell distribution's
+`frequency_bigramdictionary_en_243_342.txt` (MIT repository license retained in
+`English-LICENSE.txt`). Both words must occur in the bundled English vocabulary;
+only the eight highest-frequency continuations per preceding word are retained.
+Counts are unchanged; ties use alphabetical order.
+
+`Data/english_context.bin` retains all 242,342 vocabulary-matched pairs from
+that same source for spelling-candidate ranking. Its 80-byte header records
+format version, vocabulary hash and row count; sorted 16-byte little-endian
+records contain a pair of vocabulary IDs packed into a 64-bit key and the
+unchanged 64-bit count. It contains no additional corpus or learned user data.
+SHA-256: `3fa9d6d400d29dd770f35bc60fd14f9cd66b711e6c6ab8c6f76d0dd1f6d0cb15`.
+
+- Source: https://github.com/wolfgarbe/SymSpell/blob/c239062ae02961df18ab7da1671d01b4388204e0/SymSpell/frequency_bigramdictionary_en_243_342.txt
+- Source SHA-256: `fd892a160184101dd7ae807ac5a302d01fcea1c47304181a8ed7ed9c94545bcd`.
+- Rebuild with `build_english.py --bigrams-source PATH`; source/output hashes
+  and 64,097 retained rows are checked.
+
+This is a separate word-pair table; the unigram corpus description above is
+not evidence that the word-pair counts came from that same corpus.
+
+## English regional spelling variants
+
+
+
+`Data/english_variants.tsv` is a modified subset of [VarCon 2020.12.07](https://wordlist.aspell.net/varcon-readme/),
+pinned to en-wl/wordlist revision `b22230cc5250887737fdefe9ca4c9d9d01230eaa`.
+It adds 875 missing preferred/equal American and British spellings from verified
+clusters through SCOWL level 60. Archaic usage rows and rare/improper variant
+tags are excluded. Each spelling maps to an already covered form; when several
+forms are covered, the highest existing frequency wins, with alphabetical ties.
+
+The runtime borrows that form's frequency prior and context evidence. These are
+not independently measured counts for the added spelling. The original vocabulary
+and context resource remain byte-for-byte unchanged, including their word IDs.
+
+- Source: https://github.com/en-wl/wordlist/blob/b22230cc5250887737fdefe9ca4c9d9d01230eaa/varcon/varcon.txt
+- Source SHA-256: `75af63da46ec12d7eb14b9f1ba8d3898d484dd6872755b73c921b215875a3629`.
+- Output: 18,631 bytes; SHA-256 `36f5a606d2ef2aa53030363814752c8793fdd36f5c334f3222c375bd24dba615`.
+- Kevin Atkinson, Benjamin Titze and Geoff Kuenning notices are retained in the
+  App and extension's `English-LICENSE.txt`. VarCon is an archived source; it is
+  not presented as the current ESDB dataset.
+- Rebuild: `Tools/BuildLexicon/build_english.py SOURCE --variants-source VARCON_SOURCE`.
+
+## English sentence starters and modern word continuations
+
+- Authors: Tatoeba contributors; all named sentence owners from the export are
+  listed in `Data/English-LICENSE.txt`, bundled in both the App and keyboard.
+- Source and export license: https://tatoeba.org/en/downloads
+- Snapshot: complete English detailed export, October 3, 2026,
+  https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences_detailed.tsv.bz2
+- License: CC BY 2.0 FR, https://creativecommons.org/licenses/by/2.0/fr/
+- Modified: deduplicated sentences, removed a disjoint 10% evaluation holdout,
+  extracted and bounded sentence-start, word-pair and three-word counts;
+  sentence texts are not distributed. The derived tables are
+  `Data/english_starters.tsv`, `english_prose_pairs.tsv` and
+  `english_prose_trigrams.tsv`.
+- Offline rebuild: `Tools/BuildLexicon/build_english_prose.py`; the compressed
+  source SHA-256 is pinned in the script. App Settings → About → Acknowledgments
+  exposes this attribution, license link, modifications and complete notices.
+
+## English recorded word evaluation
+
+`RectflyUIKitTests/Fixtures/ITE` contains modified, selected records from
+[ITE Typing dataset v1](https://zenodo.org/records/12528163), published by
+Katri Leino / Aalto University under [CC BY 4.0](RectflyUIKitTests/Fixtures/ITE/LICENSE).
+Authors of the accompanying 2024 article: Katri Leino, Markku Laine, Mikko Kurimo
+and Antti Oulasvirta. The fixture README and manifest record selection, provenance
+and limitations. The data is included only in the UIKit test bundle; reference
+words and other keyboards' outputs are evaluation labels, never decoder input.
+## Emoji and annotations
+
+The keyboard bundles Unicode Emoji 17.0 fully-qualified data and an emoji-only
+subset of CLDR 48 Chinese/English annotations, under Unicode License v3.
+Sources, rebuild instructions and the complete license are in
+[`Data/Emoji/README.md`](Data/Emoji/README.md) and
+[`Data/Emoji/UNICODE-LICENSE.txt`](Data/Emoji/UNICODE-LICENSE.txt).
+
+## English screen-title display metadata
+
+`Data/english_screen_titles.tsv` is separate display metadata derived from the
+public [Wikidata Query Service](https://query.wikidata.org/) (2026-10-07 UTC).
+It retains 1,362 existing vocabulary words that are single-word film/television
+titles with at least 20 sitelinks. It adds no words or private user data.
+Wikidata structured data is [CC0](https://www.wikidata.org/wiki/Wikidata:Licensing).
+The pinned snapshot, exact query, source IDs, SHA-256 values and offline builder
+are documented in `Tools/BuildLexicon/EnglishScreenTitles/README.md`.
+
+## English proper names
+
+`Data/english_names.rfen` uses Wikidata structured data under
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/), pinned to the
+2026-10-08 query snapshot, the fixed 2026-10-14 technology query,
+2026-10-15 subclass coverage, and 2026-10-22 app/website/software/brand query.
+The last query prefers English labels and falls back to Wikidata multilingual
+(`mul`) labels. All snapshots contain structured data only. The
+project-authored public-name supplement is also released under CC0 1.0; it
+contains names only, with no user input context. See
+[the source and build manifest](Tools/BuildLexicon/EnglishNames/README.md).
+
+## American vocabulary
+
+`Data/english_us.tsv` and `Data/english_us.rfen` are project-authored vocabulary,
+curated for the owner’s Rime configuration (`en_us.dict.yaml`, 2026-09-19).
+The 480 entries cover chain brands, stores, banks, insurers, government
+abbreviations and place names. Display spelling, punctuation and explicit
+input codes are preserved; no third-party dictionary is used.
+Rebuild with `python3 Tools/BuildLexicon/build_english_us.py`.
+
+## Poetry next-line pack
+
+`Data/poetry.rfpo` contains 823 ancient works (all 822 source records plus 易水歌) and 24,410 adjacent
+clause mappings. The source revision, original SHA-256 checksums, inclusion rules,
+reviewed readings and build instructions are in [the manifest](Tools/BuildLexicon/Poetry/sources.json)
+and [documentation](docs/poetry-pack.md). Only ancient body text, titles and
+authors are retained. Changes: full-corpus import, editorial-note removal, traditional to
+simplified conversion, reviewed pinyin and the documented 洒→酒 typo correction.
+The independently transcribed public-domain 《易水歌》 is from 《史记·刺客列传》.
+The 3-work test fixture remains separate from product resources.
+
+Upstream: [chinese-poetry/chinese-poetry](https://github.com/chinese-poetry/chinese-poetry/tree/b8594f81a89752241442f2ce267d6f66f96704ee).
+[MIT license at the pinned revision](https://github.com/chinese-poetry/chinese-poetry/blob/b8594f81a89752241442f2ce267d6f66f96704ee/LICENSE):
+
+```text
+The MIT License (MIT)
+
+Copyright (c) 2016 JackeyGao
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```
+
+### English canonical casing
+
+`Data/english_casing.tsv` and `Data/english_casing_context.tsv` derive case-form counts from the pinned Tatoeba
+English detailed export (2026-10-03; byte-identical download on 2026-10-09),
+under [CC BY 2.0 FR](https://creativecommons.org/licenses/by/2.0/fr/).
+Source: <https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences_detailed.tsv.bz2>.
+Attribution: Tatoeba contributors; the full existing owner list and notices
+remain in `Data/English-LICENSE.txt`. Deduplicated sentence-internal counts
+exclude the same 10% holdout and are reduced to spellings/ambiguity flags and high-support previous-word pairs.
+No source sentences are shipped. See `docs/ENGLISH_CASE.md` for the policy.
+
+### English offensive-word admission
+
+`Data/english_offensive.tsv` derives from David Sojevic's
+[dsojevic/profanity-list](https://github.com/dsojevic/profanity-list), under MIT
+(2021 David Sojevic; full notice in `Data/English-LICENSE.txt` and
+`Tools/BuildLexicon/Offensive/LICENSE`).
+
+- Commit: `c27924319aa9bd6f917e3782b4f4b6604a50b652`.
+- Source: <https://raw.githubusercontent.com/dsojevic/profanity-list/c27924319aa9bd6f917e3782b4f4b6604a50b652/en.json>.
+- Source SHA-256: `bcf8bfc09dd3f7480972cb041a4cba291a6ff16a6fbf29022d5d679e3c39502c`.
+- Vocabulary SHA-256 (`Data/english_words.tsv`): `a91457abe5d196228c3f351239e98fe1cba1f206661c75c4075a972b363c5199`.
+- Generated SHA-256: `5338b2b7190b6e82a4cb0fcb7620b6a084699bd27ada63b9cb52f8e2e02b377d`.
+- Rebuild: `python3 Tools/BuildLexicon/build_english_offensive.py`.
+
+The existing English source resources have no usable offensive-word flag.
+This source provides severity metadata, unlike a flat blocklist. Apply the same
+rule to every entry: retain upstream severity 2–4, exclude severity 1 (mild).
+Of 434 source entries, 406 are retained and 28 excluded. Expand explicit aliases,
+then materialize repeated-letter forms and common suffixes (`s/es/ed/ing/er/ers`)
+only when present in the pinned existing English vocabulary, excluding each
+entry's upstream exceptions from its expanded forms (`*` substitutes the matched
+word). Explicit aliases remain intact. This removes 12 expanded forms, including
+`spices`, `spiced`, `spicer`, `spicing`, `dicker`, `cocker` and `cockers`, and produces
+756 unique whole words/phrases. Runtime matching uses whole tokens and phrases,
+with punctuation (including straight/curly apostrophes) separating tokens, never
+arbitrary substrings; `class`, `shell`, `Scunthorpe`, `cockpit` and `Dickinson`
+remain available.
+
+Ambiguity is not resolved by guessing intent or handpicking exceptions. Ordinary
+or polysemous entries include `ass`, `bloody`, `Christ`, `hell`, `Jesus`, `snatch`,
+`breasts`, `genitals`, `nipples`, `penis`, `rectum`, `semen`, `vagina` (excluded
+by severity); `anal`, `bareback`, `bastard`, `bitch`, `chink`, `cock`, `collaring`,
+`cornhole`, `Dick`, `domination`, `dyke`, `fag`, `fingering`, `grope`, `haji`,
+`intercourse`, `jelly donut`, `lovemaking`, `nude`, `pansy`, `panties`, `pegging`,
+`playboy`, `poof`, `rape`, `retard`, `scissoring`, `sex`, `shrimping`, `sissy`,
+`skeet`, `snowballing`, `spastic`, `spunk`, `switch hitter`, `threesome`, `topless`,
+`twink`, `vibrator`, `wet dream`, `xxx`, plus identity terms `cishet`, `enby`,
+`transbian` (retained by the same severity rule). This is an admission policy for
+unsolicited suggestions, not a judgment about a word or its speaker. Fully typed
+literal text stays available unchanged, including its case.
+
+All 28 excluded entry IDs: `anus`, `ass`, `bloody`, `bollocks`, `boob`, `breasts`, `bugger`, `christ`, `crap`, `damn`, `dingleberry`, `genitals`, `hell`, `jap`, `jesus`, `kraut`, `mayonnaise-monkey`, `nipples`, `penis`, `pubes`, `rectum`, `semen`, `snatch`, `sod-off`, `sodding`, `vagina`, `venus-mound`, `wog`.
+
+Upstream severities are subjective; its README notes that many original entries
+defaulted to severity 3. Consequently ordinary senses can lose suggestions, and
+some offensive senses of mild entries remain. This finite resource also does not
+cover every new spelling or phrase. The user-facing switch restores the original
+candidate behavior completely. No ranking scores or evaluation scoring change.
+
+## English acronym statistics
+
+`Data/english_acronym_casing.tsv` derives from the
+original Tatoeba English detailed export, retrieved 2026-10-16, under CC BY 2.0 FR
+(https://creativecommons.org/licenses/by/2.0/fr/). Source:
+https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences_detailed.tsv.bz2
+Compressed SHA-256: `1d8c40545b4af2c6531d1a8b64941fa9d0fa3ee5bcc11cb705c8d8c1fd930c84`.
+
+The generator deduplicates normalized sentences, removes the deterministic 10%
+holdout and segment-initial words, then selects repeated short abbreviation forms.
+Training token counts remain in the private generation report; the bundled table
+contains only keys and canonical forms.
+No source sentences are bundled. Contributor attribution, including additional
+export owners, is retained in `Data/English-LICENSE.txt` in both targets. Rebuild
+with `Tools/BuildLexicon/build_english_acronyms.py`; see
+`docs/evidence/english-acronyms.md` for thresholds and hashes.
