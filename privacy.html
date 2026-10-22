@@ -22,7 +22,7 @@
       <h1>隐私政策</h1>
       <p class="lead">你打的字，留在你的设备上。</p>
       <p class="meta">更新于 2026 年 10 月 22 日 · 中文为主，附英文</p>
-      <aside class="draft" aria-label="草案状态"><strong>发布前草案</strong><p>本政策按公开版“输入日志默认关闭、评测结果经同意后由系统分享导出”的约定编写，须在公开版行为核验通过后生效。</p></aside>
+      <aside class="draft" aria-label="草案状态"><strong>发布前草案</strong><p>本政策按公开版“输入日志默认关闭、评测结果由用户通过邮件发送，未配置邮件时退回系统分享面板”的约定编写，须在公开版行为核验通过后生效。</p></aside>
       <nav class="contents" aria-label="政策目录"><a href="#data">输入与学习</a><a href="#logs">输入日志</a><a href="#access">完全访问</a><a href="#network">联网边界</a><a href="#evaluation">联邦评测</a><a href="#english" lang="en">English</a></nav>
       <section id="data"><h2>输入与本机学习</h2>
         <p>Rectfly 键盘扩展不联网。中文纠错、英文补全、词语联想和个人学习在设备上完成。输入文字、导入的 Rime 用户词库及学习记录只在本机使用，不上传到我们的服务器，也不在设备间同步。</p>
@@ -43,7 +43,7 @@
       </section>
       <section id="evaluation"><h2>联邦评测与自愿分享</h2>
         <p>联邦评测使用已有的本机输入记录，对比现版与候选新版的结果，计算过程与结果留在本机。你可在 App 内关闭评测。</p>
-        <p>按公开版约定，仅当你明确同意并操作系统分享时，才导出胜负统计。没有自动上传或接收统计的服务器，是否发送、发送给谁由你选择。</p>
+        <p>你点击“分享”后，App 会打开预填好的邮件，收件人为 <a href="mailto:rectfly@fastmail.com">rectfly@fastmail.com</a>，并附上评测统计文件。你可以检查邮件和附件，再自己点击“发送”，也可以取消。未配置邮件时，App 会退回系统分享面板，由你选择如何分享。Rectfly 没有接收评测结果的服务器，不会自动发送。</p>
         <p>导出内容包括“两版都对、只有现版对、只有新版对、两版都错”等计数、总数和按输入长度分组的统计，以及实验标识、构建版本标识和完成日期；不含输入文字、所选词语、拼音或按键记录。评测统计与可能含文字的故障包是不同文件。</p>
       </section>
       <section id="website"><h2>本网站与联系</h2>
@@ -54,12 +54,12 @@
       <section class="english" id="english" lang="en" aria-labelledby="english-title">
         <h2 id="english-title">Privacy policy · English</h2>
         <p class="meta">Updated October 22, 2026 · Pre-release draft</p>
-        <p>This draft describes the intended public release: input logging is off by default and evaluation statistics are exported only with consent through the system share sheet. It takes effect after those behaviors have been verified in the public build.</p>
+        <p>This draft describes the intended public release: input logging is off by default and evaluation statistics are sent by the user via email, with the system share sheet as a fallback when email is not configured. It takes effect after those behaviors have been verified in the public build.</p>
         <h3>Typing and local learning</h3><p>The Rectfly keyboard extension does not access the network. Correction, completion, suggestions and personal learning run on your device. Typed text, imported Rime user dictionaries and learning records stay local; they are not uploaded or synced between devices. We do not collect personal information through Rectfly. There are no third-party SDKs, ads or tracking tools.</p>
         <h3>Optional logs and fault bundles</h3><p>Input logging is off by default in the public release. If you enable it under Privacy &amp; Data, logs are stored locally and may contain text, candidates, touch events and surrounding context, including verification codes entered into ordinary fields. You can disable logging and delete existing logs separately. Local learning can be reset separately. Turning logging off does not delete existing files.</p><p>Keyboard fault capture is a separate option. When enabled, long-pressing “123” saves a recent fault bundle for manual sharing from the app. Bundles may contain text and context. Review them and remove private information before sharing.</p>
         <h3>Full Access</h3><p>The extension requests Full Access for local sharing of settings, haptic preferences, imported dictionaries, installed grammar models and personal learning between the app and keyboard, as well as optional logs and manual fault export. iOS also grants network capability with this permission; Rectfly's keyboard does not use it to send your input. Basic typing works without Full Access, while shared features may be limited. You may revoke it in iOS Settings at any time.</p>
         <h3>Grammar downloads</h3><p>The main app checks GitHub's public release API for grammar updates at launch or when you request a check. It downloads model files only when you choose to download or update them. Installed models are used offline and can be deleted in the app. Requests do not include typed text, dictionaries, learning records or input logs. GitHub and download services receive connection information such as your IP address. Rectfly operates no server to receive input or evaluation results.</p>
-        <h3>Federated evaluation</h3><p>Evaluation compares versions using existing local input records. Processing and results remain on your device, and evaluation can be disabled. Under the public-release policy, statistics are exported only after explicit consent using the system share sheet; there is no automatic upload or receiving server. You choose the recipient. The export contains win/loss counts, totals, input-length buckets, experiment and build identifiers, and a completion date. It contains no typed text, selected words, pinyin or key events. Fault bundles are separate and may contain text.</p>
+        <h3>Federated evaluation</h3><p>Evaluation compares versions using existing local input records. Processing and results remain on your device, and evaluation can be disabled. When you tap Share, the app opens a prefilled email addressed to <a href="mailto:rectfly@fastmail.com">rectfly@fastmail.com</a> with the statistics file attached. You can review the message and attachment, then tap Send yourself, or cancel. If email is not configured, the app falls back to the system share sheet so you can choose how to share. Rectfly has no server receiving evaluation results and never sends them automatically. The export contains win/loss counts, totals, input-length buckets, experiment and build identifiers, and a completion date. It contains no typed text, selected words, pinyin or key events. Fault bundles are separate and may contain text.</p>
         <h3>Website and contact</h3><p>This static website uses local images and CSS, with no scripts, cookies, analytics, external fonts or third-party embeds. External links open only when selected. The intended host, GitHub Pages, may process IP addresses and other request information needed to serve pages. Contact <a href="mailto:rectfly@fastmail.com">rectfly@fastmail.com</a> about privacy. Messages you choose to send are handled by email services; avoid including sensitive input records.</p>
       </section>
     </main>
