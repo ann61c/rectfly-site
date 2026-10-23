@@ -1,0 +1,23 @@
+# 宣传截图 · 2026-10-23
+
+真实 Rectfly 键盘扩展；独立、全新 iPhone 17 Pro / iOS 27.0 模拟器，浅色模式，现有简单文本框宿主。PNG 均为原生 1206 × 2622；除明确命名的 annotated 图外，PNG 均为未修改的截图。
+
+| 文件 | 实际按键 | 画面内容 |
+| --- | --- | --- |
+| correction.png | `wouigfvshztzks` | 首候选「我十分钟后有空」；没有上屏 |
+| correction-annotated.png | 同上 | 额外标注按键、标准双拼和首候选；原图另存 |
+| correction.mp4 | 同上 | 从空输入到整句首候选的真实输入过程；7.73 秒，166,446 bytes，1206 × 2622 |
+| mixed.png | `meeting` | 中文模式，首候选 `meeting` |
+| keyboard.png | `woui` | 普通中文输入，首候选「我是」 |
+| settings.png | 无 | 双拼方案「小鹤双拼」和「用户词」入口 |
+| settings-import.png | 无 | 「用户词」子页的导入入口，明确标示支持 Rime userdb.txt |
+
+纠错句来自公开评测集 `eval/public-v1/sentences.tsv` 的 `s0005`，来源 Tatoeba，未使用私人日志。标准双拼为 `wouiffvshzyzks`；实际第 5 个键 f → g、第 11 个键 y → t，两处均为相邻键。
+
+产品源码基线：`696a6cfb58fe2586fe21a8afdaffce33fd8321e5`。没有修改产品代码。使用 Release 配置和 `RECTFLY_PUBLIC_BUILD=YES`，构建后以及拍摄后均通过 `Tools/BuildLexicon/check_public_bundle.py`。安装包不含 private-posterior.rflx，也没有复制或导入用户词库、用户日志或学习数据。
+
+语法从项目 `Data/wanxiang-lts-20260909.gram` 安装到模拟器的标准 Grammar 共享存储，使用与公开版下载相同的 installed.json 元数据：420,339,756 bytes，SHA-256 `1eb651288b117e68374110b32796346e128be790e994559cb7c1e3b0fd63029d`。语法未塞入安装包。
+
+已目视核查全部 PNG 的候选栏、文本框与设置内容；已按逐秒画面核查 MP4 从空输入、逐键输入到最终首候选。未出现私人词、人名或私人日志原句。UIKit 驱动同时断言整句首候选为「我十分钟后有空」。驱动仅存在官网仓库之外的临时目录。
+
+Rime 导入与双拼方案位于两个实际页面，因此分别保留两张原生截图，没有拼接成虚构设置页。这里只交付素材，尚未替换官网中的排版示意键盘。
