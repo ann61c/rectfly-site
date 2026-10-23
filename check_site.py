@@ -58,6 +58,6 @@ for name, page in pages.items():
 css = (ROOT / "styles.css").read_text()
 assert "@import" not in css and "url(" not in css, "Unexpected stylesheet resource"
 assert "prefers-color-scheme: dark" in css
-assert "#testflight" in PAGES["index.html"].read_text()
+assert "https://testflight.apple.com/join/un67VMZe" in PAGES["index.html"].read_text()
 assert "默认关闭" in PAGES["privacy.html"].read_text()
 print(f"PASS: {len(pages)} pages; local links/anchors, contact, landmarks, no remote embeds or scripts")
