@@ -79,8 +79,6 @@ figcaption { font-size: 12px; margin-top: 12px; }
 .document h3 { margin-top: 24px; }
 .document .lead { font-size: 19px; color: var(--muted); }
 .meta { font-size: 13px; }
-.draft { padding: 18px 22px; margin-block: 25px 32px; border: 1px solid var(--line); background: var(--panel); font-size: 14px; }
-.draft p:last-child { margin: 0; }
 .contents { display: flex; flex-wrap: wrap; gap: 8px 24px; border-block: 1px solid var(--line); padding-block: 18px; margin-block: 30px; font-size: 14px; }
 section[id] { scroll-margin-top: 24px; }
 .document ol, .document ul { padding-left: 1.5em; }
