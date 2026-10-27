@@ -9,7 +9,7 @@ https://ann61c.github.io/rectfly-site/ ，由 GitHub Pages 从 `main` 发布。
 | 页面 | 要点 |
 | --- | --- |
 | `index.html` | iOS 双拼键盘、整句纠错、离线输入、Rime 用户词导入、四种双拼、中英混打；TestFlight 公开测试入口 |
-| `privacy.html` | 中英隐私政策：日志默认关闭、本机学习、完全访问、主 App 语法联网、用户自行邮件发送评测统计 |
+| `privacy.html` | 中英隐私政策：日志默认关闭、本机学习、完全访问、主 App 语法联网、用户确认后直接上传评测统计、失败重试与取消 |
 | `support.html` | 添加键盘、完全访问、Rime 导入、方案与英文切换、语法下载、问题反馈 |
 | `attributions.html` | 来源、作者、许可、修改说明；完整 App 署名原文与本地许可全文 |
 | `assets/screenshots/` | 公开版模拟器截图与录屏，说明见该目录 README |
