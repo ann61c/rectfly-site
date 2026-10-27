@@ -28,7 +28,7 @@
       </section>
       <section id="full-access"><h2>如何开启完全访问？为什么需要它？</h2>
         <p>打开“设置 → 通用 → 键盘 → 键盘 → Rectfly”，开启“允许完全访问”并确认系统提示。然后重新切换到 Rectfly 键盘一次，让主 App 更新状态。</p>
-        <p>它用于在主 App 与键盘之间共享本机设置、用户词库、学习数据和已下载的语法模型，以及可选的诊断导出。基础输入可不授予该权限，共享功能可能受限；也可以随时在同一位置关闭。<a href="privacy.html#access">阅读权限与隐私说明</a>。</p>
+        <p>它用于在主 App 与键盘之间共享本机设置、用户词库、学习数据和已下载的语法模型，以及本机评测记录；也用于读取剪贴板文字和保存本机剪贴板历史。内部及较早版本还支持可选的诊断导出。基础输入可不授予该权限，共享功能可能受限；也可以随时在同一位置关闭。<a href="privacy.html#access">阅读权限与隐私说明</a>。</p>
       </section>
       <section id="rime"><h2>如何导入 Rime 用户词库？</h2>
         <ol><li>准备 Rime 用户词典的文本导出文件 <code>*.userdb.txt</code>，或兼容的 Rectfly 个人词库文件 <code>.rflx</code>。不是直接选择 Rime 数据库目录或普通 <code>.dict.yaml</code> 词典。</li><li>把文件保存到 iPhone 的“文件”App 可访问的位置。</li><li>在 Rectfly App 中打开“用户词 → 导入用户词文件”，选择该文件。</li><li>看到“用户词已导入”后，重新打开键盘。为使导入数据在主 App 与键盘间共享，请开启完全访问。</li></ol>
@@ -36,10 +36,11 @@
       </section>
       <section id="preferences"><h2>如何切换双拼、输入英文？</h2><p>在主 App 的“双拼方案”里选择小鹤双拼、自然码、智能ABC 或拼音加加，重新打开键盘后使用。键盘支持中英混打；点击“中 / EN”可以切换英文模式。</p></section>
       <section id="grammar"><h2>不下载万象语法，也能用吗？</h2><p>可以。首次打开主 App 时可选择“以后再说”。需要时再到“万象语法”下载模型；主 App 会联网检查更新，键盘只在本机读取模型。你也可以在那里更新、回退或删除模型。模型缺失时，部分整句排序与评测能力会受限。</p></section>
-      <section id="evaluation"><h2>如何分享联邦评测结果？</h2>
-        <p>在新版 App 的评测结果中，点击“先看看会发送什么”查看统计，再点击“发送统计结果”直接上传，不需要配置邮件。发送失败时会保留待发送结果，并在 App 打开时重试。你可以取消待发送任务，也可以关闭本机评测。</p>
-        <p>每轮只提交首次确认的结果。统计不含输入文字；已经发送的统计不会因取消任务或关闭评测而撤回。旧版仍通过邮件或系统分享面板发送。内容范围与处理方式见<a href="privacy.html#evaluation">隐私政策</a>。</p>
-        <div lang="en"><h3>How do I share evaluation results?</h3><p>In the updated app, preview the statistics and tap Send Statistics to upload them directly, without configuring email. Failed submissions are retained and retried while the app is open. You can cancel pending uploads or disable evaluation. Only the first approved snapshot per experiment is submitted; cancellation does not recall results already received. Statistics contain no typed text. Older versions use email or the system share sheet. See the <a href="privacy.html#english">privacy policy</a> for details.</p></div>
+      <section id="evaluation"><h2>如何参与或关闭联邦评测？</h2>
+        <p>新版新安装首次打开 App，在语法下载引导后询问是否帮助改进 Rectfly。选“好”开启本机评测，并同意满 500 次对比后在 App 前台自动发送统计；选“不用了”保持关闭，选择前不采集评测记录、不自动发送。之后在设置打开“本机评测”，也表示同意自动发送。</p>
+        <p>升级用户保留原开关状态。原已开启者会被询问一次是否自动发送；选“不用了”或未选择时仍可手动发送，原已关闭者保持关闭。提示只问一次，之后通过设置开关调整。在评测结果中点“查看统计内容”查看数据；保留手动发送的用户可点“发送统计结果”。</p>
+        <p>每个实验只提交首次授权入队的结果。失败时在 App 前台重试；关闭“本机评测”可取消待发送任务并清除评测结果，原始输入记录需单独清除。已经接收的统计不会撤回。统计不含输入文字，衡量与实际上屏选词的一致性，不代表正确率。旧版仍通过邮件或系统分享面板发送。详见<a href="privacy.html#evaluation">隐私政策</a>。</p>
+        <div lang="en"><h3>How do I participate in or disable evaluation?</h3><p>On first launch of a new installation of the updated app, after grammar download onboarding, Rectfly asks whether to help improve the app. OK enables local evaluation and consents to automatic aggregate uploads after 500 comparisons while the app is in the foreground. No Thanks leaves it off; no evaluation records are collected or automatically sent before this choice. Later enabling evaluation in Settings also consents to automatic sending.</p><p>Upgraded users retain their evaluation setting. Previously enabled users are asked once about automatic sending; declining or leaving the prompt unanswered retains manual sending. Previously disabled users keep evaluation off. The prompt appears only once; later changes use the Settings switch. Open View Statistics in the results to inspect the data; users retaining manual sending can tap Send Statistics.</p><p>Only the first snapshot queued with your authorization per experiment is submitted. Failed uploads retry in the foreground. Disable evaluation to cancel pending uploads and clear results; raw input records must be deleted separately. Statistics already received are not recalled. Counts contain no typed text and measure agreement with committed words, not accuracy. Older versions use email or the system share sheet. See the <a href="privacy.html#english">privacy policy</a>.</p></div>
       </section>
       <section id="feedback"><h2>如何反馈问题？</h2>
         <p>请发邮件到 <a href="mailto:rectfly@fastmail.com">rectfly@fastmail.com</a>，写明 iPhone 型号、iOS 版本、Rectfly 版本、双拼方案，以及“做了什么、预期什么、实际出现什么”。用自己编写的不含隐私的短句复现即可。</p>
