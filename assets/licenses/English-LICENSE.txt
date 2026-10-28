@@ -1164,9 +1164,26 @@ Derived from the original Tatoeba English detailed export retrieved 2026-10-16.
 Source: https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences_detailed.tsv.bz2
 Compressed SHA-256: 1d8c40545b4af2c6531d1a8b64941fa9d0fa3ee5bcc11cb705c8d8c1fd930c84
 License: CC BY 2.0 FR https://creativecommons.org/licenses/by/2.0/fr/
-Modifications: normalized-sentence deduplication, 10% holdout removed;
+Also derived from the Simple English Wikipedia article dump of 2026-10-01.
+Source: https://dumps.wikimedia.org/simplewiki/20261001/simplewiki-20261001-pages-articles.xml.bz2
+Compressed SHA-256: 2db94ff149adbbaf88efecb8f510a549eaa2a82d59df6278a4af88e13c1b99bd
+License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
+Attribution: Simple English Wikipedia contributors.
+Modifications: markup removed, normalized-sentence deduplication, 10% holdout removed;
 sentence-internal abbreviation counts and canonical casing only. No sentences bundled.
 Rebuild: Tools/BuildLexicon/build_english_acronyms.py
-Attribution: Tatoeba contributors, including the named owners above and anonymous/unowned sentences.
+Tatoeba attribution: Tatoeba contributors, including the named owners above and anonymous/unowned sentences.
 Additional named owners in this export:
 Squarerobot, humed_adam
+
+Rectfly English retrospective window model
+==========================================
+Derived from the same 2026-10-16 Tatoeba English detailed export credited above.
+Compressed source SHA256: 1d8c40545b4af2c6531d1a8b64941fa9d0fa3ee5bcc11cb705c8d8c1fd930c84
+License: CC BY 2.0 FR https://creativecommons.org/licenses/by/2.0/fr/
+Modifications: normalized token-sequence deduplication; stable 80/10/10
+train/tune/test split; compact pruned unigram, bigram and trigram counts with
+full context totals and residual backoff. No sentence texts are bundled.
+Builder: Tools/BuildLexicon/build_english_window.py
+Manifest: docs/evidence/english-window/model.json
+Attribution: Tatoeba contributors, including the named owners listed above.

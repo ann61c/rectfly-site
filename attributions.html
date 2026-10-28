@@ -28,6 +28,7 @@
         <article><h2>librime-octagram</h2><p>作者：lotem / RIME Developers，Copyright (c) 2014。<a href="https://github.com/lotem/librime-octagram">librime-octagram</a> 提供公开的语法文件格式与查询默认行为参考，Rectfly 使用独立的离线读取实现。许可：BSD-3-Clause。</p><p><a href="assets/licenses/Octagram-LICENSE.txt">版权、许可与语法署名全文</a></p></article>
         <article><h2>英文词频、词序与拼写</h2><p>Wolf Garbe 的 <a href="https://github.com/wolfgarbe/SymSpell/tree/c239062ae02961df18ab7da1671d01b4388204e0">SymSpell 词频数据</a>（MIT，Copyright 2018 Wolf Garbe）；Google Books Ngram 词频（CC BY 3.0）；SCOWL 词汇；<a href="https://wordlist.aspell.net/varcon-readme/">VarCon 2020.12.07</a>（Kevin Atkinson、Benjamin Titze、Geoff Kuenning）。</p><p>数据经过词形筛选、排序、词对续接筛选和美英拼写补充，未使用 SymSpell 的实现或运行时依赖。完整作者与许可见英文资源声明。</p></article>
         <article><h2>Tatoeba 英文语料</h2><p>作者：<a href="https://tatoeba.org/en/downloads">Tatoeba contributors</a> 及导出中的各句子作者，许可：<a href="https://creativecommons.org/licenses/by/2.0/fr/">CC BY 2.0 FR</a>。使用 2026 年 10 月 3 日英文导出；经去重、排除评测留出集，派生句首、词对、三词、大小写与缩写统计，不分发原始句子。</p><p>完整句子作者名单及补充声明均保存在<a href="assets/licenses/English-LICENSE.txt">英文资源版权与许可全文</a>中。</p></article>
+        <article><h2>Simple English Wikipedia</h2><p>作者：Simple English Wikipedia contributors。许可：<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>。来源：<a href="https://dumps.wikimedia.org/simplewiki/20261001/">2026-10-01 条目转储</a>。去除标记、去重并排除评测留出集，只统计句中词的大小写写法，用于补充 iOS、GitHub 一类英文缩写与品牌写法；不分发原始句子。</p><p>由此派生的缩写写法表按 CC BY-SA 4.0 公开：<a href="assets/data/english_acronym_casing.tsv">english_acronym_casing.tsv</a>（<a href="assets/data/README.txt">说明</a>），同时含 Tatoeba（CC BY 2.0 FR）贡献。</p></article>
         <article><h2>Wikidata 与英文元数据</h2><p><a href="https://www.wikidata.org/wiki/Wikidata:Licensing">Wikidata 结构化数据</a>按 CC0 使用，派生英文影视标题显示信息、专名与品牌词包。公开名称补充亦以 CC0 1.0 发布。美国常用词汇为项目自建，不使用第三方词典。</p></article>
         <article><h2>诗词与英文建议筛选</h2><p>诗词来源：<a href="https://github.com/chinese-poetry/chinese-poetry/tree/b8594f81a89752241442f2ce267d6f66f96704ee">chinese-poetry/chinese-poetry</a>，MIT，Copyright (c) 2016 JackeyGao。经过导入、编者注移除、繁简转换及读音与错字校订；《易水歌》为独立转录的公版文本。</p><p>英文建议筛选元数据来源：<a href="https://github.com/dsojevic/profanity-list/tree/c27924319aa9bd6f917e3782b4f4b6604a50b652">David Sojevic 的 profanity-list</a>，MIT，Copyright (c) 2021 David Sojevic。按严重程度筛选并展开与现有词汇匹配的别名和词形。</p><p><a href="assets/licenses/Poetry-LICENSE.txt">诗词许可全文</a> · <a href="assets/licenses/English-LICENSE.txt">英文资源许可全文</a></p></article>
         <article><h2>评测数据</h2><p>仅 UIKit 测试包使用 ITE Typing dataset v1 的修改选集：Katri Leino / Aalto University，CC BY 4.0。论文作者：Katri Leino、Markku Laine、Mikko Kurimo 与 Antti Oulasvirta。该数据不作为解码输入，也不随本网站分发。</p></article>
@@ -70,6 +71,7 @@ in both targets and displayed in the App’s 致谢 page.
   for the core and compact exact-code indexing for cold words. No frequency
   rescaling or extra coefficients.
 - Public, unencrypted used-data copy: `Data/WordSource/wanxiang-used.tsv`.
+  [Download the public copy](https://github.com/ann61c/rectfly-site/releases/download/data-wanxiang-20260909/wanxiang-used-e5cb7db.tar.gz).
   `Data/Wanxiang-LICENSE.txt` is bundled/displayed. A public source copy is not
   an ETM exemption; release requires the channel checks in `Data/WordSource/README.md`.
 - Owner userdb records are a separate imported private layer, not in this copy.
@@ -99,8 +101,8 @@ The October 19, 2026 asset has 398,497,836 bytes and SHA-256
 The pinned fallback `wanxiang-lts-20260909.gram` is the unchanged September 9, 2026 LTS
 model (asset 552602424; 420,339,756 bytes; SHA-256
 `1eb651288b117e68374110b32796346e128be790e994559cb7c1e3b0fd63029d`).
-The App downloads the upstream asset (or pinned `ann61c/rectfly` fallback) into the App Group;
-the keyboard and App preview map that same file. It is not bundled. Attribution and the CC BY 4.0 license link are included in both bundles&#x27;
+The App downloads the upstream asset (or pinned `ann61c/rectfly-site` fallback) into the App Group;
+the keyboard and App preview map that same file. It is not bundled. Attribution and the CC BY 4.0 license link are included in both bundles'
 `Octagram-LICENSE.txt`.
 
 ## librime-octagram (grammar format and query defaults)
@@ -109,7 +111,7 @@ the keyboard and App preview map that same file. It is not bundled. Attribution 
 - License: BSD-3-Clause
 - URL: https://github.com/lotem/librime-octagram
 
-The plugin&#x27;s source (`gram_db.h`, `gram_db.cc`) documents the on-disk gram
+The plugin's source (`gram_db.h`, `gram_db.cc`) documents the on-disk gram
 format (Rime MappedFile header + darts-clone double-array trie). The offline
 extractor and Swift runtime reader implement that published layout.
 `Shared/OctagramLanguageModel.swift` adapts the basic-Han, non-rear word-query
@@ -119,10 +121,10 @@ in `Data/Octagram-LICENSE.txt` and included in the App and keyboard bundles.
 
 ## English frequency dictionary
 
-`Data/english_words.tsv` derives from Wolf Garbe&#x27;s SymSpell frequency dictionary,
+`Data/english_words.tsv` derives from Wolf Garbe's SymSpell frequency dictionary,
 revision `c239062ae02961df18ab7da1671d01b4388204e0`, filtered to ASCII letters and
-apostrophes and sorted by word. The upstream truncated `you&#x27;v` is corrected to
-`you&#x27;ve`; original frequencies are unchanged.
+apostrophes and sorted by word. The upstream truncated `you'v` is corrected to
+`you've`; original frequencies are unchanged.
 
 - Source: https://github.com/wolfgarbe/SymSpell/blob/c239062ae02961df18ab7da1671d01b4388204e0/SymSpell/frequency_dictionary_en_82_765.txt
 - SymSpell: MIT, copyright 2018 Wolf Garbe.
@@ -134,7 +136,7 @@ apostrophes and sorted by word. The upstream truncated `you&#x27;v` is corrected
 
 ## English word-pair frequencies
 
-`Data/english_bigrams.tsv` derives from the same pinned SymSpell distribution&#x27;s
+`Data/english_bigrams.tsv` derives from the same pinned SymSpell distribution's
 `frequency_bigramdictionary_en_243_342.txt` (MIT repository license retained in
 `English-LICENSE.txt`). Both words must occur in the bundled English vocabulary;
 only the eight highest-frequency continuations per preceding word are retained.
@@ -166,7 +168,7 @@ clusters through SCOWL level 60. Archaic usage rows and rare/improper variant
 tags are excluded. Each spelling maps to an already covered form; when several
 forms are covered, the highest existing frequency wins, with alphabetical ties.
 
-The runtime borrows that form&#x27;s frequency prior and context evidence. These are
+The runtime borrows that form's frequency prior and context evidence. These are
 not independently measured counts for the added spelling. The original vocabulary
 and context resource remain byte-for-byte unchanged, including their word IDs.
 
@@ -174,7 +176,7 @@ and context resource remain byte-for-byte unchanged, including their word IDs.
 - Source SHA-256: `75af63da46ec12d7eb14b9f1ba8d3898d484dd6872755b73c921b215875a3629`.
 - Output: 18,631 bytes; SHA-256 `36f5a606d2ef2aa53030363814752c8793fdd36f5c334f3222c375bd24dba615`.
 - Kevin Atkinson, Benjamin Titze and Geoff Kuenning notices are retained in the
-  App and extension&#x27;s `English-LICENSE.txt`. VarCon is an archived source; it is
+  App and extension's `English-LICENSE.txt`. VarCon is an archived source; it is
   not presented as the current ESDB dataset.
 - Rebuild: `Tools/BuildLexicon/build_english.py SOURCE --variants-source VARCON_SOURCE`.
 
@@ -203,7 +205,7 @@ Katri Leino / Aalto University under [CC BY 4.0](RectflyUIKitTests/Fixtures/ITE/
 Authors of the accompanying 2024 article: Katri Leino, Markku Laine, Mikko Kurimo
 and Antti Oulasvirta. The fixture README and manifest record selection, provenance
 and limitations. The data is included only in the UIKit test bundle; reference
-words and other keyboards&#x27; outputs are evaluation labels, never decoder input.
+words and other keyboards' outputs are evaluation labels, never decoder input.
 ## Emoji and annotations
 
 The keyboard bundles Unicode Emoji 17.0 fully-qualified data and an emoji-only
@@ -263,7 +265,7 @@ The MIT License (MIT)
 Copyright (c) 2016 JackeyGao
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the &quot;Software&quot;), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -272,7 +274,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -294,7 +296,7 @@ No source sentences are shipped. See `docs/ENGLISH_CASE.md` for the policy.
 
 ### English offensive-word admission
 
-`Data/english_offensive.tsv` derives from David Sojevic&#x27;s
+`Data/english_offensive.tsv` derives from David Sojevic's
 [dsojevic/profanity-list](https://github.com/dsojevic/profanity-list), under MIT
 (2021 David Sojevic; full notice in `Data/English-LICENSE.txt` and
 `Tools/BuildLexicon/Offensive/LICENSE`).
@@ -312,7 +314,7 @@ rule to every entry: retain upstream severity 2–4, exclude severity 1 (mild).
 Of 434 source entries, 406 are retained and 28 excluded. Expand explicit aliases,
 then materialize repeated-letter forms and common suffixes (`s/es/ed/ing/er/ers`)
 only when present in the pinned existing English vocabulary, excluding each
-entry&#x27;s upstream exceptions from its expanded forms (`*` substitutes the matched
+entry's upstream exceptions from its expanded forms (`*` substitutes the matched
 word). Explicit aliases remain intact. This removes 12 expanded forms, including
 `spices`, `spiced`, `spicer`, `spicing`, `dicker`, `cocker` and `cockers`, and produces
 756 unique whole words/phrases. Runtime matching uses whole tokens and phrases,
@@ -348,6 +350,11 @@ original Tatoeba English detailed export, retrieved 2026-10-16, under CC BY 2.0 
 (https://creativecommons.org/licenses/by/2.0/fr/). Source:
 https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences_detailed.tsv.bz2
 Compressed SHA-256: `1d8c40545b4af2c6531d1a8b64941fa9d0fa3ee5bcc11cb705c8d8c1fd930c84`.
+It also derives from the Simple English Wikipedia article dump of 2026-10-01
+(https://dumps.wikimedia.org/simplewiki/20261001/simplewiki-20261001-pages-articles.xml.bz2,
+compressed SHA-256 `2db94ff149adbbaf88efecb8f510a549eaa2a82d59df6278a4af88e13c1b99bd`),
+by Simple English Wikipedia contributors under CC BY-SA 4.0
+(https://creativecommons.org/licenses/by-sa/4.0/); markup is removed and only casing counts are used.
 
 The generator deduplicates normalized sentences, removes the deterministic 10%
 holdout and segment-initial words, then selects repeated short abbreviation forms.
@@ -357,6 +364,17 @@ No source sentences are bundled. Contributor attribution, including additional
 export owners, is retained in `Data/English-LICENSE.txt` in both targets. Rebuild
 with `Tools/BuildLexicon/build_english_acronyms.py`; see
 `docs/evidence/english-acronyms.md` for thresholds and hashes.
+
+## OpenCC conversion dictionaries
+
+OpenCC **1.1.9**, [BYVoid/OpenCC](https://github.com/BYVoid/OpenCC/tree/ver.1.1.9),
+Apache License 2.0. `Tools/Traditional/build.py` pins the upstream archive URL and
+SHA-256 and compiles first-choice dictionary values to sorted, memory-mapped RFCC
+lookup tables in `Data/OpenCC/`. Swift uses longest forward matching, with the
+s2twp and s2hk conversion chains. Taiwan context first restores regional phrases
+(as in tw2sp), then uses t2s; Hong Kong context uses t2s. The engine and its learning
+stores retain simplified text. The complete license and attribution ship in both
+bundles and appear under App → 致谢与许可 → OpenCC.
 </pre></details>
       <p class="meta">保留自 App 源码版本 d9c5b20；完整原文中的路径均指向 App 仓库。公开数据副本与固定语法模型见上方 GitHub Release 下载入口。</p>
     </main>

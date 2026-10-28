@@ -36,6 +36,7 @@ in both targets and displayed in the App’s 致谢 page.
   for the core and compact exact-code indexing for cold words. No frequency
   rescaling or extra coefficients.
 - Public, unencrypted used-data copy: `Data/WordSource/wanxiang-used.tsv`.
+  [Download the public copy](https://github.com/ann61c/rectfly-site/releases/download/data-wanxiang-20260909/wanxiang-used-e5cb7db.tar.gz).
   `Data/Wanxiang-LICENSE.txt` is bundled/displayed. A public source copy is not
   an ETM exemption; release requires the channel checks in `Data/WordSource/README.md`.
 - Owner userdb records are a separate imported private layer, not in this copy.
@@ -65,7 +66,7 @@ The October 19, 2026 asset has 398,497,836 bytes and SHA-256
 The pinned fallback `wanxiang-lts-20260909.gram` is the unchanged September 9, 2026 LTS
 model (asset 552602424; 420,339,756 bytes; SHA-256
 `1eb651288b117e68374110b32796346e128be790e994559cb7c1e3b0fd63029d`).
-The App downloads the upstream asset (or pinned `ann61c/rectfly` fallback) into the App Group;
+The App downloads the upstream asset (or pinned `ann61c/rectfly-site` fallback) into the App Group;
 the keyboard and App preview map that same file. It is not bundled. Attribution and the CC BY 4.0 license link are included in both bundles'
 `Octagram-LICENSE.txt`.
 
@@ -314,6 +315,11 @@ original Tatoeba English detailed export, retrieved 2026-10-16, under CC BY 2.0 
 (https://creativecommons.org/licenses/by/2.0/fr/). Source:
 https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences_detailed.tsv.bz2
 Compressed SHA-256: `1d8c40545b4af2c6531d1a8b64941fa9d0fa3ee5bcc11cb705c8d8c1fd930c84`.
+It also derives from the Simple English Wikipedia article dump of 2026-10-01
+(https://dumps.wikimedia.org/simplewiki/20261001/simplewiki-20261001-pages-articles.xml.bz2,
+compressed SHA-256 `2db94ff149adbbaf88efecb8f510a549eaa2a82d59df6278a4af88e13c1b99bd`),
+by Simple English Wikipedia contributors under CC BY-SA 4.0
+(https://creativecommons.org/licenses/by-sa/4.0/); markup is removed and only casing counts are used.
 
 The generator deduplicates normalized sentences, removes the deterministic 10%
 holdout and segment-initial words, then selects repeated short abbreviation forms.
@@ -323,3 +329,14 @@ No source sentences are bundled. Contributor attribution, including additional
 export owners, is retained in `Data/English-LICENSE.txt` in both targets. Rebuild
 with `Tools/BuildLexicon/build_english_acronyms.py`; see
 `docs/evidence/english-acronyms.md` for thresholds and hashes.
+
+## OpenCC conversion dictionaries
+
+OpenCC **1.1.9**, [BYVoid/OpenCC](https://github.com/BYVoid/OpenCC/tree/ver.1.1.9),
+Apache License 2.0. `Tools/Traditional/build.py` pins the upstream archive URL and
+SHA-256 and compiles first-choice dictionary values to sorted, memory-mapped RFCC
+lookup tables in `Data/OpenCC/`. Swift uses longest forward matching, with the
+s2twp and s2hk conversion chains. Taiwan context first restores regional phrases
+(as in tw2sp), then uses t2s; Hong Kong context uses t2s. The engine and its learning
+stores retain simplified text. The complete license and attribution ship in both
+bundles and appear under App → 致谢与许可 → OpenCC.
