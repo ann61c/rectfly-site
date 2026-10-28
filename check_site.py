@@ -5,7 +5,7 @@ from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parent
 PAGES = {name: ROOT / name for name in (
-    "index.html", "privacy.html", "support.html", "attributions.html"
+    "index.html", "privacy.html", "terms.html", "support.html", "attributions.html"
 )}
 
 
