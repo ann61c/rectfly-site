@@ -23,7 +23,7 @@
       <p class="lead">感谢词库、语言数据与开源项目的作者和贡献者。</p>
       <p>以下列出主要来源与修改说明。完整署名原文从 App 仓库的 <a href="ATTRIBUTIONS.md">ATTRIBUTIONS.md</a> 原样保留，许可全文也随本站提供。此页不分发词库或模型数据。</p>
       <div class="credits-list">
-        <article><h2>万象 · RIME-LMDG</h2><p>作者：amzxyz 与 RIME-LMDG contributors。许可：<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>。来源：<a href="https://github.com/amzxyz/RIME-LMDG/tree/e5cb7db">RIME-LMDG（e5cb7db）</a>。</p><p>词库与读音数据经过声调移除、双拼编码转换、去重、频率筛选和紧凑索引；字符数据按系统字体覆盖过滤。可选<a href="https://github.com/amzxyz/rime-wanxiang-data/releases/tag/LTS">万象 LTS 语法模型</a>由主 App 下载，模型本身未修改。完整版本、修改与分发要求见下方原文。</p><p><a href="assets/licenses/Wanxiang-LICENSE.txt">词库许可全文</a> · <a href="assets/licenses/Character-Wanxiang-LICENSE.txt">字符补充许可全文</a></p><p><a href="https://github.com/ann61c/rectfly-site/releases/tag/data-wanxiang-20260909">下载公开数据副本与固定 2026-09-09 语法模型（GitHub Release）</a>：无需登录，附来源、许可与 SHA-256；公开数据副本不含私人层。</p></article>
+        <article><h2>万象 · RIME-LMDG</h2><p>作者：amzxyz 与 RIME-LMDG contributors。许可：<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>。来源：<a href="https://github.com/amzxyz/RIME-LMDG/tree/e5cb7db">RIME-LMDG（e5cb7db）</a>。</p><p>词库与读音数据经过声调移除、双拼编码转换、去重、频率筛选和紧凑索引；字符数据按系统字体覆盖过滤。<a href="https://github.com/amzxyz/rime-wanxiang-data/releases/tag/LTS">万象 LTS 语法模型</a>作为 Apple 托管的资源包随 App 下载，模型本身未修改。完整版本、修改与分发要求见下方原文。</p><p><a href="assets/licenses/Wanxiang-LICENSE.txt">词库许可全文</a> · <a href="assets/licenses/Character-Wanxiang-LICENSE.txt">字符补充许可全文</a></p><p><a href="https://github.com/ann61c/rectfly-site/releases/tag/data-wanxiang-20260909">下载公开数据副本与固定 2026-09-09 语法模型（GitHub Release）</a>：无需登录，附来源、许可与 SHA-256；公开数据副本不含私人层。</p></article>
         <article><h2>Unicode · Unihan / Emoji / CLDR</h2><p>作者：Unicode, Inc.。使用 Unicode 17.0.0 Unihan、Emoji 17.0 与 CLDR 48 中英文表情注释子集，许可为 <a href="https://www.unicode.org/license.txt">Unicode License v3</a>。读音经过声调移除、合并和编码过滤。</p><p><a href="assets/licenses/Unicode-LICENSE.txt">Unihan 版权与许可全文</a> · <a href="assets/licenses/Emoji-LICENSE.txt">Emoji / CLDR 许可全文</a></p></article>
         <article><h2>librime-octagram</h2><p>作者：lotem / RIME Developers，Copyright (c) 2014。<a href="https://github.com/lotem/librime-octagram">librime-octagram</a> 提供公开的语法文件格式与查询默认行为参考，Rectfly 使用独立的离线读取实现。许可：BSD-3-Clause。</p><p><a href="assets/licenses/Octagram-LICENSE.txt">版权、许可与语法署名全文</a></p></article>
         <article><h2>英文词频、词序与拼写</h2><p>Wolf Garbe 的 <a href="https://github.com/wolfgarbe/SymSpell/tree/c239062ae02961df18ab7da1671d01b4388204e0">SymSpell 词频数据</a>（MIT，Copyright 2018 Wolf Garbe）；Google Books Ngram 词频（CC BY 3.0）；SCOWL 词汇；<a href="https://wordlist.aspell.net/varcon-readme/">VarCon 2020.12.07</a>（Kevin Atkinson、Benjamin Titze、Geoff Kuenning）。</p><p>数据经过词形筛选、排序、词对续接筛选和美英拼写补充，未使用 SymSpell 的实现或运行时依赖。完整作者与许可见英文资源声明。</p></article>
@@ -94,10 +94,11 @@ same-character/same-code weights by maximum, and exclude characters without
 iOS 26.5 system-font glyphs. Missing weights are zero; supplied weights are unchanged.
 The full license is in `Data/CharacterSource/Wanxiang-LICENSE.txt`.
 
-The optional grammar download is the unchanged `wanxiang-lts-zh-hans.gram` from
+The grammar model, shipped as an Apple-hosted asset pack, is the unchanged
+September 9, 2026 `wanxiang-lts-zh-hans.gram` from
 [amzxyz/rime-wanxiang-data LTS](https://github.com/amzxyz/rime-wanxiang-data/releases/tag/LTS).
-The October 19, 2026 asset has 398,497,836 bytes and SHA-256
-`9eedac1d836f3fdafb61b162035c8937253aedc106be40b2b957d9ab64e9ed89`.
+It has 420,339,756 bytes and SHA-256
+`1eb651288b117e68374110b32796346e128be790e994559cb7c1e3b0fd63029d`.
 The pinned fallback `wanxiang-lts-20260909.gram` is the unchanged September 9, 2026 LTS
 model (asset 552602424; 420,339,756 bytes; SHA-256
 `1eb651288b117e68374110b32796346e128be790e994559cb7c1e3b0fd63029d`).
