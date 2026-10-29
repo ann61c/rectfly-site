@@ -59,10 +59,11 @@ same-character/same-code weights by maximum, and exclude characters without
 iOS 26.5 system-font glyphs. Missing weights are zero; supplied weights are unchanged.
 The full license is in `Data/CharacterSource/Wanxiang-LICENSE.txt`.
 
-The optional grammar download is the unchanged `wanxiang-lts-zh-hans.gram` from
+The grammar model, shipped as an Apple-hosted asset pack, is the unchanged
+September 9, 2026 `wanxiang-lts-zh-hans.gram` from
 [amzxyz/rime-wanxiang-data LTS](https://github.com/amzxyz/rime-wanxiang-data/releases/tag/LTS).
-The October 19, 2026 asset has 398,497,836 bytes and SHA-256
-`9eedac1d836f3fdafb61b162035c8937253aedc106be40b2b957d9ab64e9ed89`.
+It has 420,339,756 bytes and SHA-256
+`1eb651288b117e68374110b32796346e128be790e994559cb7c1e3b0fd63029d`.
 The pinned fallback `wanxiang-lts-20260909.gram` is the unchanged September 9, 2026 LTS
 model (asset 552602424; 420,339,756 bytes; SHA-256
 `1eb651288b117e68374110b32796346e128be790e994559cb7c1e3b0fd63029d`).
