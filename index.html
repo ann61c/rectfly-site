@@ -4,62 +4,135 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Rectfly 是一款离线运行的 iOS 双拼键盘，支持整句纠错、Rime 用户词库导入和中英混打。">
+  <meta name="theme-color" content="#fff6df" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0f1a" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="Rectfly 是一款离线运行的 iOS 双拼键盘：按偏了也能读懂你，整句纠错，Rime 用户词库导入，中英混打。">
   <meta name="referrer" content="no-referrer">
-  <title>Rectfly — 离线的 iOS 双拼键盘</title>
-  <link rel="icon" type="image/png" href="assets/app-icon.png">
-  <link rel="stylesheet" href="styles.css">
+  <title>Rectfly — 按偏了，也懂你</title>
+  <link rel="icon" type="image/png" href="assets/app-icon.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&family=JetBrains+Mono:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
   <a class="skip" href="#main">跳到正文</a>
-  <div class="wrap">
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Rectfly 首页"><img src="assets/app-icon.png" width="34" height="34" alt="">Rectfly</a>
-      <nav aria-label="主导航"><a href="index.html" aria-current="page">首页</a><a href="privacy.html">隐私</a><a href="terms.html">条款</a><a href="support.html">支持</a><a href="attributions.html">致谢</a></nav>
-    </header>
-    <main id="main" tabindex="-1">
-      <section class="hero" aria-labelledby="hero-title">
-        <div>
-          <p class="eyebrow">iOS 双拼键盘</p>
-          <h1 id="hero-title">打字时，<br>留一点余地。</h1>
-          <p class="intro">Rectfly，从小鹤双拼出发。打错键时，结合上下文寻找你想写的词；连成一句，也能一起纠错。</p>
-          <p class="muted">键盘离线运行，输入与学习记录留在本机。</p>
-          <div class="actions"><a class="button" href="https://testflight.apple.com/join/un67VMZe">加入 TestFlight 测试<span class="arrow" aria-hidden="true">↗</span></a><a href="support.html">开始使用</a></div>
+  <svg class="grain" aria-hidden="true"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .07 0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg>
+  <canvas id="taps" aria-hidden="true"></canvas>
+  <div class="sky" aria-hidden="true"><div class="sun"></div><div class="stars" id="stars"></div></div>
+
+  <header class="top">
+    <a class="brand" href="index.html" aria-label="Rectfly 首页"><picture><source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)"><img src="assets/app-icon.png" width="32" height="32" alt=""></picture>Rectfly</a>
+    <nav aria-label="主导航"><a href="privacy.html">隐私</a><a href="terms.html">条款</a><a href="support.html">支持</a><a href="attributions.html">致谢</a></nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="kicker reveal" style="--d:0">小鹤双拼 · iOS 键盘 · 离线</p>
+        <h1 id="hero-title" class="reveal" style="--d:1"><span class="line">按偏了，</span><span class="line accent-line">也懂你。</span></h1>
+        <p class="lede reveal" style="--d:2">Rectfly 不把每个键当成一个格子。它记住你手指落下的位置，结合上下文，把按偏、漏按、多按的键读成你想写的那句话。</p>
+        <div class="cta-row reveal" style="--d:3">
+          <a class="keycap-btn" href="https://testflight.apple.com/join/un67VMZe"><span class="cap">加入 TestFlight<span aria-hidden="true"> ↗</span></span></a>
+          <a class="ghost" href="support.html">怎么开始用 →</a>
         </div>
-        <figure class="keyboard-figure">
-          <div class="typing-sheet"><p class="typing-label">把想说的话，写下来。</p><p class="typing-text">你好，世界。<span class="caret" aria-hidden="true"></span></p></div>
-          <div class="keyboard" aria-hidden="true">
-            <div class="candidates"><span>你好</span><span>拟好</span><span>你</span></div>
-          <div class="key-row"><span class="key">q</span><span class="key">w</span><span class="key">e</span><span class="key">r</span><span class="key">t</span><span class="key">y</span><span class="key">u</span><span class="key">i</span><span class="key">o</span><span class="key">p</span></div>
-          <div class="key-row"><span class="key">a</span><span class="key">s</span><span class="key">d</span><span class="key">f</span><span class="key">g</span><span class="key">h</span><span class="key">j</span><span class="key">k</span><span class="key">l</span></div>
-          <div class="key-row"><span class="key">z</span><span class="key">x</span><span class="key">c</span><span class="key">v</span><span class="key">b</span><span class="key">n</span><span class="key">m</span></div>
-            <div class="key-row"><span class="key wide">123</span><span class="key wide">中/EN</span><span class="key space">空格</span><span class="key wide">换行</span></div>
-          </div>
-          <figcaption>文字与键盘为排版示意，非 App 截图或纠错测试结果。</figcaption>
-        </figure>
-      </section>
-      <div class="statement">
-        <p><strong>输入不上传。</strong> 纠错与联想在设备上完成。</p>
-        <p>词库和语法模型由 Apple 托管下载，键盘离线使用。<a href="privacy.html#network">了解联网边界</a></p>
       </div>
-      <section class="features" aria-labelledby="features-title">
-        <div class="feature-heading"><h2 id="features-title">顺着你的输入习惯。</h2><p>熟悉的双拼，本机的学习。</p></div>
-        <div class="feature-grid">
-          <article class="feature"><h3>整句输入，也能纠错</h3><p>把触点、词库和上下文一起考虑，为错键、漏键、多键等输入寻找候选。纠错仍可能出错，你可以从候选中选择想写的内容。</p></article>
-          <article class="feature"><h3>不止小鹤双拼</h3><p>默认使用小鹤双拼，也支持自然码、智能ABC、拼音加加。在 App 的“双拼方案”中选择自己习惯的一种。</p></article>
-          <article class="feature"><h3>把 Rime 用户词带过来</h3><p>导入 Rime 的用户词库文本导出，或兼容的个人词库文件。词语保存在这台设备上，不改动内置词库。</p></article>
-          <article class="feature"><h3>中文里，也写英文</h3><p>支持中英混打、英文词联想与补全，并在本机学习常用英文词序。也可以切换到 EN 模式输入英文。</p></article>
+
+      <figure class="demo reveal" style="--d:2" aria-label="演示：按偏的键被纠正成正确的句子">
+        <div class="phone">
+          <svg class="mascot perched" viewBox="-6 6 110 92" aria-hidden="true">
+  <g class="ears">
+    <ellipse class="ear ear-a" cx="24" cy="25.5" rx="20" ry="7.5" transform="rotate(-35 24 26)"/>
+    <ellipse class="ear ear-b" cx="18" cy="44.5" rx="19" ry="7.5" transform="rotate(-12 18 44)"/>
+  </g>
+  <g class="bob">
+    <rect class="body" x="22" y="32" width="64" height="58" rx="24" transform="rotate(-10 54 61)"/>
+    <g class="face">
+      <ellipse class="blush" cx="50" cy="73.5" rx="5.5" ry="3.2"/>
+      <ellipse class="blush" cx="81" cy="67.5" rx="5.5" ry="3.2"/>
+      <g class="eyes">
+        <ellipse cx="56" cy="63" rx="3.6" ry="5"/><ellipse cx="73" cy="59" rx="3.6" ry="5"/>
+        <circle class="glint" cx="57" cy="61" r="1.3"/><circle class="glint" cx="74" cy="57" r="1.3"/>
+      </g>
+      <path class="mouth" d="M61.5 70.3 L67.6 69.2 Q66.2 74.8 63.4 73.6 Z"/>
+    </g>
+  </g>
+</svg>
+          <div class="sheet"><p class="sheet-text" id="sheet"></p><span class="caret" aria-hidden="true"></span></div>
+          <div class="kb" id="kb" aria-hidden="true">
+            <div class="comp" id="comp"></div>
+            <div class="cands" id="cands"><span class="ph">候选</span></div>
+            <div class="rows" id="rows"></div>
+          </div>
         </div>
-      </section>
-      <section class="testflight" id="testflight" aria-labelledby="testflight-title">
-        <div><h2 id="testflight-title">一起试试 Rectfly。</h2><p>公开测试通过 TestFlight 提供。</p></div>
-        <div><p><a class="button" href="https://testflight.apple.com/join/un67VMZe">加入 TestFlight 测试<span class="arrow" aria-hidden="true">↗</span></a></p><p class="availability">需要 iOS 26 或更新版本。完整词库和万象语法模型（约 400 MB）在安装后由 iOS 自动下载。</p><a href="support.html#feedback">已有测试版？反馈使用问题 →</a></div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <p>Rectfly · 让输入回到文字本身</p>
-      <div><a href="privacy.html">隐私</a> · <a href="terms.html">条款</a> · <a href="support.html">支持</a> · <a href="attributions.html">致谢</a> · <a href="https://t.me/rectfly">Telegram</a> · <a href="mailto:rectfly@fastmail.com">联系我们</a></div>
-    </footer>
-  </div>
+        <figcaption>示意动画：金色是按偏的键，屏幕上照你按下的显示，候选已经纠正好了。</figcaption>
+      </figure>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>jb tm tm qi bu co</span><i>今天天气不错</i><span>wo mf vz ri wj uh jm</span><i>我们周日晚上见</i><span>ni hc ui jp</span><i>你好世界</i><span>xm zl kl ui</span><i>现在开始</i>
+        <span>jb tm tm qi bu co</span><i>今天天气不错</i><span>wo mf vz ri wj uh jm</span><i>我们周日晚上见</i><span>ni hc ui jp</span><i>你好世界</i><span>xm zl kl ui</span><i>现在开始</i>
+      </div>
+    </section>
+
+    <section class="cloud-sec" aria-labelledby="cloud-title">
+      <div class="cloud-copy">
+        <h2 id="cloud-title" class="reveal">每个键，<br>都是一片<br><em>概率</em>。</h2>
+        <p class="reveal" style="--d:1">你按 m 的时候，手指不一定落在 m 的正中。Rectfly 看的是那一下落在哪、离谁更近，再看前后文，算出你最可能想按的键。把手指或鼠标放到键盘上试试。</p>
+      </div>
+      <div class="cloud-stage reveal" style="--d:1"><canvas id="cloud" aria-label="触点分布示意：每个键周围是一团落点"></canvas></div>
+    </section>
+
+    <section class="offline" aria-labelledby="offline-title">
+      <h2 id="offline-title" class="split">输入不出手机。</h2>
+      <div class="offline-grid">
+        <p class="reveal">纠错、联想和学词都在这台 iPhone 上完成。打下的字不上传。</p>
+        <p class="reveal" style="--d:1">词库和语法模型由 Apple 托管下载，装好之后完全离线可用。<a href="privacy.html#network">联网边界 →</a></p>
+      </div>
+    </section>
+
+    <section class="caps" aria-labelledby="caps-title">
+      <h2 id="caps-title" class="reveal">顺着你的手。</h2>
+      <div class="cap-grid">
+        <article class="feature-cap reveal" style="--d:0"><span class="legend">整句</span><h3>整句输入，一起纠错</h3><p>一句话里错了好几个键，也能整句读回来。纠错也会出错，候选栏里随时可以改选。</p></article>
+        <article class="feature-cap reveal" style="--d:1"><span class="legend">双拼</span><h3>不止小鹤</h3><p>默认小鹤双拼，也支持自然码、智能 ABC、拼音加加。</p></article>
+        <article class="feature-cap reveal" style="--d:2"><span class="legend">Rime</span><h3>带着词库搬家</h3><p>导入 Rime 用户词、搜狗细胞词库和常见词表。词留在这台设备上。</p></article>
+        <article class="feature-cap reveal" style="--d:3"><span class="legend">EN</span><h3>中文里写英文</h3><p>中英混打，英文联想与补全，也会学你常用的英文词序。</p></article>
+      </div>
+    </section>
+
+    <section class="final" aria-labelledby="final-title">
+      <div class="final-mascot reveal"><svg class="mascot wave" viewBox="-6 6 110 92" aria-hidden="true">
+  <g class="ears">
+    <ellipse class="ear ear-a" cx="24" cy="25.5" rx="20" ry="7.5" transform="rotate(-35 24 26)"/>
+    <ellipse class="ear ear-b" cx="18" cy="44.5" rx="19" ry="7.5" transform="rotate(-12 18 44)"/>
+  </g>
+  <g class="bob">
+    <rect class="body" x="22" y="32" width="64" height="58" rx="24" transform="rotate(-10 54 61)"/>
+    <g class="face">
+      <ellipse class="blush" cx="50" cy="73.5" rx="5.5" ry="3.2"/>
+      <ellipse class="blush" cx="81" cy="67.5" rx="5.5" ry="3.2"/>
+      <g class="eyes">
+        <ellipse cx="56" cy="63" rx="3.6" ry="5"/><ellipse cx="73" cy="59" rx="3.6" ry="5"/>
+        <circle class="glint" cx="57" cy="61" r="1.3"/><circle class="glint" cx="74" cy="57" r="1.3"/>
+      </g>
+      <path class="mouth" d="M61.5 70.3 L67.6 69.2 Q66.2 74.8 63.4 73.6 Z"/>
+    </g>
+  </g>
+</svg></div>
+      <h2 id="final-title" class="reveal">来，<span class="accent-line">按偏一下</span>试试。</h2>
+      <a class="keycap-btn big reveal" style="--d:1" href="https://testflight.apple.com/join/un67VMZe"><span class="cap">加入 TestFlight<span aria-hidden="true"> ↗</span></span></a>
+      <p class="fine reveal" style="--d:2">需要 iOS 26 或更新。完整词库和万象语法模型（约 400 MB）安装后由 iOS 自动下载。<a href="support.html#feedback">已有测试版？反馈问题 →</a></p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Rectfly · 让输入回到文字本身</p>
+    <p><a href="privacy.html">隐私</a> · <a href="terms.html">条款</a> · <a href="support.html">支持</a> · <a href="attributions.html">致谢</a> · <a href="https://t.me/rectfly">Telegram</a> · <a href="mailto:rectfly@fastmail.com">联系我们</a></p>
+  </footer>
+  <script src="home.js" defer></script>
 </body>
 </html>
