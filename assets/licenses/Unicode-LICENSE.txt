@@ -41,4 +41,4 @@ authorization of the copyright holder.
 Dictionary reading supplements: amzxyz, RIME-LMDG / 万象, commit 5568f955750ca4b58deaafd4a18e2c6cf62562c9.
 https://github.com/amzxyz/RIME-LMDG
 CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
-Changes: tone marks and original frequencies removed; only existing-codec readings retained.
+Modified.

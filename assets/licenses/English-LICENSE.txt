@@ -3,12 +3,8 @@ English frequency data
 Source: https://github.com/wolfgarbe/SymSpell
 Commit: c239062ae02961df18ab7da1671d01b4388204e0
 
-Unigram vocabulary: filtered to ASCII letters/apostrophes and sorted;
-frequencies unchanged.
-Bigram table: frequency_bigramdictionary_en_243_342.txt from the same
-SymSpell commit, restricted to this vocabulary and the top eight successors
-per context; original frequencies unchanged. Distributed under the repository's
-MIT license below. The following corpus credits describe the unigram source.
+Distributed under the repository's MIT license below.
+Corpus credits:
 Google Books Ngram: CC BY 3.0 https://creativecommons.org/licenses/by/3.0/
 SCOWL source and license: https://wordlist.aspell.net/scowl_v1-readme/
 
@@ -295,16 +291,12 @@ appropriate directory under the r/ directory.
 
 
 
-Rectfly English regional spelling variants
-==========================================
+VarCon
+======
 
 Modified subset of VarCon 2020.12.07, en-wl/wordlist revision
 b22230cc5250887737fdefe9ca4c9d9d01230eaa. Copyright 2000-2020
 by Kevin Atkinson and Benjamin Titze.
-
-Only verified clusters through SCOWL level 60 and preferred/equal
-American and British forms are used. Each added spelling maps to a
-covered frequency spelling; no new frequency observations are claimed.
 The original VarCon notices follow unchanged.
 
 Copyright
@@ -365,16 +357,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
 OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 SUCH DAMAGE.
 
-Rectfly English prose statistics
-================================
-Derived from the complete English Tatoeba detailed export, 2026-10-03.
+Tatoeba English sentences
+=========================
 Source: https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences_detailed.tsv.bz2
 Project and export license: https://tatoeba.org/en/downloads
 License: CC BY 2.0 FR https://creativecommons.org/licenses/by/2.0/fr/
-Modifications: deduplicated; disjoint 10% holdout removed; sentence-start,
-pair and three-word statistics extracted and bounded by observation count.
-No sentence texts are bundled. No literary source is used.
-Rebuild: Tools/BuildLexicon/build_english_prose.py, pinned compressed snapshot.
+Exports of 2026-10-03 and 2026-10-16.
 Attribution: Tatoeba contributors (including anonymous/unowned sentences).
 Named owners supplied in the English export:
 000sharris000, 00shoujikisou, 0789392767, 0987654321ok, 0ni, 100nosewiggles, 12882, 12Daniel,
@@ -1108,33 +1096,14 @@ zhangsan, zhaoxin, zhekka, zhoucantd, zhouj1955, ziggsmith, zipangu, zlisia, zma
 znc, zoeker, zogwarg, zoom, zorgzikhnit, zormax, zornn, zosia, zpaden, zrajm, zuikng, zumbeispiel,
 zumley, zvaigzne, zvzuibqx, zwhzwh, zyy915, zzxjoanw, zzz
 
-English proper-name package (english_names.rfen)
-Source: Wikidata structured data, pinned query snapshot 2026-10-08.
-License: CC0 1.0 Universal — https://creativecommons.org/publicdomain/zero/1.0/
+Wikidata
+Source: Wikidata structured data, query snapshot 2026-10-08.
+License: CC0 1.0 Universal https://creativecommons.org/publicdomain/zero/1.0/
 Policy: https://www.wikidata.org/wiki/Wikidata:Licensing
-Selection, provenance, source snapshot and reproducible build manifest:
-Tools/BuildLexicon/EnglishNames/README.md
-
-Rectfly English canonical casing
-================================
-english_casing.tsv is derived from the same complete English Tatoeba export
-and uses the contributor attribution above (CC BY 2.0 FR). Downloaded again
-on 2026-10-09; SHA256 is identical to the pinned 2026-10-03 snapshot:
-d2c8fc271db70967cbf6e74069b34f394eccccca4a61fc84039e0f0549016ee8.
-Modifications: deduplicated; same 10% holdout excluded; sentence-internal
-case-form counts reduced to preferred display spellings and ambiguity flags.
-No sentence texts are bundled. Rebuild: Tools/BuildLexicon/build_english_casing.py.
-
-english_casing_context.tsv uses the same source, contributors and held-out split
-as english_casing.tsv. It stores previous-word pairs whose sentence-internal
-capitalization has at least 3 training observations and 95% capital support.
-Rebuild: Tools/BuildLexicon/build_english_casing_context.py. CC BY 2.0 FR.
 
 
-English offensive-word admission list
+profanity-list
 Source: https://github.com/dsojevic/profanity-list/tree/c27924319aa9bd6f917e3782b4f4b6604a50b652
-Modified: severity >= 2, whole-token/phrase matching, vocabulary-supported inflections
-excluding per-entry upstream exceptions.
 
 MIT License
 
@@ -1158,32 +1127,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Rectfly English acronym statistics
-=================================
-Derived from the original Tatoeba English detailed export retrieved 2026-10-16.
-Source: https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences_detailed.tsv.bz2
-Compressed SHA-256: 1d8c40545b4af2c6531d1a8b64941fa9d0fa3ee5bcc11cb705c8d8c1fd930c84
-License: CC BY 2.0 FR https://creativecommons.org/licenses/by/2.0/fr/
-Also derived from the Simple English Wikipedia article dump of 2026-10-01.
-Source: https://dumps.wikimedia.org/simplewiki/20261001/simplewiki-20261001-pages-articles.xml.bz2
-Compressed SHA-256: 2db94ff149adbbaf88efecb8f510a549eaa2a82d59df6278a4af88e13c1b99bd
-License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
+Simple English Wikipedia
+========================
+Source: https://dumps.wikimedia.org/simplewiki/20261001/
 Attribution: Simple English Wikipedia contributors.
-Modifications: markup removed, normalized-sentence deduplication, 10% holdout removed;
-sentence-internal abbreviation counts and canonical casing only. No sentences bundled.
-Rebuild: Tools/BuildLexicon/build_english_acronyms.py
-Tatoeba attribution: Tatoeba contributors, including the named owners above and anonymous/unowned sentences.
-Additional named owners in this export:
-Squarerobot, humed_adam
+License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
+Modified. The derived table english_acronym_casing.tsv is published under
+CC BY-SA 4.0 at https://rectfly.app/assets/data/english_acronym_casing.tsv
 
-Rectfly English retrospective window model
-==========================================
-Derived from the same 2026-10-16 Tatoeba English detailed export credited above.
-Compressed source SHA256: 1d8c40545b4af2c6531d1a8b64941fa9d0fa3ee5bcc11cb705c8d8c1fd930c84
-License: CC BY 2.0 FR https://creativecommons.org/licenses/by/2.0/fr/
-Modifications: normalized token-sequence deduplication; stable 80/10/10
-train/tune/test split; compact pruned unigram, bigram and trigram counts with
-full context totals and residual backoff. No sentence texts are bundled.
-Builder: Tools/BuildLexicon/build_english_window.py
-Manifest: docs/evidence/english-window/model.json
-Attribution: Tatoeba contributors, including the named owners listed above.
+Additional named Tatoeba owners in the 2026-10-16 export:
+Squarerobot, humed_adam
