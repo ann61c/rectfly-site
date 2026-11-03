@@ -12,9 +12,6 @@
   <link rel="icon" type="image/png" href="assets/app-icon.png" media="(prefers-color-scheme: light)">
   <link rel="icon" type="image/png" href="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
   <link rel="apple-touch-icon" href="assets/app-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&family=JetBrains+Mono:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -33,7 +30,7 @@
       <div class="hero-copy">
         <p class="kicker reveal" style="--d:0">小鹤双拼 · iOS 键盘 · 离线</p>
         <h1 id="hero-title" class="reveal" style="--d:1"><span class="line">按偏了，</span><span class="line accent-line">也懂你。</span></h1>
-        <p class="lede reveal" style="--d:2">Rectfly 不把每个键当成一个格子。它记住你手指落下的位置，结合上下文，把按偏、漏按、多按的键读成你想写的那句话。</p>
+        <p class="lede reveal" style="--d:2">按偏、漏按、多按，Rectfly 都能还你想写的那句话。越用越懂你的手，越打越准。</p>
         <div class="cta-row reveal" style="--d:3">
           <a class="keycap-btn" href="https://testflight.apple.com/join/un67VMZe"><span class="cap">加入 TestFlight<span aria-hidden="true"> ↗</span></span></a>
           <a class="ghost" href="support.html">怎么开始用 →</a>
@@ -80,10 +77,10 @@
 
     <section class="cloud-sec" aria-labelledby="cloud-title">
       <div class="cloud-copy">
-        <h2 id="cloud-title" class="reveal">每个键，<br>都是一片<br><em>概率</em>。</h2>
-        <p class="reveal" style="--d:1">你按 m 的时候，手指不一定落在 m 的正中。Rectfly 看的是那一下落在哪、离谁更近，再看前后文，算出你最可能想按的键。把手指或鼠标放到键盘上试试。</p>
+        <h2 id="cloud-title" class="reveal">手快一点，<br>也不怕<br><em>打错</em>。</h2>
+        <p class="reveal" style="--d:1">打字快的时候，手指难免偏一点。打偏了也能打对，用得越久越准。把手指或鼠标放到键盘上试试。</p>
       </div>
-      <div class="cloud-stage reveal" style="--d:1"><canvas id="cloud" aria-label="触点分布示意：每个键周围是一团落点"></canvas></div>
+      <div class="cloud-stage reveal" style="--d:1"><canvas id="cloud" aria-label="键盘示意：放上手指或鼠标试试"></canvas></div>
     </section>
 
     <section class="offline" aria-labelledby="offline-title">

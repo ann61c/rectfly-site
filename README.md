@@ -1,8 +1,8 @@
 # Rectfly 官网
 
-https://ann61c.github.io/rectfly-site/ ，由 GitHub Pages 从 `main` 发布。
+https://rectfly.app ，托管在 Cloudflare Workers 静态资源，用 wrangler 手动部署。旧副本 https://ann61c.github.io/rectfly-site/ 仍由 GitHub Pages 从 `main` 发布。
 
-纯 HTML + CSS，无框架、JavaScript、构建步骤或第三方请求。适配手机与系统深色模式。
+纯 HTML + CSS + 本站脚本和字体（`assets/fonts/`），无框架、构建步骤或第三方请求。适配手机与系统深色模式。
 
 ## 页面
 
