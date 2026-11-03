@@ -4,28 +4,10 @@ Source: https://github.com/amzxyz/RIME-LMDG/tree/e5cb7db
 License: Creative Commons Attribution 4.0 International (CC BY 4.0)
 https://creativecommons.org/licenses/by/4.0/
 
-Modifications: removed pinyin tone marks (ü retained as v), canonicalized Xiaohe
-codes, merged duplicate word/pronunciation rows by the highest source frequency,
-omitted invalid, unencodable and unsupported-glyph rows with the shared pinned iOS whitelist, selected the high-frequency word core and
-encoded the remaining words as a read-only exact-code mmap index.
-Source frequencies are retained; omitted frequencies in optional dictionaries use 1.
-Optional dictionaries: mingren, diming, renming, shici, wuzhong, yaopin, yixue,
-huaxue, duoyin, cuoyin, fangyan, taifeng and yiren; fixed full commit
-e5cb7dbebeacb5ddad63289640940105ef32cf45. Each becomes a separate exact-code
-mmap pack. The actual used rows are in Data/WordSource/Packs/*.tsv; their
-source/download hashes and filtering counts are in Data/WordSource/source.json.
-The character layer is maintained separately. Imported owner words are private,
-are not upstream Wanxiang data and are not included in the public source copy.
+Includes the optional dictionaries of commit e5cb7dbebeacb5ddad63289640940105ef32cf45.
+Modified.
 
-The actual used upstream word data is provided unencrypted as
-Data/WordSource/wanxiang-used.tsv in the Rectfly source/release materials.
-This independent TSV copy can be used and redistributed under CC BY 4.0;
-A public copy is not an ETM exemption. Before release, verify that the actual
-channel's DRM, encryption and contractual terms do not restrict recipients
-from copying, modifying or redistributing the CC material shipped with the App.
-Signing or format conversion alone is not necessarily an ETM. If restrictions
-apply, obtain separate permission or distribute without those restrictions.
-See CC BY 4.0 section 2(a)(5)(B) and the Creative Commons ETM FAQ.
+A public copy of the used data: https://github.com/ann61c/rectfly-site/releases/tag/data-wanxiang-20260909
 
 Full upstream license follows:
 

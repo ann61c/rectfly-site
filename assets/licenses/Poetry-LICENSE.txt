@@ -4,11 +4,7 @@ Revision: b8594f81a89752241442f2ce267d6f66f96704ee
 License: https://github.com/chinese-poetry/chinese-poetry/blob/b8594f81a89752241442f2ce267d6f66f96704ee/LICENSE
 
 Ancient bodies/titles/authors from 唐诗三百首, 宋词三百首 and 古文观止.
-Modified: included all 822 source works; removed editorial notes; simplified Chinese;
-reviewed readings and one source typo; indexed adjacent clauses for next-line lookup.
-No translations, modern notes, introductions or tags are included.
-易水歌 (荆轲), independently transcribed from 史记·刺客列传, is public-domain
-ancient text and is not attributed to this dataset. Total: 823 works, 24,410 edges.
+易水歌 (荆轲) is public-domain ancient text and is not attributed to this dataset.
 
 The MIT License (MIT)
 
