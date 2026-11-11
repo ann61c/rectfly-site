@@ -3,9 +3,7 @@ Author: amzxyz
 Source: https://github.com/amzxyz/RIME-LMDG/blob/e5cb7db/dicts/zi.dict.yaml
 License: Creative Commons Attribution 4.0 International
 https://creativecommons.org/licenses/by/4.0/
-Modified: stripped tones, converted readings to Flypy codes, merged same-character/
-same-code weights by maximum, and filtered by iOS 26.5 system-font glyph coverage.
-Supplied weights are unchanged; missing weights are zero.
+Modified.
 
 Wanxiang grammar model
 Author: amzxyz
@@ -13,9 +11,11 @@ Source: https://github.com/amzxyz/rime-wanxiang-data/releases/tag/LTS
 Pinned fallback: September 9, 2026 LTS asset 552602424
 License: Creative Commons Attribution 4.0 International
 https://creativecommons.org/licenses/by/4.0/
-The grammar data is downloaded unchanged as wanxiang-lts-zh-hans.gram.
-It is not bundled. Pinned fallback SHA-256: 1eb651288b117e68374110b32796346e128be790e994559cb7c1e3b0fd63029d
-The Swift reader is adapted separately under the BSD license below.
+Downloaded separately, unmodified.
+
+librime-octagram
+Source: https://github.com/lotem/librime-octagram
+License: BSD-3-Clause
 
 Copyright (c) 2014, RIME Developers
 All rights reserved.
